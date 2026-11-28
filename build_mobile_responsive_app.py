@@ -13,15 +13,19 @@ questions.sort(key=lambda x: (x['exam'], x['qNum']))
 
 json_data_str = json.dumps(questions, ensure_ascii=False)
 
+# Load TIPS DATA
+import generate_tips_data
+tips_data_str = generate_tips_data.tips_data_str
+
 html_template = '''<!DOCTYPE html>
 <html lang="vi" class="h-full">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>AVCD6 PASS MÔN - Ôn Thi Tiếng Anh Trên Điện Thoại & Máy Tính</title>
+  <title>AVCD6 PASS MÔN - Ôn Thi Tiếng Anh & Sổ Tay Mẹo 3S</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -82,6 +86,12 @@ html_template = '''<!DOCTYPE html>
       border-color: #4f46e5 !important;
       box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
     }
+    .active-tip-cat {
+      background: #f59e0b !important;
+      color: #ffffff !important;
+      border-color: #f59e0b !important;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    }
     /* Touch optimization */
     button, input, select, textarea {
       touch-action: manipulation;
@@ -100,7 +110,7 @@ html_template = '''<!DOCTYPE html>
       <div class="flex items-center justify-between gap-2.5">
         
         <!-- Logo & Title -->
-        <div class="flex items-center gap-2 sm:gap-3">
+        <div class="flex items-center gap-2 sm:gap-3 cursor-pointer" onclick="setMode('study')">
           <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 font-black text-lg sm:text-xl flex-shrink-0">
             A6
           </div>
@@ -113,7 +123,7 @@ html_template = '''<!DOCTYPE html>
           </div>
         </div>
 
-        <!-- Mode Selector on Header -->
+        <!-- Mode Selector on Header (Includes the new Tips Tab) -->
         <div class="flex items-center bg-slate-100 dark:bg-slate-900 p-1 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] sm:text-xs font-bold overflow-x-auto scrollbar-none">
           <button id="modeStudyBtn" onclick="setMode('study')" class="px-2.5 sm:px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 bg-white dark:bg-slate-800 text-brand-600 dark:text-brand-400 shadow-sm whitespace-nowrap">
             <span>📖</span> <span class="hidden xs:inline">Ôn Tập</span>
@@ -123,6 +133,9 @@ html_template = '''<!DOCTYPE html>
           </button>
           <button id="modeWrongBtn" onclick="setMode('wrong')" class="px-2.5 sm:px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap">
             <span>❌</span> <span id="wrongCountBadge">0</span>
+          </button>
+          <button id="modeTipsBtn" onclick="setMode('tips')" class="px-2.5 sm:px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-200 bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800/60 whitespace-nowrap" title="Bí kíp và mẹo 3s qua môn">
+            <span class="text-amber-500 font-black">💡</span> <span class="font-bold">Mẹo 3S</span>
           </button>
         </div>
 
@@ -166,7 +179,7 @@ html_template = '''<!DOCTYPE html>
   </header>
 
   <!-- NAVIGATION TABS: SWIPEABLE ON PHONE -->
-  <div class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-sm sticky top-[57px] sm:top-[61px] z-30">
+  <div id="navTabsContainer" class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-sm sticky top-[57px] sm:top-[61px] z-30">
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 flex flex-col gap-2">
       
       <!-- ROW 1: LUYỆN THEO ĐỀ (Exam 1 -> 5) -->
@@ -194,25 +207,28 @@ html_template = '''<!DOCTYPE html>
         </button>
       </div>
 
-      <!-- ROW 2: CHUYÊN ĐỀ TỔNG HỢP CẢ 5 BÀI -->
+      <!-- ROW 2: CHUYÊN ĐỀ TỔNG HỢP CẢ 5 BÀI + QUICK TIPS BUTTON -->
       <div class="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5 flex-nowrap -mx-3 px-3 sm:mx-0 sm:px-0 pt-1.5 border-t border-slate-100 dark:border-slate-800/80">
         <span class="text-[11px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider flex-shrink-0 mr-1 flex items-center gap-1">
           <span>🎯</span> TỔNG HỢP:
         </span>
+        <button onclick="selectCategory('part', 'TRANSFORMATION')" id="tab_part_TRANSFORMATION" class="cat-tab px-3 py-1 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 flex-shrink-0 flex items-center gap-1">
+          <span>📙</span> Tổng Viết Lại Câu (50 câu)
+        </button>
         <button onclick="selectCategory('part', 'GRAMMAR')" id="tab_part_GRAMMAR" class="cat-tab px-3 py-1 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 flex-shrink-0 flex items-center gap-1">
           <span>📘</span> Tổng Ngữ Pháp (50 câu)
         </button>
         <button onclick="selectCategory('part', 'VOCABULARY')" id="tab_part_VOCABULARY" class="cat-tab px-3 py-1 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 flex-shrink-0 flex items-center gap-1">
           <span>📗</span> Tổng Từ Vựng (50 câu)
         </button>
-        <button onclick="selectCategory('part', 'TRANSFORMATION')" id="tab_part_TRANSFORMATION" class="cat-tab px-3 py-1 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 flex-shrink-0 flex items-center gap-1">
-          <span>📙</span> Tổng Viết Lại Câu (50 câu)
-        </button>
         <button onclick="selectCategory('part', 'CLOZE')" id="tab_part_CLOZE" class="cat-tab px-3 py-1 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 flex-shrink-0 flex items-center gap-1">
           <span>📕</span> Tổng Điền Từ (50 câu)
         </button>
         <button onclick="selectCategory('part', 'READING')" id="tab_part_READING" class="cat-tab px-3 py-1 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 flex-shrink-0 flex items-center gap-1">
           <span>📖</span> Tổng Đọc Hiểu (50 câu)
+        </button>
+        <button onclick="setMode('tips')" id="tab_quick_tips" class="cat-tab px-3 py-1 rounded-xl text-xs font-bold border border-amber-300 dark:border-amber-700/60 bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/60 flex-shrink-0 flex items-center gap-1 shadow-sm">
+          <span>⚡</span> Sổ Tay Bí Kíp Mẹo 3S
         </button>
       </div>
 
@@ -222,8 +238,67 @@ html_template = '''<!DOCTYPE html>
   <!-- MAIN CONTENT CONTAINER -->
   <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 flex-1 w-full flex flex-col lg:flex-row gap-5">
 
-    <!-- LEFT: QUESTION LIST -->
-    <div class="flex-1 min-w-0 flex flex-col gap-4 sm:gap-5">
+    <!-- DEDICATED TIPS & TRICKS VIEW CONTAINER -->
+    <div id="tipsViewContainer" class="hidden flex-1 flex flex-col gap-4 sm:gap-5 w-full">
+      
+      <!-- TOP BANNER FOR TIPS -->
+      <div class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 rounded-3xl p-4 sm:p-6 text-white shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="text-2xl">⚡</span>
+            <span class="badge-pill bg-white/20 text-white font-mono text-[10px] tracking-wider">BẢN ĐỒ QUA MÔN 3S</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-black tracking-tight">SỔ TAY BÍ KÍP & MẸO LÀM BÀI SIÊU TỐC</h2>
+          <p class="text-xs sm:text-sm text-amber-100 mt-1 max-w-2xl leading-relaxed">
+            Tổng hợp toàn bộ công thức vàng, dấu hiệu nhận biết 3s và bẫy thi thường gặp cho cả 5 phần thi AVCD6. Học nhanh - dễ nhớ - thi là qua!
+          </p>
+        </div>
+        <div class="flex items-center gap-2 flex-shrink-0">
+          <button onclick="setMode('study')" class="px-4 py-2.5 bg-white text-amber-900 rounded-2xl font-black text-xs shadow-md hover:bg-amber-50 active:scale-95 transition-all flex items-center gap-1.5">
+            <span>📖</span> Làm Bài Ngay
+          </button>
+        </div>
+      </div>
+
+      <!-- SEARCH & FILTER TOOLBAR FOR TIPS -->
+      <div class="bg-white dark:bg-slate-900 p-3.5 sm:p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col gap-3">
+        <!-- Live Search -->
+        <div class="relative">
+          <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm">🔍</span>
+          <input type="text" id="tipsSearchInput" oninput="filterTipsRealtime()" placeholder="Tìm nhanh công thức / từ khóa (VD: bị động, gián tiếp, if, unless, modal, since, make, cloze, scan, in on at...)" class="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-xs sm:text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-500">
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 -mx-2 px-2 sm:mx-0 sm:px-0">
+          <button onclick="setTipsCategory('all')" id="tip_cat_all" class="tip-cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-amber-500 text-white shadow-sm flex-shrink-0">
+            🌟 Tất cả (<span id="count_tip_all">21</span>)
+          </button>
+          <button onclick="setTipsCategory('trans')" id="tip_cat_trans" class="tip-cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 flex-shrink-0">
+            📙 1. Viết Lại Câu (<span id="count_tip_trans">7</span>)
+          </button>
+          <button onclick="setTipsCategory('gram')" id="tip_cat_gram" class="tip-cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 flex-shrink-0">
+            📘 2. Ngữ Pháp 3s (<span id="count_tip_gram">5</span>)
+          </button>
+          <button onclick="setTipsCategory('vocab')" id="tip_cat_vocab" class="tip-cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 flex-shrink-0">
+            📗 3. Từ Vựng & Cụm Cố Định (<span id="count_tip_vocab">3</span>)
+          </button>
+          <button onclick="setTipsCategory('cloze')" id="tip_cat_cloze" class="tip-cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 flex-shrink-0">
+            📕 4. Điền Từ Đoạn Văn (<span id="count_tip_cloze">2</span>)
+          </button>
+          <button onclick="setTipsCategory('read')" id="tip_cat_read" class="tip-cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 flex-shrink-0">
+            📖 5. Đọc Hiểu Không Cần Dịch Hết (<span id="count_tip_read">4</span>)
+          </button>
+        </div>
+      </div>
+
+      <!-- TIPS CARDS GRID -->
+      <div id="tipsCardsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+
+    <!-- LEFT: QUESTION LIST (Shown on study, exam, wrong modes) -->
+    <div id="questionListContainer" class="flex-1 min-w-0 flex flex-col gap-4 sm:gap-5">
       
       <!-- CURRENT VIEW BANNER -->
       <div id="viewBanner" class="bg-gradient-to-r from-brand-600 to-indigo-600 rounded-2xl p-3.5 sm:p-4 text-white shadow-sm flex items-center justify-between flex-wrap gap-2.5">
@@ -257,53 +332,6 @@ html_template = '''<!DOCTYPE html>
         </div>
       </div>
 
-      <!-- BEGINNER GUIDE FOR TRANSFORMATION (Shown on Tổng Viết Lại Câu) -->
-      <div id="transformationGuideBox" class="hidden bg-white dark:bg-slate-900 rounded-2xl border-2 border-amber-300 dark:border-amber-700/60 shadow-sm overflow-hidden">
-        <button onclick="document.getElementById('transformationGuideContent').classList.toggle('hidden'); document.getElementById('guideArrow').classList.toggle('rotate-180')" class="w-full px-4 py-3 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/50 dark:to-orange-950/30 flex items-center justify-between text-left">
-          <div class="flex items-center gap-2">
-            <span class="text-lg">🧭</span>
-            <div>
-              <div class="text-xs sm:text-sm font-black text-amber-900 dark:text-amber-200">HƯỚNG DẪN TỪ SỐ 0: CÁCH NHẬN BIẾT & LÀM DẠNG VIẾT LẠI CÂU</div>
-              <div class="text-[11px] text-amber-700 dark:text-amber-300 font-medium">Bấm để mở bảng tổng hợp dấu hiệu nhận biết & công thức đổi câu (dành cho người mới)</div>
-            </div>
-          </div>
-          <span id="guideArrow" class="text-amber-700 dark:text-amber-300 font-bold text-sm transition-transform">▼</span>
-        </button>
-        <div id="transformationGuideContent" class="hidden p-4 border-t border-amber-200 dark:border-amber-800/50 text-xs text-slate-700 dark:text-slate-200 flex flex-col gap-3">
-          <p class="leading-relaxed bg-indigo-50 dark:bg-indigo-950/40 p-2.5 rounded-xl border border-indigo-200 dark:border-indigo-900/50 text-indigo-900 dark:text-indigo-200 font-medium">
-            💡 <strong>Nguyên tắc vàng:</strong> Phần Viết lại câu yêu cầu tìm câu có <strong>nghĩa giống hệt câu gốc</strong> và <strong>đúng ngữ pháp</strong>. Đừng dịch từng chữ rời rạc — hãy nhìn <strong>DẤU HIỆU</strong> trong câu gốc để biết ngay nó thuộc dạng nào dưới đây:
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
-            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
-              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">1. Câu bị động (Đảo tân ngữ lên đầu)</div>
-              <div><strong>Dấu hiệu:</strong> Đáp án đưa vật/việc bị tác động lên đầu câu (VD: <em>They will release <u>the film</u></em> → <em><u>The film</u>...</em>).</div>
-              <div><strong>Công thức:</strong> Phải có <strong>BE + V3/ed</strong> đúng thì:<br>• Hiện tại đơn: <strong>am/is/are + V3/ed</strong><br>• Hiện tại tiếp diễn: <strong>am/is/are + being + V3/ed</strong><br>• Hiện tại hoàn thành: <strong>have/has + been + V3/ed</strong><br>• Tương lai (will): <strong>will + be + V3/ed</strong></div>
-            </div>
-            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
-              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">2. Câu gián tiếp (Kể lại lời nói)</div>
-              <div><strong>Dấu hiệu:</strong> Câu gốc có dấu ngoặc kép <strong>"..." said / asked</strong>.</div>
-              <div><strong>3 bước làm:</strong><br>① <strong>Lùi thì</strong> (hiện tại → quá khứ; quá khứ / HTHT → had + V3)<br>② <strong>Đổi đại từ & thời gian</strong> (tomorrow → the following/next day; today → that day; tonight → that night; last night → the night before)<br>③ <strong>Nếu là câu hỏi:</strong> dùng <strong>if/whether</strong> (Yes/No) hoặc giữ từ để hỏi + <strong>S + V</strong> (KHÔNG đảo trợ động từ do/does/did ra trước S!).</div>
-            </div>
-            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
-              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">3. Câu điều kiện (If loại 2 & loại 3)</div>
-              <div><strong>Dấu hiệu:</strong> Câu gốc có <strong>so / because</strong> chỉ nguyên nhân - kết quả, đáp án bắt đầu bằng <strong>If</strong>.<br>• Nếu câu gốc ở <strong>HIỆN TẠI</strong> (don't/can't) → <strong>Loại 2</strong>: <em>If + S + V2/ed (were), S + would/could + V</em> (nhớ đổi ngược nghĩa: không có → nếu có).<br>• Nếu câu gốc ở <strong>QUÁ KHỨ</strong> (was/didn't/V2) → <strong>Loại 3</strong>: <em>If + S + had + V3/ed, S + would/could + have + V3/ed</em>.<br>• Thấy <strong>You should + V</strong> (khuyên) → <em>If I were you, I would + V</em>.</div>
-            </div>
-            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
-              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">4. Động từ khuyết thiếu (Modal Verbs)</div>
-              <div>• <strong>It isn't necessary for sb to V</strong> (không cần thiết) = <strong>S + don't/doesn't have to + V</strong> (Cấm chọn <em>mustn't</em> vì mustn't là CẤM ĐOÁN!).<br>• <strong>I'm sure/certain ... isn't</strong> (chắc chắn không phải) = <strong>can't be</strong>.<br>• <strong>Perhaps</strong> (có lẽ) = <strong>might be</strong>.<br>• <strong>couldn't + V</strong> (quá khứ) = <strong>wasn't/weren't able to + V</strong>.</div>
-            </div>
-            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
-              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">5. Quá khứ đơn ↔ Hiện tại hoàn thành</div>
-              <div><strong>Dấu hiệu:</strong> Thấy <strong>last + V2 ... + khoảng thời gian + ago</strong> (lần cuối làm gì cách đây bao lâu).<br><strong>Công thức:</strong> Đổi sang <strong>haven't/hasn't + V3/ed + for + khoảng thời gian</strong> (Lưu ý: <em>for</em> + khoảng thời gian như <em>four years</em>; KHÔNG dùng <em>since</em> với khoảng thời gian!).</div>
-            </div>
-            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
-              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">6. Although ↔ In spite of / Despite & Các mẫu hay gặp</div>
-              <div>• <strong>Although + S + V</strong> (mệnh đề) = <strong>In spite of / Despite + Cụm danh từ</strong> (bỏ chủ ngữ + động từ, gom thành cụm danh từ).<br>• Đồng tình khẳng định (<em>too</em>): <strong>So + trợ động từ (do/does/am/is) + S</strong>.<br>• <strong>prefer A to B</strong> = <strong>like A more than B</strong>.<br>• <strong>find it + adj + to V</strong> = <strong>It is + adj + for sb + to V</strong>.<br>• Hỏi miêu tả (<em>describe</em>): <strong>What is/are ... like?</strong></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- QUESTIONS CONTAINER -->
       <div id="questionsContainer" class="flex flex-col gap-4 sm:gap-5">
         <!-- Rendered dynamically by JavaScript -->
@@ -319,7 +347,7 @@ html_template = '''<!DOCTYPE html>
     </div>
 
     <!-- RIGHT: QUESTION PALETTE GRID (Visible on Desktop) -->
-    <div class="hidden lg:block w-80 flex-shrink-0">
+    <div id="paletteDesktopContainer" class="hidden lg:block w-80 flex-shrink-0">
       <div class="sticky top-[135px] bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col gap-3.5 max-h-[calc(100vh-160px)] overflow-hidden">
         
         <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
@@ -341,13 +369,17 @@ html_template = '''<!DOCTYPE html>
           <!-- Rendered dynamically -->
         </div>
 
-        <div class="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/40 rounded-xl p-3 text-[11px] text-amber-900 dark:text-amber-200">
-          <div class="font-bold flex items-center gap-1 mb-1">
+        <!-- Shortcut Card to Tips -->
+        <div class="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/40 rounded-xl p-3 text-[11px] text-amber-900 dark:text-amber-200 flex flex-col gap-1.5">
+          <div class="font-bold flex items-center gap-1">
             <span>💡</span> BÍ QUYẾT QUA MÔN:
           </div>
           <p class="leading-relaxed">
-            Chọn <strong>"Tổng Ngữ Pháp"</strong> hoặc <strong>"Tổng Từ Vựng"</strong> ở hàng trên để luyện liền mạch 50 câu của cả 5 đề!
+            Xem trọn bộ <strong>21 công thức vàng & mẹo nhận diện 3s</strong> trong sổ tay!
           </p>
+          <button onclick="setMode('tips')" class="mt-1 px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white rounded-lg font-bold text-center transition-colors">
+            Mở Sổ Tay Mẹo 3S ➔
+          </button>
         </div>
 
       </div>
@@ -356,7 +388,7 @@ html_template = '''<!DOCTYPE html>
   </main>
 
   <!-- MOBILE STICKY BOTTOM BAR (Always easy to tap on phone) -->
-  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 p-2.5 px-4 flex items-center justify-between shadow-xl pb-safe">
+  <div id="mobileBottomBar" class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 p-2.5 px-4 flex items-center justify-between shadow-xl pb-safe">
     <!-- Quick Stat -->
     <div class="flex items-center gap-2 text-xs font-bold text-slate-600 dark:text-slate-400">
       <span class="text-emerald-600 dark:text-emerald-400">✔ <span id="mobileStatCorrect">0</span></span>
@@ -364,10 +396,15 @@ html_template = '''<!DOCTYPE html>
       <span class="text-rose-600 dark:text-rose-400">✖ <span id="mobileStatWrong">0</span></span>
     </div>
 
-    <!-- Center Button: Open Question Palette Drawer -->
-    <button onclick="toggleMobilePalette(true)" class="px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-md shadow-brand-500/25 active:scale-95 transition-transform">
-      <span>📑</span> Bảng Câu Hỏi (<span id="mobilePaletteBtnCount">50</span>)
-    </button>
+    <!-- Center Button: Open Question Palette Drawer or View Tips -->
+    <div class="flex items-center gap-2">
+      <button onclick="toggleMobilePalette(true)" class="px-3.5 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-md shadow-brand-500/25 active:scale-95 transition-transform">
+        <span>📑</span> Bảng Câu (<span id="mobilePaletteBtnCount">50</span>)
+      </button>
+      <button onclick="setMode('tips')" class="px-2.5 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl text-xs font-bold flex items-center gap-1 active:scale-95 transition-transform" title="Sổ tay mẹo">
+        <span>💡</span> Mẹo
+      </button>
+    </div>
 
     <!-- Next Question Button -->
     <button onclick="jumpToNextUnanswered()" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-xl text-xs font-bold active:bg-slate-200 dark:active:bg-slate-700">
@@ -514,12 +551,13 @@ html_template = '''<!DOCTYPE html>
   <!-- EMBEDDED JAVASCRIPT APP -->
   <script>
     const DEFAULT_DATA = ''' + json_data_str + ''';
+    const ALL_TIPS = ''' + tips_data_str + ''';
 
     // Application State
     let questionsData = [];
     let userAnswers = {};
     let mistakes = new Set();
-    let currentMode = 'study';
+    let currentMode = 'study'; // 'study' | 'exam' | 'wrong' | 'tips'
     let currentCatType = 'exam'; 
     let currentCatValue = 1;
     let searchQuery = '';
@@ -530,6 +568,10 @@ html_template = '''<!DOCTYPE html>
     let examTimerInterval = null;
     let examSecondsRemaining = 60 * 60;
     let examSubmitted = false;
+
+    // Tips State
+    let currentTipCategory = 'all';
+    let tipsSearchQuery = '';
 
     function initApp() {
       const stored = localStorage.getItem('avcd6_custom_data');
@@ -565,9 +607,9 @@ html_template = '''<!DOCTYPE html>
         document.getElementById('themeIcon').textContent = '🌙';
       }
 
-      updateMistakesBadge();
       buildShuffledChoices();
-      updateCategoryUI();
+      updateMistakesBadge();
+      updateTipCategoryCounts();
       renderApp();
       populateAdminSelect();
     }
@@ -593,12 +635,43 @@ html_template = '''<!DOCTYPE html>
       const studyBtn = document.getElementById('modeStudyBtn');
       const examBtn = document.getElementById('modeExamBtn');
       const wrongBtn = document.getElementById('modeWrongBtn');
+      const tipsBtn = document.getElementById('modeTipsBtn');
       const examBar = document.getElementById('examBar');
       const examResultBanner = document.getElementById('examResultBanner');
+      
+      const navTabs = document.getElementById('navTabsContainer');
+      const viewBanner = document.getElementById('viewBanner');
+      const questionList = document.getElementById('questionListContainer');
+      const desktopPalette = document.getElementById('paletteDesktopContainer');
+      const tipsContainer = document.getElementById('tipsViewContainer');
 
-      [studyBtn, examBtn, wrongBtn].forEach(b => {
-        b.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap';
+      [studyBtn, examBtn, wrongBtn, tipsBtn].forEach(b => {
+        if (b) {
+          b.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap';
+        }
       });
+
+      if (mode === 'tips') {
+        tipsBtn.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 bg-amber-500 text-white shadow-sm font-bold whitespace-nowrap';
+        examBar.classList.add('hidden');
+        examResultBanner.classList.add('hidden');
+        clearInterval(examTimerInterval);
+
+        // Hide regular question list and desktop palette, show tips
+        if (questionList) questionList.classList.add('hidden');
+        if (desktopPalette) desktopPalette.classList.add('hidden');
+        if (tipsContainer) {
+          tipsContainer.classList.remove('hidden');
+          renderTips();
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      // Restore view for study / exam / wrong
+      if (tipsContainer) tipsContainer.classList.add('hidden');
+      if (questionList) questionList.classList.remove('hidden');
+      if (desktopPalette) desktopPalette.classList.remove('hidden');
 
       if (mode === 'study') {
         studyBtn.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 bg-white dark:bg-slate-800 text-brand-600 dark:text-brand-400 shadow-sm font-bold whitespace-nowrap';
@@ -618,6 +691,7 @@ html_template = '''<!DOCTYPE html>
 
       currentPage = 1;
       renderApp();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function startExam() {
@@ -647,30 +721,28 @@ html_template = '''<!DOCTYPE html>
       clearInterval(examTimerInterval);
 
       const filtered = getFilteredQuestions();
-      let correctCount = 0;
+      let correct = 0;
       filtered.forEach(q => {
         if (userAnswers[q.id] === q.correctAnswer) {
-          correctCount++;
+          correct++;
         } else {
           mistakes.add(q.id);
         }
       });
-
       saveMistakes();
       updateMistakesBadge();
 
       const total = filtered.length;
-      const score10 = total > 0 ? ((correctCount / total) * 10).toFixed(1) : 0;
-      const pct = total > 0 ? Math.round((correctCount / total) * 100) : 0;
-      const isPass = score10 >= 5.0;
+      const score = (correct / total) * 10;
+      const percentage = Math.round((correct / total) * 100);
 
       const banner = document.getElementById('examResultBanner');
-      const title = document.getElementById('examResultTitle');
-      const desc = document.getElementById('examResultDesc');
-
       banner.classList.remove('hidden');
-      title.textContent = `Bạn đạt ${score10} / 10 Điểm! (${isPass ? 'ĐẠT QUA MÔN 🎉' : 'CHƯA ĐẠT - CẦN ÔN LẠI ⚠️'})`;
-      desc.textContent = `Số câu đúng: ${correctCount} / ${total} câu • Tỷ lệ chính xác: ${pct}% • ${isPass ? 'Xin chúc mừng! Nắm chắc các câu này là bạn tự tin qua môn 100%!' : 'Hãy xem lại các câu sai và ôn tập kỹ các mẹo 3s bên dưới!'}`;
+      document.getElementById('examResultTitle').textContent = `Bạn đạt ${score.toFixed(1)} / 10 điểm!`;
+      
+      let passText = score >= 5.0 ? "ĐỖ QUA MÔN XUẤT SẮC! 🎉" : "CẦN ÔN LẠI ĐỂ QUA MÔN! 💪";
+      document.getElementById('examResultDesc').textContent = 
+        `Số câu đúng: ${correct}/${total} • Tỷ lệ chính xác: ${percentage}% • KẾT QUẢ: ${passText}`;
 
       renderApp();
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -691,25 +763,21 @@ html_template = '''<!DOCTYPE html>
     function buildShuffledChoices() {
       shuffledChoicesMap = {};
       questionsData.forEach(q => {
-        const keys = ['A', 'B', 'C', 'D'];
-        let list = keys.map(k => ({
-          originalKey: k,
-          text: q.options[k] || '',
-          meaning: q.choice_breakdown ? q.choice_breakdown[k] : ''
-        }));
-
+        const originalKeys = ['A', 'B', 'C', 'D'];
+        let keysToUse = [...originalKeys];
+        
         if (shuffleChoicesEnabled) {
-          for (let i = list.length - 1; i > 0; i--) {
+          for (let i = keysToUse.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            [list[i], list[j]] = [list[j], list[i]];
+            [keysToUse[i], keysToUse[j]] = [keysToUse[j], keysToUse[i]];
           }
         }
 
-        shuffledChoicesMap[q.id] = list.map((item, idx) => ({
+        shuffledChoicesMap[q.id] = keysToUse.map((origKey, idx) => ({
           displayKey: ['A', 'B', 'C', 'D'][idx],
-          originalKey: item.originalKey,
-          text: item.text,
-          meaning: item.meaning
+          originalKey: origKey,
+          text: q.options[origKey],
+          meaning: q.choice_breakdown ? q.choice_breakdown[origKey] : ''
         }));
       });
     }
@@ -719,86 +787,53 @@ html_template = '''<!DOCTYPE html>
       currentCatValue = val;
       currentPage = 1;
 
-      updateCategoryUI();
-      renderApp();
-    }
+      document.querySelectorAll('.cat-tab').forEach(el => el.classList.remove('active-tab'));
 
-    function updateCategoryUI() {
-      document.querySelectorAll('.cat-tab').forEach(el => {
-        el.classList.remove('active-tab');
-      });
-
-      const activeId = `tab_${currentCatType}_${currentCatValue}`;
-      const activeBtn = document.getElementById(activeId);
+      const activeBtnId = type === 'exam' ? `tab_exam_${val}` : (type === 'part' ? `tab_part_${val}` : `tab_all_all`);
+      const activeBtn = document.getElementById(activeBtnId);
       if (activeBtn) activeBtn.classList.add('active-tab');
 
-      const subTitle = document.getElementById('viewSubTitle');
-      const mainTitle = document.getElementById('viewMainTitle');
-
-      if (currentCatType === 'exam') {
-        subTitle.textContent = 'CHẾ ĐỘ LUYỆN THEO ĐỀ';
-        mainTitle.textContent = `ĐỀ ÔN TẬP ${currentCatValue} (50 CÂU CHUẨN ĐỀ THI)`;
-      } else if (currentCatType === 'part') {
-        subTitle.textContent = 'CHUYÊN ĐỀ TỔNG HỢP CẢ 5 BÀI';
-        const partNames = {
-          'GRAMMAR': 'TỔNG HỢP TOÀN BỘ NGỮ PHÁP (50 CÂU)',
-          'VOCABULARY': 'TỔNG HỢP TOÀN BỘ TỪ VỰNG (50 CÂU)',
-          'TRANSFORMATION': 'TỔNG HỢP TOÀN BỘ VIẾT LẠI CÂU (50 CÂU)',
-          'CLOZE': 'TỔNG HỢP TOÀN BỘ ĐIỀN TỪ (50 CÂU)',
-          'READING': 'TỔNG HỢP TOÀN BỘ ĐỌC HIỂU (50 CÂU)'
-        };
-        mainTitle.textContent = partNames[currentCatValue] || 'CHUYÊN ĐỀ TỔNG HỢP';
+      if (currentMode === 'tips') {
+        setMode('study');
       } else {
-        subTitle.textContent = 'TỔNG ÔN TOÀN DIỆN';
-        mainTitle.textContent = 'TẤT CẢ 5 ĐỀ ÔN TẬP (250 CÂU)';
+        renderApp();
       }
     }
 
-    function handleSearch(val) {
-      searchQuery = val.trim().toLowerCase();
-      currentPage = 1;
-      renderApp();
-    }
-
     function getFilteredQuestions() {
-      let list = questionsData.filter(q => {
-        if (currentMode === 'wrong' && !mistakes.has(q.id)) {
-          return false;
-        }
+      let list = [...questionsData];
 
-        if (currentCatType === 'exam') {
-          if (q.exam !== currentCatValue) return false;
-        } else if (currentCatType === 'part') {
-          if (q.part !== currentCatValue) return false;
-        }
+      if (currentMode === 'wrong') {
+        list = list.filter(q => mistakes.has(q.id));
+      }
 
-        if (searchQuery) {
-          const matchQ = q.question.toLowerCase().includes(searchQuery);
-          const matchTip = (q.explanation?.tip || '').toLowerCase().includes(searchQuery);
-          const matchTrans = (q.explanation?.translation || '').toLowerCase().includes(searchQuery);
-          const matchOpts = Object.values(q.options || {}).some(v => v.toLowerCase().includes(searchQuery));
-          if (!matchQ && !matchTip && !matchTrans && !matchOpts) return false;
-        }
+      if (currentCatType === 'exam') {
+        list = list.filter(q => q.exam === parseInt(currentCatValue, 10));
+      } else if (currentCatType === 'part') {
+        list = list.filter(q => q.part === currentCatValue);
+      }
 
-        return true;
-      });
+      if (searchQuery.trim() !== '') {
+        const q = searchQuery.toLowerCase();
+        list = list.filter(item => 
+          item.question.toLowerCase().includes(q) ||
+          item.options.A.toLowerCase().includes(q) ||
+          item.options.B.toLowerCase().includes(q) ||
+          item.options.C.toLowerCase().includes(q) ||
+          item.options.D.toLowerCase().includes(q) ||
+          (item.explanation?.translation && item.explanation.translation.toLowerCase().includes(q))
+        );
+      }
 
       list.sort((a, b) => (a.exam - b.exam) || (a.qNum - b.qNum));
       return list;
     }
 
-    function getSpecificWrongReason(q, chosenKey, displayKey) {
-      if (!chosenKey || chosenKey === q.correctAnswer) return "";
-      const shownKey = displayKey || chosenKey;
-      
-      const chosenMeaning = (q.choice_breakdown && q.choice_breakdown[chosenKey]) ? q.choice_breakdown[chosenKey] : '';
-      if (chosenMeaning && !chosenMeaning.includes('phương án:')) {
-        if (q.part === 'TRANSFORMATION') {
-          return `Bạn chọn [${shownKey}] "${q.options[chosenKey]}" → ${chosenMeaning}`;
-        }
-        return `Bạn chọn [${shownKey}] "${q.options[chosenKey]}" mang nghĩa là: "${chosenMeaning}". Nghĩa này HOÀN TOÀN KHÔNG PHÙ HỢP với ngữ cảnh câu!`;
+    function getWrongReason(q, chosenKey) {
+      const shownKey = chosenKey;
+      if (q.choice_breakdown && q.choice_breakdown[chosenKey]) {
+        return `Lựa chọn '${shownKey}' (${q.options[chosenKey]}) mang nghĩa "${q.choice_breakdown[chosenKey]}", không phù hợp với ngữ cảnh câu hỏi hoặc sai cấu trúc ngữ pháp.`;
       }
-
       if (q.explanation?.wrong) {
         return q.explanation.wrong;
       }
@@ -840,7 +875,7 @@ html_template = '''<!DOCTYPE html>
     }
 
     function scrollToQuestion(qId) {
-      toggleMobilePalette(false); // Close mobile drawer if open
+      toggleMobilePalette(false);
 
       const filtered = getFilteredQuestions();
       const idx = filtered.findIndex(q => q.id === qId);
@@ -883,6 +918,11 @@ html_template = '''<!DOCTYPE html>
     // RENDER QUESTIONS & PALETTES
     // ==========================================
     function renderApp() {
+      if (currentMode === 'tips') {
+        renderTips();
+        return;
+      }
+
       const filtered = getFilteredQuestions();
       const totalQuestions = filtered.length;
       const totalPages = Math.ceil(totalQuestions / PAGE_SIZE) || 1;
@@ -910,31 +950,41 @@ html_template = '''<!DOCTYPE html>
 
       document.getElementById('mobileStatCorrect').textContent = correctCount;
       document.getElementById('mobileStatWrong').textContent = wrongCount;
-
-      document.getElementById('examAnsweredCount').textContent = answeredCount;
-      document.getElementById('examTotalCount').textContent = totalQuestions;
       document.getElementById('mobilePaletteBtnCount').textContent = `${answeredCount}/${totalQuestions}`;
 
-      document.getElementById('pageInfo').textContent = `Trang ${currentPage} / ${totalPages} (Câu ${totalQuestions > 0 ? startIndex + 1 : 0} - ${endIndex} / ${totalQuestions})`;
-      document.getElementById('prevPageBtn').disabled = currentPage <= 1;
-      document.getElementById('nextPageBtn').disabled = currentPage >= totalPages;
+      // View Banner Info
+      let subTitle = "CHẾ ĐỘ LUYỆN THEO ĐỀ";
+      let mainTitle = `ĐỀ ÔN TẬP ${currentCatValue} (50 CÂU CHUẨN ĐỀ THI)`;
 
-      const guideBox = document.getElementById('transformationGuideBox');
-      if (guideBox) {
-        if (currentCatType === 'part' && currentCatValue === 'TRANSFORMATION') {
-          guideBox.classList.remove('hidden');
-        } else {
-          guideBox.classList.add('hidden');
-        }
+      if (currentMode === 'wrong') {
+        subTitle = "SỔ TAY CÂU SAI";
+        mainTitle = `TẬP HỢP ${mistakes.size} CÂU LÀM SAI CẦN ÔN LẠI`;
+      } else if (currentCatType === 'part') {
+        subTitle = "CHUYÊN ĐỀ TỔNG HỢP CẢ 5 BÀI";
+        const mapNames = {
+          'GRAMMAR': 'TỔNG HỢP NGỮ PHÁP (50 CÂU)',
+          'VOCABULARY': 'TỔNG HỢP TỪ VỰNG (50 CÂU)',
+          'TRANSFORMATION': 'TỔNG HỢP VIẾT LẠI CÂU (50 CÂU)',
+          'CLOZE': 'TỔNG HỢP ĐIỀN TỪ ĐOẠN VĂN (50 CÂU)',
+          'READING': 'TỔNG HỢP ĐỌC HIỂU (50 CÂU)'
+        };
+        mainTitle = mapNames[currentCatValue] || currentCatValue;
+      } else if (currentCatType === 'all') {
+        subTitle = "TOÀN BỘ DỮ LIỆU";
+        mainTitle = "TẤT CẢ 5 ĐỀ (250 CÂU HỎI ĐẦY ĐỦ)";
       }
 
+      document.getElementById('viewSubTitle').textContent = subTitle;
+      document.getElementById('viewMainTitle').textContent = mainTitle;
+
+      // Render Questions Container
       const container = document.getElementById('questionsContainer');
       if (pageQuestions.length === 0) {
         container.innerHTML = `
-          <div class="bg-white dark:bg-slate-900 rounded-3xl p-10 text-center border border-slate-200 dark:border-slate-800 shadow-sm">
-            <div class="text-4xl mb-3">🎉</div>
-            <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white">Không có câu hỏi nào!</h3>
-            <p class="text-xs text-slate-500 mt-1">Bạn đã hoàn thành hết các câu trong mục này.</p>
+          <div class="bg-white dark:bg-slate-900 rounded-2xl p-8 text-center border border-slate-200 dark:border-slate-800">
+            <span class="text-4xl mb-3 block">🎉</span>
+            <h3 class="text-base font-bold text-slate-800 dark:text-slate-100">Không có câu hỏi nào trong danh sách này!</h3>
+            <p class="text-xs text-slate-500 mt-1">Nếu đang ở mục 'Câu sai', bạn đã làm đúng hết hoặc chưa có câu sai nào.</p>
           </div>
         `;
       } else {
@@ -942,45 +992,30 @@ html_template = '''<!DOCTYPE html>
           const userChoice = userAnswers[q.id];
           const hasAnswered = !!userChoice;
           const isCorrect = userChoice === q.correctAnswer;
+          const choices = shuffledChoicesMap[q.id] || [];
+
           const showAnswerDetail = (currentMode === 'study' && hasAnswered) || (currentMode === 'exam' && examSubmitted);
-
-          const choices = shuffledChoicesMap[q.id] || [
-            { displayKey: 'A', originalKey: 'A', text: q.options.A },
-            { displayKey: 'B', originalKey: 'B', text: q.options.B },
-            { displayKey: 'C', originalKey: 'C', text: q.options.C },
-            { displayKey: 'D', originalKey: 'D', text: q.options.D }
-          ];
-
-          const displayKeyByOrig = {};
-          choices.forEach(c => { displayKeyByOrig[c.originalKey] = c.displayKey; });
-          const userDisplayKey = userChoice ? (displayKeyByOrig[userChoice] || userChoice) : '';
-          const correctDisplayKey = displayKeyByOrig[q.correctAnswer] || q.correctAnswer;
-
-          const userChoiceText = userChoice ? (q.options[userChoice] || '') : '';
           const correctText = q.options[q.correctAnswer] || '';
-          const specificWrongReason = (!isCorrect && userChoice) ? getSpecificWrongReason(q, userChoice, userDisplayKey) : '';
+          const userChoiceText = userChoice ? (q.options[userChoice] || '') : '';
+          const specificWrongReason = userChoice ? getWrongReason(q, userChoice) : '';
 
           return `
-            <div id="card_${q.id}" class="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-5 border ${hasAnswered && !isCorrect && showAnswerDetail ? 'border-rose-300 dark:border-rose-900 shadow-rose-100 dark:shadow-none' : 'border-slate-200 dark:border-slate-800'} shadow-sm transition-all duration-200 hover:shadow-md">
+            <div id="card_${q.id}" class="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-5 border border-slate-200/90 dark:border-slate-800 shadow-sm transition-all flex flex-col">
               
-              <!-- Card Header -->
-              <div class="flex items-center justify-between gap-2.5 mb-3 flex-wrap">
-                <div class="flex items-center gap-1.5 sm:gap-2">
-                  <span class="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-brand-100 dark:bg-brand-950/80 text-brand-700 dark:text-brand-300 font-mono font-bold text-xs flex items-center justify-center shadow-sm">
-                    #${q.qNum}
+              <!-- Header info -->
+              <div class="flex items-center justify-between gap-2 mb-2.5">
+                <div class="flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-lg bg-brand-50 dark:bg-brand-950/70 border border-brand-200 dark:border-brand-800 flex items-center justify-center font-mono font-bold text-brand-600 dark:text-brand-400 text-xs">
+                    ${q.qNum}
                   </span>
-                  <span class="badge-pill bg-indigo-50 text-indigo-700 dark:bg-indigo-950/50 dark:text-indigo-300">
-                    Đề ${q.exam}
-                  </span>
-                  <span class="badge-pill bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
-                    ${q.partName || q.part}
+                  <span class="badge-pill bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                    Đề ${q.exam} • ${q.partName || q.part}
                   </span>
                 </div>
-
-                ${showAnswerDetail ? `
-                  <div class="flex items-center gap-1 text-xs font-bold ${isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}">
-                    <span>${isCorrect ? '✔ ĐÚNG' : '✖ SAI'}</span>
-                  </div>
+                ${q.explanation?.topic ? `
+                  <span class="text-[10px] font-semibold text-slate-400 bg-slate-50 dark:bg-slate-800/50 px-2 py-0.5 rounded-md border border-slate-200/60 dark:border-slate-800">
+                    ${q.explanation.topic}
+                  </span>
                 ` : ''}
               </div>
 
@@ -1043,26 +1078,26 @@ html_template = '''<!DOCTYPE html>
                   ${!isCorrect ? `
                     <div class="p-3.5 bg-rose-50/95 dark:bg-rose-950/50 border-2 border-rose-400 dark:border-rose-800 rounded-2xl shadow-sm flex flex-col gap-2">
                       <div class="flex items-center gap-1.5 text-rose-700 dark:text-rose-300 font-black text-xs uppercase tracking-wide">
-                        <span class="text-sm">❌</span> BẠN VỪA CHỌN: [${userDisplayKey}] "${userChoiceText}" — TẠI SAO SAI?
+                        <span class="text-sm">❌</span> BẠN VỪA CHỌN: [${userChoice}] "${userChoiceText}" — TẠI SAO SAI?
                       </div>
-                      <p class="text-xs text-rose-900 dark:text-rose-200 font-semibold leading-relaxed pl-5 border-l-2 border-rose-300 dark:border-rose-700 ml-1 whitespace-pre-line">
+                      <p class="text-xs text-rose-900 dark:text-rose-200 font-semibold leading-relaxed pl-5 border-l-2 border-rose-300 dark:border-rose-700 ml-1">
                         ${specificWrongReason}
                       </p>
                       <div class="mt-0.5 pt-2 border-t border-rose-200/80 dark:border-rose-900/60 flex items-start gap-1.5 text-xs font-bold text-emerald-800 dark:text-emerald-300 pl-1">
                         <span class="text-sm">👉</span>
                         <div>
                           <span>ĐÁP ÁN ĐÚNG PHẢI LÀ: </span>
-                          <span class="underline decoration-2">[${correctDisplayKey}] "${correctText}"</span>
-                          <div class="font-normal text-slate-700 dark:text-slate-300 mt-1 leading-relaxed whitespace-pre-line">${q.explanation?.why || ''}</div>
+                          <span class="underline decoration-2">[${q.correctAnswer}] "${correctText}"</span>
+                          <span class="font-normal text-slate-600 dark:text-slate-300"> — ${q.explanation?.why || ''}</span>
                         </div>
                       </div>
                     </div>
                   ` : `
                     <div class="p-3.5 bg-emerald-50/95 dark:bg-emerald-950/50 border-2 border-emerald-400 dark:border-emerald-800 rounded-2xl shadow-sm flex flex-col gap-1.5">
                       <div class="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-300 font-black text-xs uppercase tracking-wide">
-                        <span class="text-sm">🎉</span> CHÍNH XÁC! BẠN ĐÃ CHỌN ĐÚNG: [${correctDisplayKey}] "${correctText}"
+                        <span class="text-sm">🎉</span> CHÍNH XÁC! BẠN ĐÃ CHỌN ĐÚNG: [${q.correctAnswer}] "${correctText}"
                       </div>
-                      <p class="text-xs text-emerald-900 dark:text-emerald-200 font-medium leading-relaxed pl-5 whitespace-pre-line">
+                      <p class="text-xs text-emerald-900 dark:text-emerald-200 font-medium leading-relaxed pl-5">
                         ${q.explanation?.why || 'Lựa chọn hoàn toàn chính xác.'}
                       </p>
                     </div>
@@ -1072,19 +1107,13 @@ html_template = '''<!DOCTYPE html>
                 <!-- COMPREHENSIVE STUDY BOX (Sentence Translation + Choice Breakdown + 3s Pass Tip) -->
                 <div class="mt-3.5 pt-3.5 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-3">
                   
-                  ${q.part === 'TRANSFORMATION' && q.explanation?.topic ? `
-                    <div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-lg bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-900/60 text-purple-800 dark:text-purple-200 text-[11px] font-bold">
-                      <span>📌</span> DẠNG BÀI: ${q.explanation.topic}
-                    </div>
-                  ` : ''}
-
                   <!-- 1. DỊCH NGUYÊN VĂN CẢ CÂU HOÀN CHỈNH -->
                   <div class="bg-indigo-50/80 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-900/60 rounded-xl p-3 text-xs shadow-sm">
                     <div class="font-bold text-indigo-950 dark:text-indigo-200 flex items-center gap-1 mb-1 text-[12px]">
-                      <span>🇻🇳</span> DỊCH NGUYÊN VĂN TOÀN BỘ CÂU & CỤM TỪ:
+                      <span>🇻🇳</span> DỊCH NGUYÊN VĂN TOÀN BỘ CÂU:
                     </div>
-                    <p class="text-indigo-900 dark:text-indigo-100 leading-relaxed font-semibold text-xs whitespace-pre-line">
-                      ${q.explanation?.translation || 'Bản dịch đang được cập nhật.'}
+                    <p class="text-indigo-900 dark:text-indigo-100 leading-relaxed font-semibold text-xs">
+                      "${q.explanation?.translation || 'Bản dịch đang được cập nhật.'}"
                     </p>
                   </div>
 
@@ -1109,8 +1138,8 @@ html_template = '''<!DOCTYPE html>
                     </div>
                   </div>
 
-                  <!-- 3. MẸO QUA MÔN 3s -->
-                  <div class="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/30 border border-amber-200 dark:border-amber-900/50 rounded-xl p-3 text-xs">
+                  <!-- 3. MẸO 3S QUA MÔN (DẤU HIỆU NHẬN BIẾT NHANH) -->
+                  <div class="bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700/60 rounded-xl p-3 text-xs shadow-sm">
                     <div class="font-black text-amber-900 dark:text-amber-200 flex items-center gap-1.5 mb-1 tracking-wide">
                       <span class="text-sm">⚡</span> ${q.explanation?.tip ? q.explanation.tip.split(':')[0] : 'MẸO QUA MÔN 3s'}
                     </div>
@@ -1126,6 +1155,11 @@ html_template = '''<!DOCTYPE html>
           `;
         }).join('');
       }
+
+      // Pagination update
+      document.getElementById('pageInfo').textContent = `Trang ${currentPage} / ${totalPages}`;
+      document.getElementById('prevPageBtn').disabled = currentPage <= 1;
+      document.getElementById('nextPageBtn').disabled = currentPage >= totalPages;
 
       renderGroupedPalette(filtered);
     }
@@ -1207,6 +1241,161 @@ html_template = '''<!DOCTYPE html>
       if (mobileEl) mobileEl.innerHTML = html;
     }
 
+    // ==========================================
+    // TIPS & SHORTCUTS HUB (21 MẸO VÀNG QUA MÔN)
+    // ==========================================
+    function updateTipCategoryCounts() {
+      document.getElementById('count_tip_all').textContent = ALL_TIPS.length;
+      document.getElementById('count_tip_trans').textContent = ALL_TIPS.filter(t => t.category === 'trans').length;
+      document.getElementById('count_tip_gram').textContent = ALL_TIPS.filter(t => t.category === 'gram').length;
+      document.getElementById('count_tip_vocab').textContent = ALL_TIPS.filter(t => t.category === 'vocab').length;
+      document.getElementById('count_tip_cloze').textContent = ALL_TIPS.filter(t => t.category === 'cloze').length;
+      document.getElementById('count_tip_read').textContent = ALL_TIPS.filter(t => t.category === 'read').length;
+    }
+
+    function setTipsCategory(cat) {
+      currentTipCategory = cat;
+      document.querySelectorAll('.tip-cat-btn').forEach(b => {
+        b.className = 'tip-cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 flex-shrink-0';
+      });
+
+      const activeBtn = document.getElementById(`tip_cat_${cat}`);
+      if (activeBtn) {
+        activeBtn.className = 'tip-cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-amber-500 text-white shadow-sm flex-shrink-0 active-tip-cat';
+      }
+
+      renderTips();
+    }
+
+    function filterTipsRealtime() {
+      tipsSearchQuery = document.getElementById('tipsSearchInput').value.trim().toLowerCase();
+      renderTips();
+    }
+
+    function getFilteredTips() {
+      let list = [...ALL_TIPS];
+
+      if (currentTipCategory !== 'all') {
+        list = list.filter(t => t.category === currentTipCategory);
+      }
+
+      if (tipsSearchQuery !== '') {
+        list = list.filter(t => 
+          t.title.toLowerCase().includes(tipsSearchQuery) ||
+          t.signal.toLowerCase().includes(tipsSearchQuery) ||
+          t.formula.toLowerCase().includes(tipsSearchQuery) ||
+          t.trap.toLowerCase().includes(tipsSearchQuery) ||
+          t.example.toLowerCase().includes(tipsSearchQuery) ||
+          t.badge.toLowerCase().includes(tipsSearchQuery)
+        );
+      }
+
+      return list;
+    }
+
+    function renderTips() {
+      const container = document.getElementById('tipsCardsGrid');
+      if (!container) return;
+
+      const list = getFilteredTips();
+
+      if (list.length === 0) {
+        container.innerHTML = `
+          <div class="col-span-full bg-white dark:bg-slate-900 rounded-3xl p-8 text-center border border-slate-200 dark:border-slate-800">
+            <span class="text-4xl mb-2 block">🔍</span>
+            <h3 class="text-base font-bold text-slate-800 dark:text-white">Không tìm thấy mẹo nào khớp với từ khóa "${tipsSearchQuery}"!</h3>
+            <p class="text-xs text-slate-500 mt-1">Thử tìm các từ như: bị động, gián tiếp, if, modal, since, make, cloze, scan, in on at...</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = list.map(t => {
+        return `
+          <div class="bg-white dark:bg-slate-900 rounded-3xl border-2 border-slate-200/90 dark:border-slate-800 p-4 sm:p-5 shadow-sm hover:shadow-md transition-all flex flex-col gap-3">
+            
+            <!-- Card Header -->
+            <div class="flex items-start justify-between gap-2 border-b border-slate-100 dark:border-slate-800/80 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-2xl">${t.icon}</span>
+                <div>
+                  <span class="badge-pill bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 text-[10px] font-black tracking-wider">
+                    ${t.badge}
+                  </span>
+                  <h3 class="text-sm sm:text-base font-black text-slate-900 dark:text-white leading-snug mt-0.5">
+                    ${t.title}
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Signal: Dấu hiệu nhận biết 3s -->
+            <div class="bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200/90 dark:border-amber-900/40 rounded-2xl p-3 text-xs">
+              <div class="font-black text-amber-900 dark:text-amber-300 flex items-center gap-1.5 mb-1 text-[11px] uppercase tracking-wide">
+                <span>⚡</span> DẤU HIỆU NHẬN BIẾT 3S:
+              </div>
+              <div class="text-amber-950 dark:text-amber-100 leading-relaxed font-medium">
+                ${t.signal}
+              </div>
+            </div>
+
+            <!-- Formula: Công thức & các bước làm -->
+            <div class="bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-200/90 dark:border-indigo-900/40 rounded-2xl p-3 text-xs">
+              <div class="font-black text-indigo-900 dark:text-indigo-300 flex items-center gap-1.5 mb-1 text-[11px] uppercase tracking-wide">
+                <span>📐</span> CÔNG THỨC & CÁCH LÀM:
+              </div>
+              <div class="text-indigo-950 dark:text-indigo-100 leading-relaxed font-sans">
+                ${t.formula}
+              </div>
+            </div>
+
+            <!-- Trap: Bẫy thi cần chú ý -->
+            <div class="bg-rose-50/80 dark:bg-rose-950/30 border border-rose-200/90 dark:border-rose-900/40 rounded-2xl p-3 text-xs text-rose-950 dark:text-rose-100 leading-relaxed">
+              ${t.trap}
+            </div>
+
+            <!-- Example: Ví dụ thực tế -->
+            <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 rounded-2xl p-3 text-xs flex flex-col gap-1.5">
+              <div class="font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1 text-[11px]">
+                <span>📝</span> VÍ DỤ MINH HỌA THỰC CHIẾN:
+              </div>
+              <div class="font-mono text-slate-800 dark:text-slate-200 text-[11px] leading-relaxed bg-white dark:bg-slate-900 p-2.5 rounded-xl border border-slate-200 dark:border-slate-700">
+                ${t.example}
+              </div>
+              <div class="text-slate-600 dark:text-slate-400 italic text-[11px] pl-1">
+                ↳ Dịch: "${t.exampleTrans}"
+              </div>
+            </div>
+
+            <!-- Card Bottom Action Button -->
+            <div class="pt-1 mt-auto flex justify-end">
+              <button onclick="jumpToPracticeFromTip('${t.category}')" class="px-3.5 py-1.5 bg-brand-50 hover:bg-brand-100 dark:bg-brand-950/50 dark:hover:bg-brand-900/50 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-800 rounded-xl font-bold text-xs flex items-center gap-1 active:scale-95 transition-all">
+                <span>🎯</span> Luyện tập phần này ngay →
+              </button>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    function jumpToPracticeFromTip(cat) {
+      setMode('study');
+      if (cat === 'trans') {
+        selectCategory('part', 'TRANSFORMATION');
+      } else if (cat === 'gram') {
+        selectCategory('part', 'GRAMMAR');
+      } else if (cat === 'vocab') {
+        selectCategory('part', 'VOCABULARY');
+      } else if (cat === 'cloze') {
+        selectCategory('part', 'CLOZE');
+      } else if (cat === 'read') {
+        selectCategory('part', 'READING');
+      } else {
+        selectCategory('all', 'all');
+      }
+    }
+
     // ==================== ADMIN FUNCTIONS ====================
     function toggleAdminModal() {
       const modal = document.getElementById('adminModal');
@@ -1219,9 +1408,9 @@ html_template = '''<!DOCTYPE html>
     }
 
     function populateAdminSelect() {
-      const select = document.getElementById('adminQuestionSelect');
-      select.innerHTML = questionsData.map(q => `
-        <option value="${q.id}">[Đề ${q.exam} - Câu ${q.qNum}] (${q.part}) ${q.question.substring(0, 65)}...</option>
+      const sel = document.getElementById('adminQuestionSelect');
+      sel.innerHTML = questionsData.map(q => `
+        <option value="${q.id}">Đề ${q.exam} - Câu ${q.qNum} (${q.part}): ${q.question.slice(0, 50)}...</option>
       `).join('');
     }
 
@@ -1229,13 +1418,13 @@ html_template = '''<!DOCTYPE html>
       const q = questionsData.find(item => item.id === qId);
       if (!q) return;
 
-      document.getElementById('editQuestionText').value = q.question || '';
-      document.getElementById('editOptA').value = q.options?.A || '';
-      document.getElementById('editOptB').value = q.options?.B || '';
-      document.getElementById('editOptC').value = q.options?.C || '';
-      document.getElementById('editOptD').value = q.options?.D || '';
-      document.getElementById('editCorrectAnswer').value = q.correctAnswer || 'A';
-      document.getElementById('editTopic').value = q.explanation?.topic || q.partName || '';
+      document.getElementById('editQuestionText').value = q.question;
+      document.getElementById('editOptA').value = q.options.A;
+      document.getElementById('editOptB').value = q.options.B;
+      document.getElementById('editOptC').value = q.options.C;
+      document.getElementById('editOptD').value = q.options.D;
+      document.getElementById('editCorrectAnswer').value = q.correctAnswer;
+      document.getElementById('editTopic').value = q.explanation?.topic || '';
       document.getElementById('editTrans').value = q.explanation?.translation || '';
       document.getElementById('editWhy').value = q.explanation?.why || '';
       document.getElementById('editWrong').value = q.explanation?.wrong || '';
@@ -1243,28 +1432,29 @@ html_template = '''<!DOCTYPE html>
     }
 
     function saveAdminChanges() {
-      const qId = document.getElementById('adminQuestionSelect').value;
+      const sel = document.getElementById('adminQuestionSelect');
+      const qId = sel.value;
       const q = questionsData.find(item => item.id === qId);
       if (!q) return;
 
-      q.question = document.getElementById('editQuestionText').value.trim();
-      q.options.A = document.getElementById('editOptA').value.trim();
-      q.options.B = document.getElementById('editOptB').value.trim();
-      q.options.C = document.getElementById('editOptC').value.trim();
-      q.options.D = document.getElementById('editOptD').value.trim();
+      q.question = document.getElementById('editQuestionText').value;
+      q.options.A = document.getElementById('editOptA').value;
+      q.options.B = document.getElementById('editOptB').value;
+      q.options.C = document.getElementById('editOptC').value;
+      q.options.D = document.getElementById('editOptD').value;
       q.correctAnswer = document.getElementById('editCorrectAnswer').value;
-      
+
       if (!q.explanation) q.explanation = {};
-      q.explanation.topic = document.getElementById('editTopic').value.trim();
-      q.explanation.translation = document.getElementById('editTrans').value.trim();
-      q.explanation.why = document.getElementById('editWhy').value.trim();
-      q.explanation.wrong = document.getElementById('editWrong').value.trim();
-      q.explanation.tip = document.getElementById('editTip').value.trim();
+      q.explanation.topic = document.getElementById('editTopic').value;
+      q.explanation.translation = document.getElementById('editTrans').value;
+      q.explanation.why = document.getElementById('editWhy').value;
+      q.explanation.wrong = document.getElementById('editWrong').value;
+      q.explanation.tip = document.getElementById('editTip').value;
 
       localStorage.setItem('avcd6_custom_data', JSON.stringify(questionsData));
       buildShuffledChoices();
       renderApp();
-      alert('Đã lưu thay đổi thành công!');
+      alert(`Đã lưu thay đổi cho câu ${qId} thành công!`);
     }
 
     function deleteSelectedQuestion() {
@@ -1307,14 +1497,15 @@ html_template = '''<!DOCTYPE html>
       populateAdminSelect();
       document.getElementById('adminQuestionSelect').value = newId;
       loadQuestionToEdit(newId);
-      alert('Đã tạo câu hỏi mới!');
+      renderApp();
+      alert('Đã thêm 1 câu hỏi mới vào cuối danh sách!');
     }
 
     function exportDataJSON() {
       const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(questionsData, null, 2));
       const downloadAnchor = document.createElement('a');
       downloadAnchor.setAttribute("href", dataStr);
-      downloadAnchor.setAttribute("download", "avcd6_5de_backup.json");
+      downloadAnchor.setAttribute("download", "avcd6_custom_questions.json");
       document.body.appendChild(downloadAnchor);
       downloadAnchor.click();
       downloadAnchor.remove();
@@ -1327,7 +1518,7 @@ html_template = '''<!DOCTYPE html>
       reader.onload = function(e) {
         try {
           const parsed = JSON.parse(e.target.result);
-          if (Array.isArray(parsed) && parsed.length > 0) {
+          if (Array.isArray(parsed)) {
             questionsData = parsed;
             localStorage.setItem('avcd6_custom_data', JSON.stringify(questionsData));
             buildShuffledChoices();
@@ -1366,4 +1557,4 @@ out_html_path = os.path.join(BASE_DIR, 'index.html')
 with open(out_html_path, 'w', encoding='utf-8') as f:
     f.write(html_template)
 
-print('Updated index.html with FULL MOBILE RESPONSIVE UI! Size:', os.path.getsize(out_html_path))
+print('Updated index.html with FULL MOBILE RESPONSIVE UI and TIPS TAB! Size:', os.path.getsize(out_html_path))

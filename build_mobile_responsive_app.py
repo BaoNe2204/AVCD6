@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import json, re, os
 
-with open('g:\\AVCD6\\enriched_questions_v2.json', 'r', encoding='utf-8') as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(BASE_DIR, 'enriched_questions_v2.json'), 'r', encoding='utf-8') as f:
     questions = json.load(f)
 
 for q in questions:
@@ -253,6 +254,53 @@ html_template = '''<!DOCTYPE html>
           <button onclick="setMode('study')" class="px-3.5 py-2 bg-indigo-900/60 text-white font-bold text-xs rounded-xl hover:bg-indigo-900 transition-all">
             Về Ôn Tập
           </button>
+        </div>
+      </div>
+
+      <!-- BEGINNER GUIDE FOR TRANSFORMATION (Shown on Tổng Viết Lại Câu) -->
+      <div id="transformationGuideBox" class="hidden bg-white dark:bg-slate-900 rounded-2xl border-2 border-amber-300 dark:border-amber-700/60 shadow-sm overflow-hidden">
+        <button onclick="document.getElementById('transformationGuideContent').classList.toggle('hidden'); document.getElementById('guideArrow').classList.toggle('rotate-180')" class="w-full px-4 py-3 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/50 dark:to-orange-950/30 flex items-center justify-between text-left">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">🧭</span>
+            <div>
+              <div class="text-xs sm:text-sm font-black text-amber-900 dark:text-amber-200">HƯỚNG DẪN TỪ SỐ 0: CÁCH NHẬN BIẾT & LÀM DẠNG VIẾT LẠI CÂU</div>
+              <div class="text-[11px] text-amber-700 dark:text-amber-300 font-medium">Bấm để mở bảng tổng hợp dấu hiệu nhận biết & công thức đổi câu (dành cho người mới)</div>
+            </div>
+          </div>
+          <span id="guideArrow" class="text-amber-700 dark:text-amber-300 font-bold text-sm transition-transform">▼</span>
+        </button>
+        <div id="transformationGuideContent" class="hidden p-4 border-t border-amber-200 dark:border-amber-800/50 text-xs text-slate-700 dark:text-slate-200 flex flex-col gap-3">
+          <p class="leading-relaxed bg-indigo-50 dark:bg-indigo-950/40 p-2.5 rounded-xl border border-indigo-200 dark:border-indigo-900/50 text-indigo-900 dark:text-indigo-200 font-medium">
+            💡 <strong>Nguyên tắc vàng:</strong> Phần Viết lại câu yêu cầu tìm câu có <strong>nghĩa giống hệt câu gốc</strong> và <strong>đúng ngữ pháp</strong>. Đừng dịch từng chữ rời rạc — hãy nhìn <strong>DẤU HIỆU</strong> trong câu gốc để biết ngay nó thuộc dạng nào dưới đây:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">1. Câu bị động (Đảo tân ngữ lên đầu)</div>
+              <div><strong>Dấu hiệu:</strong> Đáp án đưa vật/việc bị tác động lên đầu câu (VD: <em>They will release <u>the film</u></em> → <em><u>The film</u>...</em>).</div>
+              <div><strong>Công thức:</strong> Phải có <strong>BE + V3/ed</strong> đúng thì:<br>• Hiện tại đơn: <strong>am/is/are + V3/ed</strong><br>• Hiện tại tiếp diễn: <strong>am/is/are + being + V3/ed</strong><br>• Hiện tại hoàn thành: <strong>have/has + been + V3/ed</strong><br>• Tương lai (will): <strong>will + be + V3/ed</strong></div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">2. Câu gián tiếp (Kể lại lời nói)</div>
+              <div><strong>Dấu hiệu:</strong> Câu gốc có dấu ngoặc kép <strong>"..." said / asked</strong>.</div>
+              <div><strong>3 bước làm:</strong><br>① <strong>Lùi thì</strong> (hiện tại → quá khứ; quá khứ / HTHT → had + V3)<br>② <strong>Đổi đại từ & thời gian</strong> (tomorrow → the following/next day; today → that day; tonight → that night; last night → the night before)<br>③ <strong>Nếu là câu hỏi:</strong> dùng <strong>if/whether</strong> (Yes/No) hoặc giữ từ để hỏi + <strong>S + V</strong> (KHÔNG đảo trợ động từ do/does/did ra trước S!).</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">3. Câu điều kiện (If loại 2 & loại 3)</div>
+              <div><strong>Dấu hiệu:</strong> Câu gốc có <strong>so / because</strong> chỉ nguyên nhân - kết quả, đáp án bắt đầu bằng <strong>If</strong>.<br>• Nếu câu gốc ở <strong>HIỆN TẠI</strong> (don't/can't) → <strong>Loại 2</strong>: <em>If + S + V2/ed (were), S + would/could + V</em> (nhớ đổi ngược nghĩa: không có → nếu có).<br>• Nếu câu gốc ở <strong>QUÁ KHỨ</strong> (was/didn't/V2) → <strong>Loại 3</strong>: <em>If + S + had + V3/ed, S + would/could + have + V3/ed</em>.<br>• Thấy <strong>You should + V</strong> (khuyên) → <em>If I were you, I would + V</em>.</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">4. Động từ khuyết thiếu (Modal Verbs)</div>
+              <div>• <strong>It isn't necessary for sb to V</strong> (không cần thiết) = <strong>S + don't/doesn't have to + V</strong> (Cấm chọn <em>mustn't</em> vì mustn't là CẤM ĐOÁN!).<br>• <strong>I'm sure/certain ... isn't</strong> (chắc chắn không phải) = <strong>can't be</strong>.<br>• <strong>Perhaps</strong> (có lẽ) = <strong>might be</strong>.<br>• <strong>couldn't + V</strong> (quá khứ) = <strong>wasn't/weren't able to + V</strong>.</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">5. Quá khứ đơn ↔ Hiện tại hoàn thành</div>
+              <div><strong>Dấu hiệu:</strong> Thấy <strong>last + V2 ... + khoảng thời gian + ago</strong> (lần cuối làm gì cách đây bao lâu).<br><strong>Công thức:</strong> Đổi sang <strong>haven't/hasn't + V3/ed + for + khoảng thời gian</strong> (Lưu ý: <em>for</em> + khoảng thời gian như <em>four years</em>; KHÔNG dùng <em>since</em> với khoảng thời gian!).</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <div class="font-black text-brand-600 dark:text-brand-400 mb-1">6. Although ↔ In spite of / Despite & Các mẫu hay gặp</div>
+              <div>• <strong>Although + S + V</strong> (mệnh đề) = <strong>In spite of / Despite + Cụm danh từ</strong> (bỏ chủ ngữ + động từ, gom thành cụm danh từ).<br>• Đồng tình khẳng định (<em>too</em>): <strong>So + trợ động từ (do/does/am/is) + S</strong>.<br>• <strong>prefer A to B</strong> = <strong>like A more than B</strong>.<br>• <strong>find it + adj + to V</strong> = <strong>It is + adj + for sb + to V</strong>.<br>• Hỏi miêu tả (<em>describe</em>): <strong>What is/are ... like?</strong></div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -739,18 +787,22 @@ html_template = '''<!DOCTYPE html>
       return list;
     }
 
-    function getSpecificWrongReason(q, chosenKey) {
+    function getSpecificWrongReason(q, chosenKey, displayKey) {
       if (!chosenKey || chosenKey === q.correctAnswer) return "";
+      const shownKey = displayKey || chosenKey;
       
       const chosenMeaning = (q.choice_breakdown && q.choice_breakdown[chosenKey]) ? q.choice_breakdown[chosenKey] : '';
       if (chosenMeaning && !chosenMeaning.includes('phương án:')) {
-        return `Bạn chọn [${chosenKey}] "${q.options[chosenKey]}" mang nghĩa là: "${chosenMeaning}". Nghĩa này HOÀN TOÀN KHÔNG PHÙ HỢP với ngữ cảnh câu!`;
+        if (q.part === 'TRANSFORMATION') {
+          return `Bạn chọn [${shownKey}] "${q.options[chosenKey]}" → ${chosenMeaning}`;
+        }
+        return `Bạn chọn [${shownKey}] "${q.options[chosenKey]}" mang nghĩa là: "${chosenMeaning}". Nghĩa này HOÀN TOÀN KHÔNG PHÙ HỢP với ngữ cảnh câu!`;
       }
 
       if (q.explanation?.wrong) {
         return q.explanation.wrong;
       }
-      return `Lựa chọn '${chosenKey}' (${q.options[chosenKey]}) không đúng ngữ cảnh câu, sai thì động từ hoặc sai cấu trúc so với đáp án chính xác [${q.correctAnswer}].`;
+      return `Lựa chọn '${shownKey}' (${q.options[chosenKey]}) không đúng ngữ cảnh câu, sai thì động từ hoặc sai cấu trúc so với đáp án chính xác.`;
     }
 
     function selectAnswer(qId, chosenOriginalKey) {
@@ -867,6 +919,15 @@ html_template = '''<!DOCTYPE html>
       document.getElementById('prevPageBtn').disabled = currentPage <= 1;
       document.getElementById('nextPageBtn').disabled = currentPage >= totalPages;
 
+      const guideBox = document.getElementById('transformationGuideBox');
+      if (guideBox) {
+        if (currentCatType === 'part' && currentCatValue === 'TRANSFORMATION') {
+          guideBox.classList.remove('hidden');
+        } else {
+          guideBox.classList.add('hidden');
+        }
+      }
+
       const container = document.getElementById('questionsContainer');
       if (pageQuestions.length === 0) {
         container.innerHTML = `
@@ -890,9 +951,14 @@ html_template = '''<!DOCTYPE html>
             { displayKey: 'D', originalKey: 'D', text: q.options.D }
           ];
 
+          const displayKeyByOrig = {};
+          choices.forEach(c => { displayKeyByOrig[c.originalKey] = c.displayKey; });
+          const userDisplayKey = userChoice ? (displayKeyByOrig[userChoice] || userChoice) : '';
+          const correctDisplayKey = displayKeyByOrig[q.correctAnswer] || q.correctAnswer;
+
           const userChoiceText = userChoice ? (q.options[userChoice] || '') : '';
           const correctText = q.options[q.correctAnswer] || '';
-          const specificWrongReason = (!isCorrect && userChoice) ? getSpecificWrongReason(q, userChoice) : '';
+          const specificWrongReason = (!isCorrect && userChoice) ? getSpecificWrongReason(q, userChoice, userDisplayKey) : '';
 
           return `
             <div id="card_${q.id}" class="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-5 border ${hasAnswered && !isCorrect && showAnswerDetail ? 'border-rose-300 dark:border-rose-900 shadow-rose-100 dark:shadow-none' : 'border-slate-200 dark:border-slate-800'} shadow-sm transition-all duration-200 hover:shadow-md">
@@ -977,26 +1043,26 @@ html_template = '''<!DOCTYPE html>
                   ${!isCorrect ? `
                     <div class="p-3.5 bg-rose-50/95 dark:bg-rose-950/50 border-2 border-rose-400 dark:border-rose-800 rounded-2xl shadow-sm flex flex-col gap-2">
                       <div class="flex items-center gap-1.5 text-rose-700 dark:text-rose-300 font-black text-xs uppercase tracking-wide">
-                        <span class="text-sm">❌</span> BẠN VỪA CHỌN: [${userChoice}] "${userChoiceText}" — TẠI SAO SAI?
+                        <span class="text-sm">❌</span> BẠN VỪA CHỌN: [${userDisplayKey}] "${userChoiceText}" — TẠI SAO SAI?
                       </div>
-                      <p class="text-xs text-rose-900 dark:text-rose-200 font-semibold leading-relaxed pl-5 border-l-2 border-rose-300 dark:border-rose-700 ml-1">
+                      <p class="text-xs text-rose-900 dark:text-rose-200 font-semibold leading-relaxed pl-5 border-l-2 border-rose-300 dark:border-rose-700 ml-1 whitespace-pre-line">
                         ${specificWrongReason}
                       </p>
                       <div class="mt-0.5 pt-2 border-t border-rose-200/80 dark:border-rose-900/60 flex items-start gap-1.5 text-xs font-bold text-emerald-800 dark:text-emerald-300 pl-1">
                         <span class="text-sm">👉</span>
                         <div>
                           <span>ĐÁP ÁN ĐÚNG PHẢI LÀ: </span>
-                          <span class="underline decoration-2">[${q.correctAnswer}] "${correctText}"</span>
-                          <span class="font-normal text-slate-600 dark:text-slate-300"> — ${q.explanation?.why || ''}</span>
+                          <span class="underline decoration-2">[${correctDisplayKey}] "${correctText}"</span>
+                          <div class="font-normal text-slate-700 dark:text-slate-300 mt-1 leading-relaxed whitespace-pre-line">${q.explanation?.why || ''}</div>
                         </div>
                       </div>
                     </div>
                   ` : `
                     <div class="p-3.5 bg-emerald-50/95 dark:bg-emerald-950/50 border-2 border-emerald-400 dark:border-emerald-800 rounded-2xl shadow-sm flex flex-col gap-1.5">
                       <div class="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-300 font-black text-xs uppercase tracking-wide">
-                        <span class="text-sm">🎉</span> CHÍNH XÁC! BẠN ĐÃ CHỌN ĐÚNG: [${q.correctAnswer}] "${correctText}"
+                        <span class="text-sm">🎉</span> CHÍNH XÁC! BẠN ĐÃ CHỌN ĐÚNG: [${correctDisplayKey}] "${correctText}"
                       </div>
-                      <p class="text-xs text-emerald-900 dark:text-emerald-200 font-medium leading-relaxed pl-5">
+                      <p class="text-xs text-emerald-900 dark:text-emerald-200 font-medium leading-relaxed pl-5 whitespace-pre-line">
                         ${q.explanation?.why || 'Lựa chọn hoàn toàn chính xác.'}
                       </p>
                     </div>
@@ -1006,38 +1072,40 @@ html_template = '''<!DOCTYPE html>
                 <!-- COMPREHENSIVE STUDY BOX (Sentence Translation + Choice Breakdown + 3s Pass Tip) -->
                 <div class="mt-3.5 pt-3.5 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-3">
                   
+                  ${q.part === 'TRANSFORMATION' && q.explanation?.topic ? `
+                    <div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-lg bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-900/60 text-purple-800 dark:text-purple-200 text-[11px] font-bold">
+                      <span>📌</span> DẠNG BÀI: ${q.explanation.topic}
+                    </div>
+                  ` : ''}
+
                   <!-- 1. DỊCH NGUYÊN VĂN CẢ CÂU HOÀN CHỈNH -->
                   <div class="bg-indigo-50/80 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-900/60 rounded-xl p-3 text-xs shadow-sm">
                     <div class="font-bold text-indigo-950 dark:text-indigo-200 flex items-center gap-1 mb-1 text-[12px]">
-                      <span>🇻🇳</span> DỊCH NGUYÊN VĂN TOÀN BỘ CÂU:
+                      <span>🇻🇳</span> DỊCH NGUYÊN VĂN TOÀN BỘ CÂU & CỤM TỪ:
                     </div>
-                    <p class="text-indigo-900 dark:text-indigo-100 leading-relaxed font-semibold text-xs">
-                      "${q.explanation?.translation || 'Bản dịch đang được cập nhật.'}"
+                    <p class="text-indigo-900 dark:text-indigo-100 leading-relaxed font-semibold text-xs whitespace-pre-line">
+                      ${q.explanation?.translation || 'Bản dịch đang được cập nhật.'}
                     </p>
                   </div>
 
                   <!-- 2. NGHĨA CỦA CẢ 4 PHƯƠNG ÁN A, B, C, D -->
                   <div class="bg-slate-50 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 rounded-xl p-3 text-xs">
                     <div class="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1 mb-2">
-                      <span>📚</span> NGHĨA CHI TIẾT CỦA CẢ 4 ĐÁP ÁN:
+                      <span>📚</span> ${q.part === 'TRANSFORMATION' ? 'DỊCH & GIẢI THÍCH TỪNG ĐÁP ÁN A, B, C, D:' : 'NGHĨA CHI TIẾT CỦA CẢ 4 ĐÁP ÁN:'}
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs">
-                      <div class="bg-white dark:bg-slate-800 p-2 rounded-lg border border-slate-200 dark:border-slate-700">
-                        <strong class="font-mono text-brand-600 dark:text-brand-400">A. ${q.options.A}:</strong>
-                        <span class="text-slate-700 dark:text-slate-300 ml-1 font-medium">${q.choice_breakdown?.A || ''}</span>
-                      </div>
-                      <div class="bg-white dark:bg-slate-800 p-2 rounded-lg border border-slate-200 dark:border-slate-700">
-                        <strong class="font-mono text-brand-600 dark:text-brand-400">B. ${q.options.B}:</strong>
-                        <span class="text-slate-700 dark:text-slate-300 ml-1 font-medium">${q.choice_breakdown?.B || ''}</span>
-                      </div>
-                      <div class="bg-white dark:bg-slate-800 p-2 rounded-lg border border-slate-200 dark:border-slate-700">
-                        <strong class="font-mono text-brand-600 dark:text-brand-400">C. ${q.options.C}:</strong>
-                        <span class="text-slate-700 dark:text-slate-300 ml-1 font-medium">${q.choice_breakdown?.C || ''}</span>
-                      </div>
-                      <div class="bg-white dark:bg-slate-800 p-2 rounded-lg border border-slate-200 dark:border-slate-700">
-                        <strong class="font-mono text-brand-600 dark:text-brand-400">D. ${q.options.D}:</strong>
-                        <span class="text-slate-700 dark:text-slate-300 ml-1 font-medium">${q.choice_breakdown?.D || ''}</span>
-                      </div>
+                    <div class="grid grid-cols-1 ${q.part === 'TRANSFORMATION' ? '' : 'sm:grid-cols-2'} gap-1.5 text-xs">
+                      ${choices.map(c => {
+                        const isAns = c.originalKey === q.correctAnswer;
+                        const boxBorder = (q.part === 'TRANSFORMATION' && isAns)
+                          ? 'border-emerald-300 dark:border-emerald-800 bg-emerald-50/60 dark:bg-emerald-950/20'
+                          : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800';
+                        return `
+                          <div class="${boxBorder} p-2.5 rounded-lg border">
+                            <strong class="font-mono ${isAns && q.part === 'TRANSFORMATION' ? 'text-emerald-700 dark:text-emerald-400' : 'text-brand-600 dark:text-brand-400'}">${c.displayKey}. ${c.text}:</strong>
+                            <span class="text-slate-700 dark:text-slate-300 ml-1 font-medium">${q.choice_breakdown?.[c.originalKey] || ''}</span>
+                          </div>
+                        `;
+                      }).join('')}
                     </div>
                   </div>
 
@@ -1046,8 +1114,8 @@ html_template = '''<!DOCTYPE html>
                     <div class="font-black text-amber-900 dark:text-amber-200 flex items-center gap-1.5 mb-1 tracking-wide">
                       <span class="text-sm">⚡</span> ${q.explanation?.tip ? q.explanation.tip.split(':')[0] : 'MẸO QUA MÔN 3s'}
                     </div>
-                    <p class="text-amber-800 dark:text-amber-200 font-bold leading-relaxed">
-                      ${q.explanation?.tip ? (q.explanation.tip.includes(':') ? q.explanation.tip.split(':')[1] : q.explanation.tip) : 'Xác định từ khóa trước và sau chỗ trống để chọn nhanh!'}
+                    <p class="text-amber-800 dark:text-amber-200 font-bold leading-relaxed whitespace-pre-line">
+                      ${q.explanation?.tip ? (q.explanation.tip.includes(':') ? q.explanation.tip.slice(q.explanation.tip.indexOf(':') + 1).trim() : q.explanation.tip) : 'Xác định từ khóa trước và sau chỗ trống để chọn nhanh!'}
                     </p>
                   </div>
 
@@ -1294,7 +1362,8 @@ html_template = '''<!DOCTYPE html>
 </html>
 '''
 
-with open('g:\\AVCD6\\index.html', 'w', encoding='utf-8') as f:
+out_html_path = os.path.join(BASE_DIR, 'index.html')
+with open(out_html_path, 'w', encoding='utf-8') as f:
     f.write(html_template)
 
-print('Updated index.html with FULL MOBILE RESPONSIVE UI! Size:', os.path.getsize('g:\\AVCD6\\index.html'))
+print('Updated index.html with FULL MOBILE RESPONSIVE UI! Size:', os.path.getsize(out_html_path))

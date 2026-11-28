@@ -634,17 +634,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển đổi câu chủ động sang câu bị động tương ứng với đúng thì động từ của câu gốc.",
-      "why": "Tân ngữ câu chủ động chuyển lên làm chủ ngữ mới, động từ chuyển thành be + V3/ed phù hợp thì.",
-      "wrong": "Các câu khác giữ nguyên dạng chủ động, sai thì động từ hoặc sai chủ ngữ số ít/nhiều.",
-      "tip": "MẸO QUA MÔN: Xác định thì của câu gốc -> chọn câu bị động có công thức BE + V3 tương ứng!",
-      "topic": "Chuyển đổi câu bị động"
+      "translation": "\"Họ chiếu phim nước ngoài có phụ đề tại rạp chiếu phim này.\"\n• Dịch từng cụm: They show (họ chiếu) • foreign films (phim nước ngoài) • with subtitles (có phụ đề) • at this cinema (tại rạp chiếu phim này).",
+      "why": "1) Dấu hiệu: Câu gốc dùng động từ 'show' (nguyên mẫu ở Hiện tại đơn) mang nghĩa chủ động ('họ chiếu phim'). Các đáp án đều đưa vật bị tác động 'Foreign films' (phim nước ngoài) lên đầu làm chủ ngữ → đây là dạng CÂU BỊ ĐỘNG (phim ĐƯỢC chiếu).\n2) Công thức bị động Hiện tại đơn: Chủ ngữ + am/is/are + V3/ed.\n3) Áp dụng: 'Foreign films' là số nhiều → dùng 'are', V3 của 'show' là 'shown' → 'Foreign films are shown...'.",
+      "wrong": "A thiếu 'are' (thành phim tự chiếu ở quá khứ); C chia sai thì Quá khứ tiếp diễn chủ động; D chia sai thì Hiện tại hoàn thành chủ động.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy chủ ngữ mới là VẬT (Foreign films) + câu gốc ở Hiện tại đơn (show) → chọn ngay công thức ARE/IS + V3/ed (are shown)!",
+      "topic": "Câu bị động — Thì Hiện tại đơn"
     },
     "choice_breakdown": {
-      "A": "phụ đề phim (chữ dịch bên dưới màn hình)",
-      "B": "phụ đề phim (chữ dịch bên dưới màn hình)",
-      "C": "phụ đề phim (chữ dịch bên dưới màn hình)",
-      "D": "phụ đề phim (chữ dịch bên dưới màn hình)"
+      "A": "Dịch: \"Phim nước ngoài đã chiếu có phụ đề tại rạp này.\" → ❌ SAI vì thiếu 'are' và dùng sai thì quá khứ chủ động (phim không tự chiếu được, phải ĐƯỢC chiếu).",
+      "B": "Dịch: \"Phim nước ngoài được chiếu có phụ đề tại rạp này.\" → ✅ ĐÚNG vì chia đúng bị động Hiện tại đơn số nhiều: are + shown (V3 của show).",
+      "C": "Dịch: \"Phim nước ngoài đang chiếu có phụ đề tại rạp này.\" → ❌ SAI vì 'were showing' là thì Quá khứ tiếp diễn chủ động, sai cả thì lẫn thể bị động.",
+      "D": "Dịch: \"Phim nước ngoài đã chiếu có phụ đề tại rạp này.\" → ❌ SAI vì 'have shown' là chủ động Hiện tại hoàn thành (thiếu 'been' và sai thì)."
     },
     "vocab_in_question": [
       {
@@ -669,17 +669,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: The studio will announce the winner tonight.",
-      "why": "Phương án [A] 'The winner will be announced tonight.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Hãng phim sẽ công bố người chiến thắng vào tối nay.\"\n• Dịch từng cụm: The studio (hãng phim) • will announce (sẽ công bố) • the winner (người chiến thắng) • tonight (tối nay).",
+      "why": "1) Dấu hiệu: Câu gốc có 'will announce' (sẽ công bố — thì Tương lai đơn). Đáp án đưa 'The winner' (người chiến thắng) lên đầu câu → chuyển sang CÂU BỊ ĐỘNG (người chiến thắng SẼ ĐƯỢC công bố).\n2) Công thức bị động với 'will': Chủ ngữ + will be + V3/ed.\n3) Áp dụng: 'will announce' → 'will be announced'.",
+      "wrong": "B thiếu 'be' (người thắng tự công bố là sai); C và D sai thì (không còn 'will' cho tương lai) và đều thiếu thể bị động.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Câu gốc có 'will + V' và đáp án đảo tân ngữ lên đầu → chọn ngay 'WILL BE + V3/ed' (will be announced)!",
+      "topic": "Câu bị động — Thì Tương lai đơn (will)"
     },
     "choice_breakdown": {
-      "A": "sẽ được thực hiện (thể bị động Tương lai đơn)",
-      "B": "phương án: \"The winner will announce tonight.\"",
-      "C": "phương án: \"The winner is announcing tonight.\"",
-      "D": "phương án: \"The winner has announced tonight.\""
+      "A": "Dịch: \"Người chiến thắng sẽ được công bố vào tối nay.\" → ✅ ĐÚNG vì giữ nguyên 'will' và đổi sang bị động 'will be announced'.",
+      "B": "Dịch: \"Người chiến thắng sẽ công bố vào tối nay.\" → ❌ SAI vì thiếu 'be' và dùng 'announce' chủ động (người thắng được công bố chứ không tự công bố).",
+      "C": "Dịch: \"Người chiến thắng đang công bố vào tối nay.\" → ❌ SAI vì đổi mất 'will' thành Hiện tại tiếp diễn chủ động.",
+      "D": "Dịch: \"Người chiến thắng đã công bố vào tối nay.\" → ❌ SAI vì dùng Hiện tại hoàn thành chủ động, sai thì tương lai ('tonight') và sai thể bị động."
     },
     "vocab_in_question": []
   },
@@ -699,17 +699,17 @@
     "correctAnswer": "C",
     "passage": "",
     "explanation": {
-      "translation": "Viết lại câu không cần thiết: 'It is not necessary for you to...' = 'You don't have to...'.",
-      "why": "'not necessary' đồng nghĩa hoàn toàn với 'don't have to' (không cần phải).",
-      "wrong": "mustn't (cấm đoán tuyệt đối), can't (không thể), shouldn't (không nên).",
-      "tip": "MẸO QUA MÔN: 'It isn't necessary for you to...' -> Đổi thành: 'You DON'T HAVE TO...'!",
-      "topic": "Viết lại câu khuyết thiếu"
+      "translation": "\"Chúng ta không cần thiết phải đặt bàn trước.\"\n• Dịch từng cụm: It is not necessary for us (không cần thiết cho chúng ta) • to book a table (đặt bàn) • in advance (trước).",
+      "why": "1) Dấu hiệu: Cụm 'It is not necessary (for sb) to V' nghĩa là 'Ai đó KHÔNG CẦN PHẢI làm gì' (làm cũng được, không làm cũng không sao).\n2) Cụm tương đương chuẩn: S + don't / doesn't have to + V (không cần phải).\n3) Vì vậy 'It is not necessary for us to book...' = 'We don't have to book...'.",
+      "wrong": "mustn't là CẤM ĐOÁN (không được phép); can't là KHÔNG THỂ; shouldn't là KHÔNG NÊN (khuyên nhủ) — đều sai nghĩa 'không cần thiết'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'not necessary' (không cần thiết) → chọn ngay 'DON'T HAVE TO'. Tuyệt đối tránh bẫy 'mustn't' (cấm đoán)!",
+      "topic": "Động từ khuyết thiếu — Không cần thiết (not necessary = don't have to)"
     },
     "choice_breakdown": {
-      "A": "tuyệt đối không được phép, bị cấm làm",
-      "B": "chắc chắn không thể / không có khả năng",
-      "C": "không cần phải làm (không bắt buộc)",
-      "D": "nên làm (lời khuyên)"
+      "A": "Dịch: \"Chúng ta không được phép (bị cấm) đặt bàn trước.\" → ❌ SAI vì 'mustn't' mang nghĩa CẤM ĐOÁN, khác hoàn toàn với 'không cần thiết'.",
+      "B": "Dịch: \"Chúng ta không thể đặt bàn trước.\" → ❌ SAI vì 'can't' nói về khả năng (không làm được), không phải sự cần thiết.",
+      "C": "Dịch: \"Chúng ta không cần phải đặt bàn trước.\" → ✅ ĐÚNG vì 'don't have to' = 'not necessary' (không bắt buộc).",
+      "D": "Dịch: \"Chúng ta không nên đặt bàn trước.\" → ❌ SAI vì 'shouldn't' là lời khuyên (không nên), nhẹ/khác nghĩa so với 'không cần thiết'."
     },
     "vocab_in_question": []
   },
@@ -729,17 +729,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: “I have never tried sushi,” Ben said.",
-      "why": "Phương án [B] 'Ben said that he had never tried sushi.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Tôi chưa bao giờ ăn thử sushi,\" Ben nói.\n• Dịch từng cụm: I have never tried (tôi chưa bao giờ thử) • sushi (món sushi) • Ben said (Ben đã nói).",
+      "why": "1) Dấu hiệu: Có dấu ngoặc kép “...” và động từ tường thuật ở quá khứ 'Ben said' → đây là CÂU GIÁN TIẾP.\n2) 2 bước đổi bắt buộc:\n   • Bước 1 (Đổi đại từ): Ben (con trai) tự xưng là 'I' → đổi thành 'he' (anh ấy).\n   • Bước 2 (Lùi thì): Động từ trong ngoặc là 'have never tried' (Hiện tại hoàn thành) → lùi 1 bậc về quá khứ thành 'had never tried' (Quá khứ hoàn thành).",
+      "wrong": "A chưa lùi thì 'have → had'; C quên đổi 'I → he'; D lùi sai về Hiện tại đơn 'never tries'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy ngoặc kép + 'said' → nhớ 2 luật: Đổi ngôi ('I' → 'he/she') và Lùi thì ('have/has + V3' → 'HAD + V3')!",
+      "topic": "Câu gián tiếp — Câu kể (Lùi thì & Đổi đại từ)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"Ben said that he has never tried sushi.\"",
-      "B": "phương án: \"Ben said that he had never tried sushi.\"",
-      "C": "phương án: \"Ben said that I had never tried sushi.\"",
-      "D": "phương án: \"Ben said that he never tries sushi.\""
+      "A": "Dịch: \"Ben nói rằng anh ấy chưa bao giờ ăn thử sushi.\" → ❌ SAI ngữ pháp gián tiếp vì chưa lùi thì ('has' phải lùi thành 'had').",
+      "B": "Dịch: \"Ben nói rằng anh ấy chưa bao giờ ăn thử sushi.\" → ✅ ĐÚNG vì đã đổi 'I → he' và lùi thì 'have tried → had tried'.",
+      "C": "Dịch: \"Ben nói rằng tôi chưa bao giờ ăn thử sushi.\" → ❌ SAI vì giữ nguyên đại từ 'I' (thành ra người nghe chưa ăn chứ không phải Ben).",
+      "D": "Dịch: \"Ben nói rằng anh ấy không bao giờ ăn thử sushi.\" → ❌ SAI vì đổi sang Hiện tại đơn 'never tries', vừa không lùi thì vừa sai nghĩa 'chưa từng'."
     },
     "vocab_in_question": []
   },
@@ -759,17 +759,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả thực tế ở hiện tại sang câu điều kiện loại 2 (trái thực tế hiện tại).",
-      "why": "Thực tế hiện tại 'don't have / don't know' -> Giả định loại 2: If + S + V2/ed (had/knew), S + could/would + V.",
-      "wrong": "Loại 1 sai vì thực tế không có; loại 3 sai vì chỉ dùng cho quá khứ.",
-      "tip": "MẸO QUA MÔN: Hiện tại 'don't have / can't' -> Viết lại bằng IF LOẠI 2 (had / could)!",
-      "topic": "Viết lại câu điều kiện loại 2"
+      "translation": "\"Tôi không có đủ tiền, vì vậy tôi không thể đi chuyến du lịch đó.\"\n• Dịch từng cụm: don't have enough money (không có đủ tiền) • so (vì vậy) • can't go on the trip (không thể đi chuyến đi).",
+      "why": "1) Dấu hiệu: Câu gốc dùng 'don't have' và 'can't' → đang nói sự thật ở HIỆN TẠI.\n2) Muốn giả định trái với hiện tại ('Nếu bây giờ có đủ tiền thì sẽ đi...'), ta dùng CÂU ĐIỀU KIỆN LOẠI 2:\n   • Công thức: If + S + V2/ed (quá khứ đơn), S + would/could + V (nguyên mẫu).\n3) Áp dụng & Đổi ngược nghĩa (không có → nếu có):\n   • 'don't have' → 'If I had' (V2 của have là had)\n   • 'can't go' → 'I would go' (hoặc 'could go').",
+      "wrong": "A là Loại 1 (sai vì thực tế hiện tại không có tiền); C trộn Loại 3 ('had had') với Loại 2 ('would go'); D đặt 'would' trong mệnh đề If (cấm dùng would sau If).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'don't / doesn't / can't ... so ...' ở HIỆN TẠI → dùng IF LOẠI 2: 'If + V2/ed (had), ... would/could + V'. Không bao giờ chọn 'If ... would'!",
+      "topic": "Câu điều kiện loại 2 — Trái với thực tế ở Hiện tại"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If I have enough money, I will go on the trip.\"",
-      "B": "phương án: \"If I had enough money, I would go on the trip.\"",
-      "C": "phương án: \"If I had had enough money, I would go on the trip.\"",
-      "D": "phương án: \"If I would have enough money, I went on the trip.\""
+      "A": "Dịch: \"Nếu tôi có đủ tiền, tôi sẽ đi chuyến đi.\" → ❌ SAI vì dùng điều kiện Loại 1 (chỉ dùng cho việc có thật/có thể xảy ra ở tương lai), không hợp giả định trái hiện tại.",
+      "B": "Dịch: \"Nếu tôi có đủ tiền, tôi sẽ đi chuyến đi.\" → ✅ ĐÚNG chuẩn công thức Loại 2: If + had (V2), ... would go.",
+      "C": "Dịch: \"Nếu tôi đã từng có đủ tiền (quá khứ), tôi sẽ đi (hiện tại).\" → ❌ SAI vì vế If dùng Loại 3 ('had had') không khớp với câu gốc ở hiện tại.",
+      "D": "Dịch: \"Nếu tôi sẽ có đủ tiền, tôi đã đi...\" → ❌ SAI hoàn toàn ngữ pháp vì mệnh đề 'If' KHÔNG ĐƯỢC chứa 'would' và vế sau dùng 'went' cũng sai."
     },
     "vocab_in_question": []
   },
@@ -789,17 +789,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: The weather was bad, so we didn't go hiking.",
-      "why": "Phương án [B] 'If the weather had been good, we would have gone hiking.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Thời tiết đã xấu, vì vậy chúng tôi đã không đi leo núi đường dài.\"\n• Dịch từng cụm: The weather was bad (thời tiết đã xấu) • so (vì vậy) • didn't go hiking (đã không đi leo núi/đi bộ đường dài).",
+      "why": "1) Dấu hiệu: Câu gốc dùng 'was' và 'didn't go' → sự việc ĐÃ XẢY RA TRONG QUÁ KHỨ.\n2) Muốn giả định trái với quá khứ ('Giá mà lúc đó thời tiết tốt thì đã đi rồi...'), ta dùng CÂU ĐIỀU KIỆN LOẠI 3:\n   • Công thức: If + S + had + V3/ed, S + would/could + have + V3/ed.\n3) Áp dụng & Đổi ngược nghĩa:\n   • 'was bad' (đã xấu) → 'If the weather had been good' (nếu thời tiết đã tốt)\n   • 'didn't go' (đã không đi) → 'we would have gone' (chúng tôi đã đi rồi).",
+      "wrong": "A và C sai cấu trúc điều kiện (A dùng Loại 2 + quá khứ đơn; C trộn Loại 1 + Loại 2); D giữ nguyên 'had been bad' (nếu thời tiết xấu thì đã đi leo núi → ngược logic).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Câu gốc có 'was / were / didn't / V2' (QUÁ KHỨ) → chọn ngay IF LOẠI 3: 'HAD + V3/ed ... WOULD HAVE + V3/ed', và nhớ ĐẢO NGƯỢC nghĩa (bad → good)!",
+      "topic": "Câu điều kiện loại 3 — Trái với thực tế trong Quá khứ"
     },
     "choice_breakdown": {
-      "A": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "B": "phương án: \"If the weather had been good, we would have gone hiking.\"",
-      "C": "phương án: \"If the weather is good, we would go hiking.\"",
-      "D": "phương án: \"If the weather had been bad, we would have gone hiking.\""
+      "A": "Dịch: \"Nếu thời tiết tốt, chúng tôi đã không đi leo núi.\" → ❌ SAI cả ngữ pháp (vế sau dùng 'didn't go') lẫn logic nghĩa.",
+      "B": "Dịch: \"Nếu thời tiết đã tốt, chúng tôi đã đi leo núi rồi.\" → ✅ ĐÚNG chuẩn Loại 3 (had been ... would have gone) và đúng logic ngược với thực tế quá khứ.",
+      "C": "Dịch: \"Nếu thời tiết tốt, chúng tôi sẽ đi leo núi.\" → ❌ SAI vì dùng 'is' (Loại 1) ghép với 'would go' (Loại 2), không dùng cho chuyện quá khứ.",
+      "D": "Dịch: \"Nếu thời tiết đã xấu, chúng tôi đã đi leo núi.\" → ❌ SAI logic vì quên đổi 'bad' (xấu) thành 'good' (tốt)."
     },
     "vocab_in_question": []
   },
@@ -819,17 +819,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: “Do you enjoy watching documentaries?” she asked me.",
-      "why": "Phương án [B] 'She asked me if I enjoyed watching documentaries.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Bạn có thích xem phim tài liệu không?\" cô ấy hỏi tôi.\n• Dịch từng cụm: Do you enjoy (bạn có thích) • watching documentaries (xem phim tài liệu) • she asked me (cô ấy đã hỏi tôi).",
+      "why": "1) Dấu hiệu: Câu trong ngoặc kép là câu hỏi Yes/No bắt đầu bằng trợ động từ 'Do you...?' và có 'asked me' ở quá khứ.\n2) 3 quy tắc vàng khi đổi câu hỏi Yes/No sang gián tiếp:\n   • Bước 1: Thêm 'if' hoặc 'whether' (có ... hay không) sau 'asked me'.\n   • Bước 2: Đưa về trật tự câu kể (S + V), BỎ hẳn trợ động từ 'do/does/did'.\n   • Bước 3: Đổi ngôi ('you' → 'I') và lùi thì (Hiện tại đơn 'enjoy' → Quá khứ đơn 'enjoyed').",
+      "wrong": "A thiếu 'if/whether' và giữ 'do'; C vẫn đảo 'did I' như câu hỏi; D quên lùi thì 'enjoy → enjoyed' và tự ý thêm 'yesterday'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy câu hỏi 'Do/Does/Did...?' trong ngoặc → Chọn 'asked + if/whether + S + V (đã lùi thì)'. Loại ngay các câu còn dính 'do/did' đứng trước chủ ngữ!",
+      "topic": "Câu gián tiếp — Câu hỏi Yes/No (if / whether)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"She asked me do I enjoy watching documentaries.\"",
-      "B": "phương án: \"She asked me if I enjoyed watching documentaries.\"",
-      "C": "phương án: \"She asked me if did I enjoy watching documentaries.\"",
-      "D": "phương án: \"She asked me whether I enjoy watching documentaries yesterday.\""
+      "A": "Dịch: \"Cô ấy hỏi tôi tôi có thích xem phim tài liệu không.\" → ❌ SAI vì thiếu 'if/whether' và vẫn để trợ động từ 'do' như câu hỏi trực tiếp.",
+      "B": "Dịch: \"Cô ấy hỏi tôi liệu tôi có thích xem phim tài liệu không.\" → ✅ ĐÚNG vì có 'if', bỏ 'do', đổi 'you → I' và lùi thì 'enjoy → enjoyed'.",
+      "C": "Dịch: \"Cô ấy hỏi tôi liệu tôi có thích xem phim tài liệu không.\" → ❌ SAI vì giữ lại trợ động từ 'did' trước chủ ngữ 'I' (câu gián tiếp không đảo ngữ).",
+      "D": "Dịch: \"Cô ấy hỏi tôi liệu hôm qua tôi có thích xem phim tài liệu không.\" → ❌ SAI vì chưa lùi thì ('enjoy' phải là 'enjoyed') và tự bịa thêm chữ 'yesterday'."
     },
     "vocab_in_question": []
   },
@@ -849,17 +849,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: This is the restaurant. We had dinner here last night.",
-      "why": "Phương án [B] 'This is the restaurant where we had dinner last night.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Đây là nhà hàng. Chúng tôi đã ăn tối ở đây tối qua.\"\n• Dịch từng cụm: This is the restaurant (đây là nhà hàng) • We had dinner here (chúng tôi đã ăn tối tại đây) • last night (tối qua).",
+      "why": "1) Dấu hiệu: Câu 1 nói về một ĐỊA ĐIỂM ('the restaurant' — nhà hàng), câu 2 có từ chỉ nơi chốn 'here' (tại đây) lặp lại địa điểm đó.\n2) Khi nối 2 câu bằng đại từ quan hệ chỉ nơi chốn (nơi mà...): dùng 'WHERE' để thay thế cho 'here / there'.\n3) Lưu ý cực quan trọng: Đã dùng 'where' thì phải BỎ chữ 'here' hoặc 'there' ở cuối câu đi!",
+      "wrong": "A dùng 'who' (chỉ người, không dùng cho nhà hàng); C dùng 'which' nhưng lại giữ thừa chữ 'there' (nếu dùng 'which' phải có giới từ 'in which' và bỏ 'there'); D dùng 'when' (chỉ thời gian).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Nối câu có ĐỊA ĐIỂM + 'here/there' → chọn ngay 'WHERE' và kiểm tra xem cuối câu đã bỏ 'here/there' chưa!",
+      "topic": "Mệnh đề quan hệ — Nơi chốn (where)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"This is the restaurant who we had dinner last night.\"",
-      "B": "phương án: \"This is the restaurant where we had dinner last night.\"",
-      "C": "phương án: \"This is the restaurant which we had dinner last night there.\"",
-      "D": "phương án: \"This is the restaurant when we had dinner last night.\""
+      "A": "Dịch: \"Đây là nhà hàng người mà chúng tôi ăn tối...\" → ❌ SAI vì 'who' chỉ dùng cho NGƯỜI, còn 'restaurant' là địa điểm.",
+      "B": "Dịch: \"Đây là nhà hàng nơi mà chúng tôi đã ăn tối tối qua.\" → ✅ ĐÚNG vì dùng 'where' thay cho địa điểm 'here' và đã bỏ 'here'.",
+      "C": "Dịch: \"Đây là nhà hàng cái mà chúng tôi đã ăn tối ở đó...\" → ❌ SAI vì thiếu giới từ ('in which') và bị thừa chữ 'there' ở cuối câu.",
+      "D": "Dịch: \"Đây là nhà hàng khi mà chúng tôi ăn tối...\" → ❌ SAI vì 'when' chỉ THỜI GIAN, không dùng cho địa điểm."
     },
     "vocab_in_question": []
   },
@@ -879,17 +879,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: I love hiking in the mountains. My sister loves it, too.",
-      "why": "Phương án [B] 'So does my sister.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Tôi thích đi leo núi. Chị/em gái tôi cũng thích điều đó.\"\n• Dịch từng cụm: love hiking in the mountains (thích đi bộ leo núi) • My sister loves it, too (chị gái tôi cũng thích nó).",
+      "why": "1) Dấu hiệu: Câu gốc là câu KHẲNG ĐỊNH ('loves it, too' — cũng thích). Muốn rút gọn thành 'Ai đó cũng vậy', ta dùng cấu trúc với 'SO' (không dùng Neither).\n2) Công thức đồng tình khẳng định: So + trợ động từ + Chủ ngữ.\n3) Xác định trợ động từ: Động từ chính là động từ thường 'love' ở Hiện tại đơn, chủ ngữ mới là 'My sister' (số ít) → phải mượn trợ động từ 'DOES' (không dùng 'is').\n4) Ghép lại: 'So does my sister.'",
+      "wrong": "A và D dùng 'Neither' (chỉ dùng cho câu phủ định 'cũng không'); C dùng 'is' (chỉ dùng khi câu gốc có động từ to be am/is/are).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy câu khẳng định + 'too' → chọn 'SO' (loại Neither). Động từ thường (love) + chủ ngữ số ít (my sister) → chọn 'SO DOES...'!",
+      "topic": "Câu đồng tình khẳng định — So + trợ động từ + S"
     },
     "choice_breakdown": {
-      "A": "tôi cũng không (đồng tình phủ định)",
-      "B": "phương án: \"So does my sister.\"",
-      "C": "phương án: \"So is my sister.\"",
-      "D": "tôi cũng không (đồng tình phủ định)"
+      "A": "Dịch: \"Chị gái tôi cũng không.\" → ❌ SAI vì 'Neither' dùng để đồng tình với câu PHỦ ĐỊNH, còn câu gốc là khẳng định ('love').",
+      "B": "Dịch: \"Chị gái tôi cũng vậy.\" → ✅ ĐÚNG vì câu khẳng định dùng 'So', động từ thường 'love' với chủ ngữ số ít 'my sister' dùng trợ động từ 'does'.",
+      "C": "Dịch: \"Chị gái tôi cũng là...\" → ❌ SAI vì câu gốc dùng động từ thường 'love' chứ không phải động từ 'to be' (is/am/are).",
+      "D": "Dịch: \"Chị gái tôi cũng không.\" → ❌ SAI cả 'Neither' (phủ định) lẫn 'is' (sai động từ)."
     },
     "vocab_in_question": []
   },
@@ -909,17 +909,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Tôi chắc chắn đây không phải đồ của tôi/của Mark -> Đây chắc chắn không thể là...",
-      "why": "'I am certain / sure that ... isn't / is not' = 'can't be'.",
-      "wrong": "must be (chắc chắn là), might not (có lẽ không), shouldn't (không nên).",
-      "tip": "MẸO QUA MÔN: Thấy 'I am certain/sure that ... NOT' -> Chọn ngay 'CAN'T BE'!",
-      "topic": "Suy đoán logic (Modals)"
+      "translation": "\"Tôi chắc chắn đó không phải vali của Mark; vali của anh ấy màu đen cơ.\"\n• Dịch từng cụm: I'm sure that isn't (tôi chắc chắn đó không phải) • Mark's suitcase (vali của Mark) • his is black (cái của anh ấy màu đen).",
+      "why": "1) Dấu hiệu: Cụm 'I'm sure that isn't...' = 'Tôi CHẮC CHẮN KHÔNG PHẢI là...' (suy đoán logic phủ định có căn cứ).\n2) Trong tiếng Anh:\n   • Chắc chắn LÀ (khẳng định) → must be\n   • Chắc chắn KHÔNG THỂ LÀ (phủ định) → CAN'T BE (lưu ý: không dùng 'mustn't be' để suy đoán!).\n3) Vì vậy 'I'm sure that isn't...' = 'This can't be...'.",
+      "wrong": "A ('must be') và D ('has to be') đều mang nghĩa 'chắc chắn là / phải là' → ngược nghĩa 'isn't'; C ('should be') mang nghĩa 'nên là'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'I'm sure / certain that ... ISN'T / NOT' → chọn ngay 'CAN'T BE' (chắc chắn không thể là)!",
+      "topic": "Động từ khuyết thiếu suy đoán — Chắc chắn không phải (can't be)"
     },
     "choice_breakdown": {
-      "A": "chắc hẳn là (suy đoán chắc chắn đúng)",
-      "B": "chắc chắn không thể / không có khả năng",
-      "C": "nên làm (lời khuyên)",
-      "D": "phương án: \"This has to be Mark's suitcase.\""
+      "A": "Dịch: \"Đây chắc chắn là vali của Mark.\" → ❌ SAI vì ngược hoàn toàn với 'isn't' (không phải) ở câu gốc.",
+      "B": "Dịch: \"Đây chắc chắn không thể là vali của Mark.\" → ✅ ĐÚNG vì 'can't be' diễn tả suy đoán chắc chắn không phải.",
+      "C": "Dịch: \"Đây nên là vali của Mark.\" → ❌ SAI vì 'should be' là lời khuyên/mong đợi, không phải suy đoán chắc chắn không phải.",
+      "D": "Dịch: \"Đây phải là vali của Mark.\" → ❌ SAI vì 'has to be' cũng mang nghĩa khẳng định, ngược nghĩa câu gốc."
     },
     "vocab_in_question": []
   },
@@ -2159,17 +2159,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: They will release the film next month.",
-      "why": "Phương án [A] 'The film will be released next month.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Họ sẽ phát hành bộ phim vào tháng tới.\"\n• Dịch từng cụm: They will release (họ sẽ phát hành/ra mắt) • the film (bộ phim) • next month (tháng tới).",
+      "why": "1) Dấu hiệu: Câu gốc có 'will release' (sẽ phát hành — Tương lai đơn) và tân ngữ là 'the film' (bộ phim).\n2) Khi đưa 'The film' lên làm chủ ngữ, bộ phim không thể tự phát hành mà phải ĐƯỢC phát hành → dùng CÂU BỊ ĐỘNG Tương lai đơn.\n3) Công thức: Chủ ngữ + will be + V3/ed.\n4) Áp dụng: 'will release' → 'will be released'.",
+      "wrong": "B thiếu 'be' (bộ phim tự phát hành là sai); C chia Hiện tại hoàn thành bị động nhưng lại đi với 'next month' (tháng tới); D chia Hiện tại đơn sai thì.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'will + V' và câu viết lại bắt đầu bằng VẬT ('The film') → chọn ngay 'WILL BE + V3/ed' (will be released)!",
+      "topic": "Câu bị động — Thì Tương lai đơn (will)"
     },
     "choice_breakdown": {
-      "A": "sẽ được thực hiện (thể bị động Tương lai đơn)",
-      "B": "phương án: \"The film will release next month.\"",
-      "C": "phương án: \"The film has been released next month.\"",
-      "D": "phương án: \"The film is released next month.\""
+      "A": "Dịch: \"Bộ phim sẽ được phát hành vào tháng tới.\" → ✅ ĐÚNG chuẩn bị động Tương lai đơn: will + be + released (V3/ed).",
+      "B": "Dịch: \"Bộ phim sẽ phát hành vào tháng tới.\" → ❌ SAI vì thiếu 'be' và dùng 'release' chủ động (phim phải ĐƯỢC phát hành).",
+      "C": "Dịch: \"Bộ phim đã được phát hành vào tháng tới.\" → ❌ SAI thì vì 'has been released' nói chuyện đã rồi, không đi được với 'next month' (tháng tới).",
+      "D": "Dịch: \"Bộ phim được phát hành vào tháng tới.\" → ❌ SAI thì vì câu gốc dùng 'will' (tương lai), không phải Hiện tại đơn 'is released'."
     },
     "vocab_in_question": []
   },
@@ -2189,17 +2189,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Viết lại câu không cần thiết: 'It is not necessary for you to...' = 'You don't have to...'.",
-      "why": "'not necessary' đồng nghĩa hoàn toàn với 'don't have to' (không cần phải).",
-      "wrong": "mustn't (cấm đoán tuyệt đối), can't (không thể), shouldn't (không nên).",
-      "tip": "MẸO QUA MÔN: 'It isn't necessary for you to...' -> Đổi thành: 'You DON'T HAVE TO...'!",
-      "topic": "Viết lại câu khuyết thiếu"
+      "translation": "\"Bạn không cần thiết phải mang theo khăn tắm.\"\n• Dịch từng cụm: It isn't necessary for you (không cần thiết cho bạn) • to bring a towel (mang theo một chiếc khăn tắm).",
+      "why": "1) Dấu hiệu: Cụm 'It isn't necessary for you to V' = 'Bạn KHÔNG CẦN PHẢI làm gì'.\n2) Đổi sang động từ khuyết thiếu đồng nghĩa: 'don't have to + V' (không bắt buộc, mang hay không tùy bạn).\n3) Ghép lại: 'You don't have to bring a towel.'",
+      "wrong": "B ('can't') là không thể; C ('mustn't') là bị cấm mang; D ('shouldn't') là khuyên không nên mang.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'isn't necessary' → chọn ngay 'DON'T HAVE TO'. Nhớ: 'not necessary' ≠ 'mustn't' (cấm)!",
+      "topic": "Động từ khuyết thiếu — Không cần thiết (not necessary = don't have to)"
     },
     "choice_breakdown": {
-      "A": "không cần phải làm (không bắt buộc)",
-      "B": "chắc chắn không thể / không có khả năng",
-      "C": "tuyệt đối không được phép, bị cấm làm",
-      "D": "nên làm (lời khuyên)"
+      "A": "Dịch: \"Bạn không cần phải mang theo khăn tắm.\" → ✅ ĐÚNG vì 'don't have to' đồng nghĩa hoàn toàn với 'isn't necessary'.",
+      "B": "Dịch: \"Bạn không thể mang theo khăn tắm.\" → ❌ SAI vì 'can't' chỉ khả năng không làm được.",
+      "C": "Dịch: \"Bạn bị cấm mang theo khăn tắm.\" → ❌ SAI vì 'mustn't' nghĩa là cấm tuyệt đối, sai hẳn nghĩa 'không cần thiết'.",
+      "D": "Dịch: \"Bạn không nên mang theo khăn tắm.\" → ❌ SAI vì 'shouldn't' là lời khuyên, không phải 'không cần thiết'."
     },
     "vocab_in_question": []
   },
@@ -2219,17 +2219,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Lần cuối tôi gặp huấn luyện viên cũ là 4 năm trước. -> Tôi đã không gặp huấn luyện viên cũ suốt 4 năm nay.",
-      "why": "Cấu trúc chuyển đổi kinh điển: 'I last saw sb ... ago' = 'I haven't seen sb for + khoảng thời gian'.",
-      "wrong": "A dùng thì quá khứ đơn với 'for' là sai ngữ cảnh; C dùng 'since' với khoảng thời gian là sai (since đi với mốc thời gian).",
-      "tip": "MẸO QUA MÔN: 'last saw ... ago' -> Viết lại bằng: 'HAVEN'T SEEN ... FOR + khoảng thời gian'!",
-      "topic": "Hiện tại hoàn thành vs Quá khứ đơn"
+      "translation": "\"Lần cuối tôi gặp huấn luyện viên cũ của mình là cách đây 4 năm.\"\n• Dịch từng cụm: I last saw (lần cuối tôi gặp) • my old coach (huấn luyện viên cũ của tôi) • four years ago (4 năm trước).",
+      "why": "1) Dấu hiệu: Mẫu câu kinh điển 'S + last + V2/ed + ... + khoảng thời gian + ago' (lần cuối làm gì cách đây bao lâu).\n2) Tư duy đổi câu: Lần cuối gặp là 4 năm trước → nghĩa là TỪ ĐÓ ĐẾN NAY ĐÃ KHÔNG GẶP suốt 4 năm rồi!\n3) Công thức chuẩn: S + haven't / hasn't + V3/ed + FOR + khoảng thời gian (bỏ 'last' và 'ago').\n4) Áp dụng: 'haven't seen' (V3 của see là seen) + 'for four years' (four years là KHOẢNG thời gian nên bắt buộc dùng 'for', không dùng 'since').",
+      "wrong": "A dùng Quá khứ đơn 'didn't see' với 'for four years' là sai thì (hành động kéo dài đến hiện tại phải dùng Hiện tại hoàn thành); C dùng 'since' trước khoảng thời gian 'four years' là sai ngữ pháp; D dùng hiện tại 'see' đi với 'ago' (quá khứ).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'LAST + V2 ... AGO' → chọn ngay 'HAVEN'T/HASN'T + V3 ... FOR + khoảng thời gian'. Loại ngay đáp án dùng 'since' đi với 'years/months'!",
+      "topic": "Quá khứ đơn ↔ Hiện tại hoàn thành (Lần cuối ... bao lâu trước)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"I didn't see my old coach for four years.\"",
-      "B": "phương án: \"I haven't seen my old coach for four years.\"",
-      "C": "phương án: \"I haven't seen my old coach since four years.\"",
-      "D": "phương án: \"I see my old coach four years ago.\""
+      "A": "Dịch: \"Tôi đã không gặp huấn luyện viên cũ trong 4 năm (ở quá khứ).\" → ❌ SAI thì vì thiếu tính liên tục tới hiện tại; phải dùng Hiện tại hoàn thành 'haven't seen'.",
+      "B": "Dịch: \"Tôi đã không gặp huấn luyện viên cũ suốt 4 năm nay rồi.\" → ✅ ĐÚNG chuẩn công thức 'haven't + V3 + for + khoảng thời gian'.",
+      "C": "Dịch: \"Tôi đã không gặp huấn luyện viên cũ kể từ 4 năm.\" → ❌ SAI giới từ: 'since' chỉ đi với MỐC thời gian (since 2020), còn 'four years' là KHOẢNG thời gian phải dùng 'for'.",
+      "D": "Dịch: \"Tôi gặp huấn luyện viên cũ 4 năm trước.\" → ❌ SAI thì vì 'see' (hiện tại) không đi được với 'ago' (quá khứ)."
     },
     "vocab_in_question": []
   },
@@ -2249,17 +2249,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu trực tiếp sang gián tiếp cần lùi thì và đổi các trạng từ chỉ thời gian.",
-      "why": "tomorrow -> the following day / the next day; today -> that day; tonight -> that night; am/is/are -> was/were.",
-      "wrong": "Giữ nguyên tomorrow / today là sai; chưa lùi thì là sai.",
-      "tip": "MẸO QUA MÔN: Trong câu gián tiếp, loại ngay phương án còn giữ nguyên 'tomorrow / today / tonight'!",
-      "topic": "Câu gián tiếp"
+      "translation": "\"Ngày mai chúng tôi sẽ rời đi,\" họ nói.\n• Dịch từng cụm: We are leaving (chúng tôi sẽ/đang chuẩn bị rời đi) • tomorrow (ngày mai) • they said (họ đã nói).",
+      "why": "1) Dấu hiệu: Câu trong ngoặc kép + 'they said' (quá khứ) → CÂU GIÁN TIẾP.\n2) 3 bước biến đổi bắt buộc:\n   • Bước 1 (Đổi đại từ): 'We' (chúng tôi — chỉ chính họ) → 'they' (họ).\n   • Bước 2 (Lùi thì): 'are leaving' (Hiện tại tiếp diễn) → 'were leaving' (Quá khứ tiếp diễn).\n   • Bước 3 (Đổi từ chỉ thời gian): 'tomorrow' (ngày mai) → 'the following day' hoặc 'the next day'.",
+      "wrong": "A dùng sai 'told' (told phải có tân ngữ như 'told me/us', không đứng trơ 'told that') và lùi sai thành 'had left'; C chưa lùi thì ('are') và chưa đổi 'tomorrow'; D quên đổi 'we → they'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy ngoặc kép + 'said' có 'tomorrow': ① Loại câu giữ nguyên 'tomorrow'; ② Loại câu có 'told that' (told phải có người nghe); ③ Đổi 'we → they', 'are → were'!",
+      "topic": "Câu gián tiếp — Lùi thì & Đổi trạng từ thời gian"
     },
     "choice_breakdown": {
-      "A": "phương án: \"They told that they had left the following day.\"",
-      "B": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "C": "phương án: \"They said that they are leaving tomorrow.\"",
-      "D": "được/bị thực hiện (thể bị động Quá khứ đơn)"
+      "A": "Dịch: \"Họ bảo rằng họ đã rời đi vào ngày hôm sau.\" → ❌ SAI ngữ pháp ở 'told that' (sau 'told' bắt buộc phải có tân ngữ như 'told me') và lùi sai thành 'had left'.",
+      "B": "Dịch: \"Họ nói rằng họ sẽ rời đi vào ngày hôm sau.\" → ✅ ĐÚNG cả 3 bước: 'We → they', 'are leaving → were leaving', 'tomorrow → the following day'.",
+      "C": "Dịch: \"Họ nói rằng ngày mai họ đang/sẽ rời đi.\" → ❌ SAI vì chưa lùi thì ('are' phải thành 'were') và chưa đổi 'tomorrow'.",
+      "D": "Dịch: \"Họ nói rằng chúng tôi sẽ rời đi vào ngày hôm sau.\" → ❌ SAI vì quên đổi đại từ 'we' thành 'they'."
     },
     "vocab_in_question": []
   },
@@ -2279,17 +2279,17 @@
     "correctAnswer": "D",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả thực tế ở hiện tại sang câu điều kiện loại 2 (trái thực tế hiện tại).",
-      "why": "Thực tế hiện tại 'don't have / don't know' -> Giả định loại 2: If + S + V2/ed (had/knew), S + could/would + V.",
-      "wrong": "Loại 1 sai vì thực tế không có; loại 3 sai vì chỉ dùng cho quá khứ.",
-      "tip": "MẸO QUA MÔN: Hiện tại 'don't have / can't' -> Viết lại bằng IF LOẠI 2 (had / could)!",
-      "topic": "Viết lại câu điều kiện loại 2"
+      "translation": "\"Tôi không biết trượt tuyết, vì vậy tôi không thể tham gia buổi học.\"\n• Dịch từng cụm: don't know how to ski (không biết cách trượt tuyết) • so (vì vậy) • can't join the lesson (không thể tham gia bài học).",
+      "why": "1) Dấu hiệu: 'don't know' và 'can't join' đều ở HIỆN TẠI → giả định trái với hiện tại phải dùng CÂU ĐIỀU KIỆN LOẠI 2.\n2) Công thức Loại 2: If + S + V2/ed, S + would/could + V (nguyên mẫu).\n3) Áp dụng & Đổi ngược nghĩa:\n   • 'don't know' → 'If I knew' (V2 của know là knew)\n   • 'can't join' → 'I could join' (hoặc 'would join').",
+      "wrong": "A dùng Loại 1 ('know ... can') là sai thực tế; B trộn Loại 3 ('had known') với Loại 2 ('could join'); C đặt 'would' trong mệnh đề If (sai ngữ pháp).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'don't know ... can't' ở HIỆN TẠI → chọn ngay IF LOẠI 2: 'If + S + V2/ed (knew), S + could/would + V'!",
+      "topic": "Câu điều kiện loại 2 — Trái với thực tế ở Hiện tại"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If I know how to ski, I can join the lesson.\"",
-      "B": "phương án: \"If I had known how to ski, I could join the lesson.\"",
-      "C": "phương án: \"If I would know how to ski, I could join the lesson.\"",
-      "D": "phương án: \"If I knew how to ski, I could join the lesson.\""
+      "A": "Dịch: \"Nếu tôi biết trượt tuyết, tôi có thể tham gia buổi học.\" → ❌ SAI vì dùng thì hiện tại (Loại 1), không đúng cho việc trái thực tế hiện tại.",
+      "B": "Dịch: \"Nếu tôi đã biết trượt tuyết (quá khứ), tôi có thể tham gia...\" → ❌ SAI vì 'had known' là Loại 3 (chỉ dùng cho quá khứ).",
+      "C": "Dịch: \"Nếu tôi sẽ biết trượt tuyết...\" → ❌ SAI ngữ pháp vì tuyệt đối không dùng 'would' ngay trong mệnh đề 'If'.",
+      "D": "Dịch: \"Nếu tôi biết trượt tuyết, tôi đã có thể tham gia buổi học.\" → ✅ ĐÚNG chuẩn Loại 2: If I knew (V2), I could join."
     },
     "vocab_in_question": []
   },
@@ -2309,17 +2309,17 @@
     "correctAnswer": "D",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển đổi câu chủ động sang câu bị động tương ứng với đúng thì động từ của câu gốc.",
-      "why": "Tân ngữ câu chủ động chuyển lên làm chủ ngữ mới, động từ chuyển thành be + V3/ed phù hợp thì.",
-      "wrong": "Các câu khác giữ nguyên dạng chủ động, sai thì động từ hoặc sai chủ ngữ số ít/nhiều.",
-      "tip": "MẸO QUA MÔN: Xác định thì của câu gốc -> chọn câu bị động có công thức BE + V3 tương ứng!",
-      "topic": "Chuyển đổi câu bị động"
+      "translation": "\"Cảnh sát đang điều tra vụ cướp.\"\n• Dịch từng cụm: The police (cảnh sát) • are investigating (đang điều tra) • the robbery (vụ cướp).",
+      "why": "1) Dấu hiệu: Câu gốc chia 'are investigating' (am/is/are + V-ing → Hiện tại tiếp diễn). Khi đưa 'the robbery' (vụ cướp) lên làm chủ ngữ, ta dùng BỊ ĐỘNG Hiện tại tiếp diễn.\n2) Công thức: Chủ ngữ + am/is/are + BEING + V3/ed (+ by ...).\n3) Lưu ý số ít/nhiều: 'The robbery' là 1 vụ cướp (số ít) → dùng 'is being investigated'.",
+      "wrong": "A đảo ngược nghĩa (cảnh sát bị vụ cướp điều tra!); B đảo ngược chủ động (vụ cướp điều tra cảnh sát!); C dùng sai thì Quá khứ tiếp diễn ('was').",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy câu gốc có 'am/is/are + V-ing' → câu bị động bắt buộc phải có chữ 'BEING + V3/ed' (is being investigated) và đúng người/vật!",
+      "topic": "Câu bị động — Thì Hiện tại tiếp diễn (is/are + being + V3/ed)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"The police are being investigated by the robbery.\"",
-      "B": "phương án: \"The robbery investigated the police.\"",
-      "C": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "D": "đang được thực hiện (thể bị động Hiện tại tiếp diễn)"
+      "A": "Dịch: \"Cảnh sát đang bị điều tra bởi vụ cướp.\" → ❌ SAI hoàn toàn vì giữ nguyên 'The police' ở đầu câu khiến nghĩa bị ngược đời.",
+      "B": "Dịch: \"Vụ cướp đã điều tra cảnh sát.\" → ❌ SAI cả nghĩa (vụ cướp không biết điều tra) lẫn thiếu thể bị động.",
+      "C": "Dịch: \"Vụ cướp đang được cảnh sát điều tra (trong quá khứ).\" → ❌ SAI thì vì câu gốc dùng 'are' (hiện tại) chứ không phải 'were/was' (quá khứ).",
+      "D": "Dịch: \"Vụ cướp đang được cảnh sát điều tra.\" → ✅ ĐÚNG chuẩn bị động Hiện tại tiếp diễn: The robbery (số ít) + is being investigated + by the police."
     },
     "vocab_in_question": []
   },
@@ -2339,17 +2339,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả sự việc trong quá khứ sang câu điều kiện loại 3 (trái thực tế quá khứ).",
-      "why": "Sự việc quá khứ 'didn't study / got up late / failed' -> Giả định loại 3: If + S + had + V3/ed, S + would/could + have + V3/ed.",
-      "wrong": "Loại 2 chỉ dùng cho hiện tại; giữ nguyên thể phủ định/khẳng định mà không đổi nghĩa là sai logic.",
-      "tip": "MẸO QUA MÔN: Quá khứ (didn't / missed) -> Viết lại bằng IF LOẠI 3: HAD + V3 ... WOULD HAVE + V3!",
-      "topic": "Viết lại câu điều kiện loại 3"
+      "translation": "\"Cô ấy đã lỡ chuyến tàu vì cô ấy đã dậy muộn.\"\n• Dịch từng cụm: missed the train (đã lỡ tàu) • because (bởi vì) • got up late (đã dậy muộn).",
+      "why": "1) Dấu hiệu: Cả 'missed' và 'got up' đều là V2 (QUÁ KHỨ ĐƠN) → giả định ngược với quá khứ phải dùng CÂU ĐIỀU KIỆN LOẠI 3.\n2) Công thức Loại 3: If + S + had (not) + V3/ed, S + would (not) + have + V3/ed.\n3) Áp dụng & Đổi ngược nghĩa nguyên nhân → kết quả:\n   • Nguyên nhân thật: 'got up late' (đã dậy muộn) → Giả định: 'If she hadn't got up late' (Nếu cô ấy đã KHÔNG dậy muộn)\n   • Kết quả thật: 'missed the train' (đã lỡ tàu) → Giả định: 'she wouldn't have missed the train' (thì cô ấy đã KHÔNG lỡ tàu).",
+      "wrong": "A và D dùng Loại 2 (sai thì quá khứ) và không đổi ngược nghĩa; C đổi ngược nguyên nhân với kết quả ('nếu không lỡ tàu thì đã không dậy muộn' — phi lý!).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Câu gốc có V2/ed (missed, got up) + 'because' → chọn IF LOẠI 3 (HAD + V3 ... WOULD HAVE + V3) và luôn đặt nguyên nhân ('dậy muộn') vào sau 'If'!",
+      "topic": "Câu điều kiện loại 3 — Trái với thực tế trong Quá khứ"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If she got up late, she would miss the train.\"",
-      "B": "phương án: \"If she hadn't got up late, she wouldn't have missed the train.\"",
-      "C": "phương án: \"If she hadn't missed the train, she wouldn't have got up late.\"",
-      "D": "phương án: \"If she didn't get up late, she wouldn't miss the train.\""
+      "A": "Dịch: \"Nếu cô ấy dậy muộn, cô ấy sẽ lỡ tàu.\" → ❌ SAI vì dùng Loại 2 (cho hiện tại) và giữ nguyên nghĩa khẳng định như câu gốc.",
+      "B": "Dịch: \"Nếu cô ấy đã không dậy muộn, cô ấy đã không lỡ tàu.\" → ✅ ĐÚNG chuẩn Loại 3 (hadn't got up ... wouldn't have missed) và đúng logic nguyên nhân - kết quả.",
+      "C": "Dịch: \"Nếu cô ấy đã không lỡ tàu, cô ấy đã không dậy muộn.\" → ❌ SAI logic vì bị đảo ngược nguyên nhân với kết quả (dậy muộn gây ra lỡ tàu, không phải ngược lại).",
+      "D": "Dịch: \"Nếu cô ấy không dậy muộn, cô ấy sẽ không lỡ tàu.\" → ❌ SAI thì vì dùng Loại 2 ('didn't get up ... wouldn't miss'), trong khi sự việc đã xảy ra ở quá khứ."
     },
     "vocab_in_question": []
   },
@@ -2369,17 +2369,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: Perhaps the hotel is full.",
-      "why": "Phương án [A] 'The hotel might be full.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Có lẽ khách sạn đã hết phòng rồi.\"\n• Dịch từng cụm: Perhaps (có lẽ, có thể) • the hotel (khách sạn) • is full (đầy / hết phòng).",
+      "why": "1) Dấu hiệu: Câu gốc mở đầu bằng 'Perhaps' (hoặc 'Maybe' — có lẽ, khả năng 50/50 không chắc chắn).\n2) Động từ khuyết thiếu tương ứng với 'Perhaps' là 'MIGHT / MAY + V' (có lẽ, có thể).\n3) Vì vậy 'Perhaps the hotel is full' = 'The hotel might be full'.",
+      "wrong": "B ('can't be' = chắc chắn không phải); C ('has to be' = bắt buộc phải); D ('must be' = chắc hẳn là, gần như 100%) → đều sai mức độ chắc chắn của 'Perhaps'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'Perhaps / Maybe' (có lẽ) → chọn ngay 'MIGHT BE' hoặc 'MAY BE'!",
+      "topic": "Động từ khuyết thiếu suy đoán — Có lẽ (Perhaps = might)"
     },
     "choice_breakdown": {
-      "A": "có lẽ, có thể xảy ra (khả năng)",
-      "B": "chắc chắn không thể / không có khả năng",
-      "C": "phương án: \"The hotel has to be full.\"",
-      "D": "chắc hẳn là (suy đoán chắc chắn đúng)"
+      "A": "Dịch: \"Khách sạn có lẽ đã hết phòng.\" → ✅ ĐÚNG vì 'might be' diễn tả khả năng không chắc chắn, đồng nghĩa hoàn toàn với 'Perhaps'.",
+      "B": "Dịch: \"Khách sạn chắc chắn không thể hết phòng.\" → ❌ SAI vì 'can't be' nghĩa là chắc chắn không phải, ngược với 'Perhaps'.",
+      "C": "Dịch: \"Khách sạn phải hết phòng.\" → ❌ SAI vì 'has to be' mang nghĩa bắt buộc/chắc chắn.",
+      "D": "Dịch: \"Khách sạn chắc hẳn đã hết phòng rồi.\" → ❌ SAI mức độ vì 'must be' là suy đoán chắc chắn gần 100%, còn 'Perhaps' chỉ là có lẽ."
     },
     "vocab_in_question": []
   },
@@ -2399,17 +2399,17 @@
     "correctAnswer": "C",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: \"Where do you keep the keys?\" she asked him.",
-      "why": "Phương án [C] 'She asked him where he kept the keys.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Bạn cất chìa khóa ở đâu vậy?\" cô ấy hỏi anh ấy.\n• Dịch từng cụm: Where do you keep (bạn cất ở đâu) • the keys (những chiếc chìa khóa) • she asked him (cô ấy đã hỏi anh ấy).",
+      "why": "1) Dấu hiệu: Câu hỏi bắt đầu bằng từ để hỏi 'Where' + 'she asked him' (quá khứ).\n2) 3 bước biến đổi câu hỏi Wh- sang gián tiếp:\n   • Bước 1: Giữ lại từ để hỏi 'where'.\n   • Bước 2: Đưa về trật tự câu kể (S + V), BỎ trợ động từ 'do/does/did'.\n   • Bước 3: Đổi ngôi ('you' hỏi 'him' → 'he') và lùi thì (Hiện tại đơn 'keep' → Quá khứ đơn 'kept').\n3) Ghép lại: 'She asked him where he kept the keys.'",
+      "wrong": "A và B giữ trợ động từ 'does / did' trước 'he' (lỗi đảo ngữ câu hỏi); D lùi sai thì sang Quá khứ hoàn thành ('had kept') và tự bịa thêm 'yesterday'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Câu hỏi có 'Where/What/Why...' trong ngoặc → sau từ để hỏi phải là CHỦ NGỮ + ĐỘNG TỪ LÙI THÌ (where he kept), loại ngay đáp án có 'do/does/did'!",
+      "topic": "Câu gián tiếp — Câu hỏi có từ để hỏi (Wh-question)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"She asked him where does he keep the keys.\"",
-      "B": "phương án: \"She asked him where did he keep the keys.\"",
-      "C": "phương án: \"She asked him where he kept the keys.\"",
-      "D": "phương án: \"She asked him where he had kept the keys yesterday.\""
+      "A": "Dịch: \"Cô ấy hỏi anh ấy anh ấy cất chìa khóa ở đâu.\" → ❌ SAI vì giữ 'does' và đảo ngữ như câu hỏi trực tiếp.",
+      "B": "Dịch: \"Cô ấy hỏi anh ấy anh ấy đã cất chìa khóa ở đâu.\" → ❌ SAI vì giữ 'did' trước chủ ngữ 'he' (câu gián tiếp không dùng do/does/did).",
+      "C": "Dịch: \"Cô ấy hỏi anh ấy anh ấy cất chìa khóa ở đâu.\" → ✅ ĐÚNG vì bỏ 'do', đổi 'you → he', lùi thì 'keep → kept' và đặt đúng trật tự S + V.",
+      "D": "Dịch: \"Cô ấy hỏi anh ấy hôm qua anh ấy đã cất chìa khóa ở đâu.\" → ❌ SAI vì lùi quá mức sang Quá khứ hoàn thành (gốc là Hiện tại đơn 'do keep' chỉ lùi về 'kept') và tự thêm 'yesterday'."
     },
     "vocab_in_question": []
   },
@@ -2429,17 +2429,17 @@
     "correctAnswer": "C",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: I prefer cooking at home to eating out.",
-      "why": "Phương án [C] 'I like cooking at home more than eating out.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Tôi thích nấu ăn ở nhà hơn là đi ăn ngoài.\"\n• Dịch từng cụm: prefer A to B (thích A hơn B) • cooking at home (nấu ăn ở nhà) • eating out (đi ăn ở ngoài hàng).",
+      "why": "1) Dấu hiệu: Cấu trúc 'prefer V-ing A to V-ing B' = thích làm A hơn làm B (tức là A là thứ thích HƠN, B là thứ thích ít hơn).\n2) Cấu trúc đồng nghĩa chuẩn: 'like V-ing A more than V-ing B' (thích nấu ăn ở nhà hơn là ăn ngoài).\n3) Lưu ý bẫy: Sau 'rather than' thường không đi V-ing lệch với 'to cook', còn 'prefer' đi với 'to' chứ không đi với 'than'.",
+      "wrong": "A dùng sai dạng động từ ('to cook ... rather than eating' bị lệch cấu trúc); B và D đảo ngược nghĩa thành thích đi ăn ngoài hơn!",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'prefer A to B' → nghĩa là thích A hơn B, đổi ngay sang 'LIKE A MORE THAN B' (giữ nguyên cả 2 động từ đuôi -ing)!",
+      "topic": "Cấu trúc tương đương — Thích cái gì hơn (prefer ... to = like ... more than)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"I like to cook at home rather than eating out.\"",
-      "B": "phương án: \"I enjoy eating out more than cooking at home.\"",
-      "C": "phương án: \"I like cooking at home more than eating out.\"",
-      "D": "phương án: \"I prefer to eat out than cook at home.\""
+      "A": "Dịch: \"Tôi thích nấu ăn ở nhà hơn ăn ngoài.\" → ❌ SAI ngữ pháp vì trước 'rather than' dùng 'to cook' mà sau lại dùng 'eating' (hai vế phải cùng dạng).",
+      "B": "Dịch: \"Tôi thích đi ăn ngoài hơn nấu ăn ở nhà.\" → ❌ SAI hoàn toàn nghĩa vì bị đảo ngược thành thích ăn ngoài hơn.",
+      "C": "Dịch: \"Tôi thích nấu ăn ở nhà hơn là đi ăn ngoài.\" → ✅ ĐÚNG chuẩn cấu trúc 'like V-ing more than V-ing' và giữ đúng nghĩa gốc.",
+      "D": "Dịch: \"Tôi thích ăn ngoài hơn nấu ở nhà.\" → ❌ SAI cả nghĩa (đảo ngược) lẫn ngữ pháp ('prefer' không đi trực tiếp với 'than' như vậy)."
     },
     "vocab_in_question": []
   },
@@ -3679,17 +3679,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: They will release the film next month.",
-      "why": "Phương án [A] 'The film will be released next month.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Họ sẽ phát hành bộ phim vào tháng tới.\"\n• Dịch từng cụm: They will release (họ sẽ phát hành/ra mắt) • the film (bộ phim) • next month (tháng tới).",
+      "why": "1) Dấu hiệu: Câu gốc có 'will release' (sẽ phát hành — Tương lai đơn) và tân ngữ là 'the film' (bộ phim).\n2) Khi đưa 'The film' lên làm chủ ngữ, bộ phim không thể tự phát hành mà phải ĐƯỢC phát hành → dùng CÂU BỊ ĐỘNG Tương lai đơn.\n3) Công thức: Chủ ngữ + will be + V3/ed.\n4) Áp dụng: 'will release' → 'will be released'.",
+      "wrong": "B thiếu 'be' (bộ phim tự phát hành là sai); C chia Hiện tại hoàn thành bị động nhưng lại đi với 'next month' (tháng tới); D chia Hiện tại đơn sai thì.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'will + V' và câu viết lại bắt đầu bằng VẬT ('The film') → chọn ngay 'WILL BE + V3/ed' (will be released)!",
+      "topic": "Câu bị động — Thì Tương lai đơn (will)"
     },
     "choice_breakdown": {
-      "A": "sẽ được thực hiện (thể bị động Tương lai đơn)",
-      "B": "phương án: \"The film will release next month.\"",
-      "C": "phương án: \"The film has been released next month.\"",
-      "D": "phương án: \"The film is released next month.\""
+      "A": "Dịch: \"Bộ phim sẽ được phát hành vào tháng tới.\" → ✅ ĐÚNG chuẩn bị động Tương lai đơn: will + be + released (V3/ed).",
+      "B": "Dịch: \"Bộ phim sẽ phát hành vào tháng tới.\" → ❌ SAI vì thiếu 'be' và dùng 'release' chủ động (phim phải ĐƯỢC phát hành).",
+      "C": "Dịch: \"Bộ phim đã được phát hành vào tháng tới.\" → ❌ SAI thì vì 'has been released' nói chuyện đã rồi, không đi được với 'next month' (tháng tới).",
+      "D": "Dịch: \"Bộ phim được phát hành vào tháng tới.\" → ❌ SAI thì vì câu gốc dùng 'will' (tương lai), không phải Hiện tại đơn 'is released'."
     },
     "vocab_in_question": []
   },
@@ -3709,17 +3709,17 @@
     "correctAnswer": "C",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển đổi câu chủ động sang câu bị động tương ứng với đúng thì động từ của câu gốc.",
-      "why": "Tân ngữ câu chủ động chuyển lên làm chủ ngữ mới, động từ chuyển thành be + V3/ed phù hợp thì.",
-      "wrong": "Các câu khác giữ nguyên dạng chủ động, sai thì động từ hoặc sai chủ ngữ số ít/nhiều.",
-      "tip": "MẸO QUA MÔN: Xác định thì của câu gốc -> chọn câu bị động có công thức BE + V3 tương ứng!",
-      "topic": "Chuyển đổi câu bị động"
+      "translation": "\"Ai đó vừa mới lau sạch tất cả các cửa sổ trong văn phòng.\"\n• Dịch từng cụm: Someone (ai đó) • has just cleaned (vừa mới lau sạch) • all the windows in the office (tất cả cửa sổ trong văn phòng).",
+      "why": "1) Dấu hiệu: Câu gốc dùng 'has just cleaned' (have/has + V3 → Hiện tại hoàn thành).\n2) Đưa 'All the windows in the office' lên làm chủ ngữ mới (các cửa sổ ĐƯỢC lau) → dùng BỊ ĐỘNG Hiện tại hoàn thành: have/has + just + been + V3/ed.\n3) Bẫy số ít/nhiều cực dễ dính: Câu gốc dùng 'has' vì chủ ngữ là 'Someone' (số ít). Nhưng khi đưa 'All the windows' (nhiều cái cửa sổ — số nhiều) lên đầu thì PHẢI đổi 'has' thành 'HAVE'!",
+      "wrong": "A dùng Quá khứ đơn ('were'); B dùng Hiện tại đơn ('are'); D dùng 'has' với chủ ngữ số nhiều 'All the windows' (sai hòa hợp chủ-vị!).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'has/have + (just) + V3' → chọn bị động 'HAVE/HAS + (just) + BEEN + V3'. Nhớ nhìn chủ ngữ mới: 'windows' có 's' (số nhiều) → chọn 'HAVE', loại 'has'!",
+      "topic": "Câu bị động — Thì Hiện tại hoàn thành (have/has + been + V3/ed)"
     },
     "choice_breakdown": {
-      "A": "cửa sổ (window seat: ghế cạnh cửa sổ)",
-      "B": "cửa sổ (window seat: ghế cạnh cửa sổ)",
-      "C": "cửa sổ (window seat: ghế cạnh cửa sổ)",
-      "D": "cửa sổ (window seat: ghế cạnh cửa sổ)"
+      "A": "Dịch: \"Tất cả cửa sổ trong văn phòng vừa được lau (quá khứ).\" → ❌ SAI thì vì câu gốc dùng Hiện tại hoàn thành ('has just cleaned'), không phải Quá khứ đơn.",
+      "B": "Dịch: \"Tất cả cửa sổ trong văn phòng được lau.\" → ❌ SAI thì vì 'are cleaned' là Hiện tại đơn (diễn tả thói quen), sai với 'has just'.",
+      "C": "Dịch: \"Tất cả các cửa sổ trong văn phòng vừa mới được lau sạch.\" → ✅ ĐÚNG vì 'windows' (số nhiều) đi với 'have' + 'just been cleaned'.",
+      "D": "Dịch: \"Tất cả cửa sổ... vừa được lau.\" → ❌ SAI ngữ pháp hòa hợp chủ ngữ - động từ: 'All the windows' là số nhiều nên không thể dùng 'has', phải dùng 'have'."
     },
     "vocab_in_question": []
   },
@@ -3739,17 +3739,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Lần cuối tôi gặp huấn luyện viên cũ là 4 năm trước. -> Tôi đã không gặp huấn luyện viên cũ suốt 4 năm nay.",
-      "why": "Cấu trúc chuyển đổi kinh điển: 'I last saw sb ... ago' = 'I haven't seen sb for + khoảng thời gian'.",
-      "wrong": "A dùng thì quá khứ đơn với 'for' là sai ngữ cảnh; C dùng 'since' với khoảng thời gian là sai (since đi với mốc thời gian).",
-      "tip": "MẸO QUA MÔN: 'last saw ... ago' -> Viết lại bằng: 'HAVEN'T SEEN ... FOR + khoảng thời gian'!",
-      "topic": "Hiện tại hoàn thành vs Quá khứ đơn"
+      "translation": "\"Lần cuối tôi gặp huấn luyện viên cũ của mình là cách đây 4 năm.\"\n• Dịch từng cụm: I last saw (lần cuối tôi gặp) • my old coach (huấn luyện viên cũ của tôi) • four years ago (4 năm trước).",
+      "why": "1) Dấu hiệu: Mẫu câu kinh điển 'S + last + V2/ed + ... + khoảng thời gian + ago' (lần cuối làm gì cách đây bao lâu).\n2) Tư duy đổi câu: Lần cuối gặp là 4 năm trước → nghĩa là TỪ ĐÓ ĐẾN NAY ĐÃ KHÔNG GẶP suốt 4 năm rồi!\n3) Công thức chuẩn: S + haven't / hasn't + V3/ed + FOR + khoảng thời gian (bỏ 'last' và 'ago').\n4) Áp dụng: 'haven't seen' (V3 của see là seen) + 'for four years' (four years là KHOẢNG thời gian nên bắt buộc dùng 'for', không dùng 'since').",
+      "wrong": "A dùng Quá khứ đơn 'didn't see' với 'for four years' là sai thì (hành động kéo dài đến hiện tại phải dùng Hiện tại hoàn thành); C dùng 'since' trước khoảng thời gian 'four years' là sai ngữ pháp; D dùng hiện tại 'see' đi với 'ago' (quá khứ).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'LAST + V2 ... AGO' → chọn ngay 'HAVEN'T/HASN'T + V3 ... FOR + khoảng thời gian'. Loại ngay đáp án dùng 'since' đi với 'years/months'!",
+      "topic": "Quá khứ đơn ↔ Hiện tại hoàn thành (Lần cuối ... bao lâu trước)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"I didn't see my old coach for four years.\"",
-      "B": "phương án: \"I haven't seen my old coach for four years.\"",
-      "C": "phương án: \"I haven't seen my old coach since four years.\"",
-      "D": "phương án: \"I see my old coach four years ago.\""
+      "A": "Dịch: \"Tôi đã không gặp huấn luyện viên cũ trong 4 năm (ở quá khứ).\" → ❌ SAI thì vì thiếu tính liên tục tới hiện tại; phải dùng Hiện tại hoàn thành 'haven't seen'.",
+      "B": "Dịch: \"Tôi đã không gặp huấn luyện viên cũ suốt 4 năm nay rồi.\" → ✅ ĐÚNG chuẩn công thức 'haven't + V3 + for + khoảng thời gian'.",
+      "C": "Dịch: \"Tôi đã không gặp huấn luyện viên cũ kể từ 4 năm.\" → ❌ SAI giới từ: 'since' chỉ đi với MỐC thời gian (since 2020), còn 'four years' là KHOẢNG thời gian phải dùng 'for'.",
+      "D": "Dịch: \"Tôi gặp huấn luyện viên cũ 4 năm trước.\" → ❌ SAI thì vì 'see' (hiện tại) không đi được với 'ago' (quá khứ)."
     },
     "vocab_in_question": []
   },
@@ -3769,17 +3769,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: The man is a famous actor. He is talking to my sister.",
-      "why": "Phương án [B] 'The man who is talking to my sister is a famous actor.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Người đàn ông đó là một diễn viên nổi tiếng. Ông ấy đang nói chuyện với chị/em gái tôi.\"\n• Dịch từng cụm: The man (người đàn ông) • a famous actor (một diễn viên nổi tiếng) • is talking to my sister (đang nói chuyện với chị gái tôi).",
+      "why": "1) Dấu hiệu: Hai câu cùng nhắc đến 1 NGƯỜI ('The man' và 'He'). Muốn gộp 2 câu lại: 'Người đàn ông NGƯỜI MÀ đang nói chuyện với chị gái tôi là diễn viên nổi tiếng'.\n2) Dùng đại từ quan hệ 'WHO' để thay cho chủ ngữ chỉ người ('He') đứng trước động từ 'is talking'.\n3) Mệnh đề quan hệ bổ nghĩa cho ai thì đặt ngay sau danh từ đó: 'The man + who is talking to my sister + is a famous actor.'",
+      "wrong": "A dùng 'whom' (whom chỉ làm tân ngữ, đứng trước S + V, không đứng ngay trước động từ 'is talking'); C thiếu động từ 'is' trước 'talking'; D dùng 'which' (chỉ vật, không dùng cho người).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thay cho NGƯỜI làm chủ ngữ (đứng ngay trước động từ 'is talking') → chọn ngay 'WHO'. Không chọn 'whom' (vì sau khoảng nối là động từ) và không chọn 'which' (vì chỉ vật)!",
+      "topic": "Mệnh đề quan hệ — Chỉ người (who)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"The man whom is talking to my sister is a famous actor.\"",
-      "B": "phương án: \"The man who is talking to my sister is a famous actor.\"",
-      "C": "phương án: \"The man is a famous actor who talking to my sister.\"",
-      "D": "phương án: \"The man which is talking to my sister is a famous actor.\""
+      "A": "Dịch: \"Người đàn ông người mà đang nói chuyện...\" → ❌ SAI ngữ pháp vì 'whom' chỉ thay cho tân ngữ (sau whom phải có S + V), còn ở đây sau nó là động từ 'is talking' nên phải dùng 'who'.",
+      "B": "Dịch: \"Người đàn ông đang nói chuyện với chị gái tôi là một diễn viên nổi tiếng.\" → ✅ ĐÚNG vì dùng 'who' chỉ người làm chủ ngữ và đặt mệnh đề quan hệ ngay sau 'The man'.",
+      "C": "Dịch: \"Người đàn ông là diễn viên nổi tiếng người mà nói chuyện...\" → ❌ SAI ngữ pháp vì thiếu 'is' ('who talking' sai, phải là 'who is talking') và đặt sai vị trí.",
+      "D": "Dịch: \"Người đàn ông cái mà đang nói chuyện...\" → ❌ SAI vì 'which' chỉ dùng cho VẬT, không dùng cho người ('The man')."
     },
     "vocab_in_question": []
   },
@@ -3799,17 +3799,17 @@
     "correctAnswer": "D",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả thực tế ở hiện tại sang câu điều kiện loại 2 (trái thực tế hiện tại).",
-      "why": "Thực tế hiện tại 'don't have / don't know' -> Giả định loại 2: If + S + V2/ed (had/knew), S + could/would + V.",
-      "wrong": "Loại 1 sai vì thực tế không có; loại 3 sai vì chỉ dùng cho quá khứ.",
-      "tip": "MẸO QUA MÔN: Hiện tại 'don't have / can't' -> Viết lại bằng IF LOẠI 2 (had / could)!",
-      "topic": "Viết lại câu điều kiện loại 2"
+      "translation": "\"Tôi không biết trượt tuyết, vì vậy tôi không thể tham gia buổi học.\"\n• Dịch từng cụm: don't know how to ski (không biết cách trượt tuyết) • so (vì vậy) • can't join the lesson (không thể tham gia bài học).",
+      "why": "1) Dấu hiệu: 'don't know' và 'can't join' đều ở HIỆN TẠI → giả định trái với hiện tại phải dùng CÂU ĐIỀU KIỆN LOẠI 2.\n2) Công thức Loại 2: If + S + V2/ed, S + would/could + V (nguyên mẫu).\n3) Áp dụng & Đổi ngược nghĩa:\n   • 'don't know' → 'If I knew' (V2 của know là knew)\n   • 'can't join' → 'I could join' (hoặc 'would join').",
+      "wrong": "A dùng Loại 1 ('know ... can') là sai thực tế; B trộn Loại 3 ('had known') với Loại 2 ('could join'); C đặt 'would' trong mệnh đề If (sai ngữ pháp).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'don't know ... can't' ở HIỆN TẠI → chọn ngay IF LOẠI 2: 'If + S + V2/ed (knew), S + could/would + V'!",
+      "topic": "Câu điều kiện loại 2 — Trái với thực tế ở Hiện tại"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If I know how to ski, I can join the lesson.\"",
-      "B": "phương án: \"If I had known how to ski, I could join the lesson.\"",
-      "C": "phương án: \"If I would know how to ski, I could join the lesson.\"",
-      "D": "phương án: \"If I knew how to ski, I could join the lesson.\""
+      "A": "Dịch: \"Nếu tôi biết trượt tuyết, tôi có thể tham gia buổi học.\" → ❌ SAI vì dùng thì hiện tại (Loại 1), không đúng cho việc trái thực tế hiện tại.",
+      "B": "Dịch: \"Nếu tôi đã biết trượt tuyết (quá khứ), tôi có thể tham gia...\" → ❌ SAI vì 'had known' là Loại 3 (chỉ dùng cho quá khứ).",
+      "C": "Dịch: \"Nếu tôi sẽ biết trượt tuyết...\" → ❌ SAI ngữ pháp vì tuyệt đối không dùng 'would' ngay trong mệnh đề 'If'.",
+      "D": "Dịch: \"Nếu tôi biết trượt tuyết, tôi đã có thể tham gia buổi học.\" → ✅ ĐÚNG chuẩn Loại 2: If I knew (V2), I could join."
     },
     "vocab_in_question": []
   },
@@ -3829,17 +3829,17 @@
     "correctAnswer": "C",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: \"Why did you cancel the trip to New York?\" she asked him.",
-      "why": "Phương án [C] 'She asked him why he had cancelled the trip to New York.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Tại sao anh lại hủy chuyến đi tới New York vậy?\" cô ấy hỏi anh ấy.\n• Dịch từng cụm: Why did you cancel (tại sao bạn đã hủy) • the trip to New York (chuyến đi tới New York) • she asked him (cô ấy hỏi anh ấy).",
+      "why": "1) Dấu hiệu: Câu hỏi có từ để hỏi 'Why' + trợ động từ quá khứ 'did cancel' (Quá khứ đơn) + 'she asked him'.\n2) 3 bước đổi sang gián tiếp:\n   • Bước 1: Giữ 'why', BỎ trợ động từ 'did', giữ trật tự S + V (không đảo ngữ).\n   • Bước 2: Đổi ngôi 'you' (hỏi anh ấy) → 'he'.\n   • Bước 3: Lùi thì Quá khứ đơn ('did cancel') xuống 1 bậc thành Quá khứ hoàn thành ('had cancelled').\n3) Ghép lại: 'She asked him why he had cancelled the trip to New York.'",
+      "wrong": "A dùng trợ động từ 'did' như câu hỏi trực tiếp; B chưa lùi thì mà chia Hiện tại đơn 'cancels'; D lùi đúng thì nhưng bị đảo 'had' ra trước 'he' (câu gián tiếp không đảo ngữ!).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'Why did + S + V' trong ngoặc → đổi thành 'why + S + HAD + V3/ed'. Nhớ: CHỦ NGỮ (he) phải đứng TRƯỚC 'had', loại mọi câu đảo 'did he / had he'!",
+      "topic": "Câu gián tiếp — Câu hỏi Wh- với thì Quá khứ đơn"
     },
     "choice_breakdown": {
-      "A": "phương án: \"She asked him why did he cancel the trip to New York.\"",
-      "B": "phương án: \"She asked him why he cancels the trip to New York.\"",
-      "C": "phương án: \"She asked him why he had cancelled the trip to New York.\"",
-      "D": "phương án: \"She asked him why had he cancelled the trip to New York.\""
+      "A": "Dịch: \"Cô ấy hỏi anh ấy tại sao anh ấy đã hủy chuyến đi New York.\" → ❌ SAI vì vẫn dùng 'did he cancel' (đảo ngữ kiểu câu hỏi trực tiếp).",
+      "B": "Dịch: \"Cô ấy hỏi anh ấy tại sao anh ấy hủy chuyến đi New York.\" → ❌ SAI thì vì câu gốc ở Quá khứ đơn ('did') mà lại đổi thành Hiện tại đơn ('cancels').",
+      "C": "Dịch: \"Cô ấy hỏi anh ấy tại sao anh ấy đã hủy chuyến đi tới New York.\" → ✅ ĐÚNG cả 3 bước: giữ 'why', bỏ 'did', đặt 'he' trước động từ và lùi Quá khứ đơn → 'had cancelled'.",
+      "D": "Dịch: \"Cô ấy hỏi anh ấy tại sao anh ấy đã hủy chuyến đi...\" → ❌ SAI trật tự từ vì đảo 'had' lên trước chủ ngữ 'he' (trong câu gián tiếp phải là 'he had')."
     },
     "vocab_in_question": []
   },
@@ -3859,17 +3859,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả sự việc trong quá khứ sang câu điều kiện loại 3 (trái thực tế quá khứ).",
-      "why": "Sự việc quá khứ 'didn't study / got up late / failed' -> Giả định loại 3: If + S + had + V3/ed, S + would/could + have + V3/ed.",
-      "wrong": "Loại 2 chỉ dùng cho hiện tại; giữ nguyên thể phủ định/khẳng định mà không đổi nghĩa là sai logic.",
-      "tip": "MẸO QUA MÔN: Quá khứ (didn't / missed) -> Viết lại bằng IF LOẠI 3: HAD + V3 ... WOULD HAVE + V3!",
-      "topic": "Viết lại câu điều kiện loại 3"
+      "translation": "\"Cô ấy đã lỡ chuyến tàu vì cô ấy đã dậy muộn.\"\n• Dịch từng cụm: missed the train (đã lỡ tàu) • because (bởi vì) • got up late (đã dậy muộn).",
+      "why": "1) Dấu hiệu: Cả 'missed' và 'got up' đều là V2 (QUÁ KHỨ ĐƠN) → giả định ngược với quá khứ phải dùng CÂU ĐIỀU KIỆN LOẠI 3.\n2) Công thức Loại 3: If + S + had (not) + V3/ed, S + would (not) + have + V3/ed.\n3) Áp dụng & Đổi ngược nghĩa nguyên nhân → kết quả:\n   • Nguyên nhân thật: 'got up late' (đã dậy muộn) → Giả định: 'If she hadn't got up late' (Nếu cô ấy đã KHÔNG dậy muộn)\n   • Kết quả thật: 'missed the train' (đã lỡ tàu) → Giả định: 'she wouldn't have missed the train' (thì cô ấy đã KHÔNG lỡ tàu).",
+      "wrong": "A và D dùng Loại 2 (sai thì quá khứ) và không đổi ngược nghĩa; C đổi ngược nguyên nhân với kết quả ('nếu không lỡ tàu thì đã không dậy muộn' — phi lý!).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Câu gốc có V2/ed (missed, got up) + 'because' → chọn IF LOẠI 3 (HAD + V3 ... WOULD HAVE + V3) và luôn đặt nguyên nhân ('dậy muộn') vào sau 'If'!",
+      "topic": "Câu điều kiện loại 3 — Trái với thực tế trong Quá khứ"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If she got up late, she would miss the train.\"",
-      "B": "phương án: \"If she hadn't got up late, she wouldn't have missed the train.\"",
-      "C": "phương án: \"If she hadn't missed the train, she wouldn't have got up late.\"",
-      "D": "phương án: \"If she didn't get up late, she wouldn't miss the train.\""
+      "A": "Dịch: \"Nếu cô ấy dậy muộn, cô ấy sẽ lỡ tàu.\" → ❌ SAI vì dùng Loại 2 (cho hiện tại) và giữ nguyên nghĩa khẳng định như câu gốc.",
+      "B": "Dịch: \"Nếu cô ấy đã không dậy muộn, cô ấy đã không lỡ tàu.\" → ✅ ĐÚNG chuẩn Loại 3 (hadn't got up ... wouldn't have missed) và đúng logic nguyên nhân - kết quả.",
+      "C": "Dịch: \"Nếu cô ấy đã không lỡ tàu, cô ấy đã không dậy muộn.\" → ❌ SAI logic vì bị đảo ngược nguyên nhân với kết quả (dậy muộn gây ra lỡ tàu, không phải ngược lại).",
+      "D": "Dịch: \"Nếu cô ấy không dậy muộn, cô ấy sẽ không lỡ tàu.\" → ❌ SAI thì vì dùng Loại 2 ('didn't get up ... wouldn't miss'), trong khi sự việc đã xảy ra ở quá khứ."
     },
     "vocab_in_question": []
   },
@@ -3889,17 +3889,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Mặc dù thời tiết xấu/mưa to, chúng tôi vẫn đi dã ngoại.",
-      "why": "Although + mệnh đề (S + V) = In spite of / Despite + cụm danh từ (the terrible weather / the heavy rain).",
-      "wrong": "Despite it rained (sai vì Despite không đi với mệnh đề), Even though the heavy rain (sai vì Even though phải đi với mệnh đề).",
-      "tip": "MẸO QUA MÔN: Sau chỗ trống là Cụm danh từ (The heavy rain) -> Chọn 'IN SPITE OF' hoặc 'DESPITE'!",
-      "topic": "Biến đổi câu Although / In spite of"
+      "translation": "\"Mặc dù thời tiết rất tệ, chúng tôi vẫn đi leo núi.\"\n• Dịch từng cụm: Although (mặc dù) • the weather was terrible (thời tiết đã rất tệ) • went hiking in the mountains (đã đi leo núi).",
+      "why": "1) Dấu hiệu: Câu gốc dùng 'Although + S + V' (Although the weather was terrible). Các đáp án đổi sang 'In spite of / Despite / Because...'.\n2) Quy tắc vàng phân biệt:\n   • Although / Even though + MỆNH ĐỀ (có Chủ ngữ + Động từ)\n   • In spite of / Despite + CỤM DANH TỪ hoặc V-ING (KHÔNG có động từ chia thì!)\n3) Biến đổi: 'the weather was terrible' (có động từ 'was') → gom thành cụm danh từ 'the terrible weather' → đi với 'In spite of'!",
+      "wrong": "A ('Because of' = bởi vì) và D ('Because' = bởi vì) làm ngược nghĩa 'mặc dù'; C dùng 'Despite' nhưng theo sau lại là mệnh đề có động từ 'was' (sai cấu trúc!).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'Although' → loại ngay 'Because / Because of' (sai nghĩa). Nhìn sau chỗ chuyển: nếu là CỤM DANH TỪ (the terrible weather) → chọn 'IN SPITE OF / DESPITE'; tuyệt đối không để 'Despite + S + V'!",
+      "topic": "Câu nhượng bộ — Although + Mệnh đề ↔ In spite of / Despite + Cụm danh từ"
     },
     "choice_breakdown": {
-      "A": "phương án: \"Because of the terrible weather, we went hiking in the mountains.\"",
-      "B": "mặc dù, bất chấp (+ cụm danh từ)",
-      "C": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "D": "được/bị thực hiện (thể bị động Quá khứ đơn)"
+      "A": "Dịch: \"Bởi vì thời tiết tệ, chúng tôi đã đi leo núi.\" → ❌ SAI nghĩa vì 'Because of' là 'bởi vì', ngược với 'Although' (mặc dù).",
+      "B": "Dịch: \"Mặc dù thời tiết rất tệ, chúng tôi vẫn đi leo núi.\" → ✅ ĐÚNG vì 'In spite of' đi với cụm danh từ 'the terrible weather' (không có động từ 'was').",
+      "C": "Dịch: \"Mặc dù thời tiết rất tệ...\" → ❌ SAI ngữ pháp vì sau 'Despite' không được dùng cả mệnh đề có động từ ('the weather was terrible').",
+      "D": "Dịch: \"Bởi vì thời tiết rất tệ, chúng tôi đã đi leo núi.\" → ❌ SAI nghĩa ('Because' = bởi vì, không phải 'mặc dù')."
     },
     "vocab_in_question": []
   },
@@ -3919,17 +3919,17 @@
     "correctAnswer": "C",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: \"Where do you keep the keys?\" she asked him.",
-      "why": "Phương án [C] 'She asked him where he kept the keys.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Bạn cất chìa khóa ở đâu vậy?\" cô ấy hỏi anh ấy.\n• Dịch từng cụm: Where do you keep (bạn cất ở đâu) • the keys (những chiếc chìa khóa) • she asked him (cô ấy đã hỏi anh ấy).",
+      "why": "1) Dấu hiệu: Câu hỏi bắt đầu bằng từ để hỏi 'Where' + 'she asked him' (quá khứ).\n2) 3 bước biến đổi câu hỏi Wh- sang gián tiếp:\n   • Bước 1: Giữ lại từ để hỏi 'where'.\n   • Bước 2: Đưa về trật tự câu kể (S + V), BỎ trợ động từ 'do/does/did'.\n   • Bước 3: Đổi ngôi ('you' hỏi 'him' → 'he') và lùi thì (Hiện tại đơn 'keep' → Quá khứ đơn 'kept').\n3) Ghép lại: 'She asked him where he kept the keys.'",
+      "wrong": "A và B giữ trợ động từ 'does / did' trước 'he' (lỗi đảo ngữ câu hỏi); D lùi sai thì sang Quá khứ hoàn thành ('had kept') và tự bịa thêm 'yesterday'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Câu hỏi có 'Where/What/Why...' trong ngoặc → sau từ để hỏi phải là CHỦ NGỮ + ĐỘNG TỪ LÙI THÌ (where he kept), loại ngay đáp án có 'do/does/did'!",
+      "topic": "Câu gián tiếp — Câu hỏi có từ để hỏi (Wh-question)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"She asked him where does he keep the keys.\"",
-      "B": "phương án: \"She asked him where did he keep the keys.\"",
-      "C": "phương án: \"She asked him where he kept the keys.\"",
-      "D": "phương án: \"She asked him where he had kept the keys yesterday.\""
+      "A": "Dịch: \"Cô ấy hỏi anh ấy anh ấy cất chìa khóa ở đâu.\" → ❌ SAI vì giữ 'does' và đảo ngữ như câu hỏi trực tiếp.",
+      "B": "Dịch: \"Cô ấy hỏi anh ấy anh ấy đã cất chìa khóa ở đâu.\" → ❌ SAI vì giữ 'did' trước chủ ngữ 'he' (câu gián tiếp không dùng do/does/did).",
+      "C": "Dịch: \"Cô ấy hỏi anh ấy anh ấy cất chìa khóa ở đâu.\" → ✅ ĐÚNG vì bỏ 'do', đổi 'you → he', lùi thì 'keep → kept' và đặt đúng trật tự S + V.",
+      "D": "Dịch: \"Cô ấy hỏi anh ấy hôm qua anh ấy đã cất chìa khóa ở đâu.\" → ❌ SAI vì lùi quá mức sang Quá khứ hoàn thành (gốc là Hiện tại đơn 'do keep' chỉ lùi về 'kept') và tự thêm 'yesterday'."
     },
     "vocab_in_question": []
   },
@@ -3949,17 +3949,17 @@
     "correctAnswer": "D",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả thực tế ở hiện tại sang câu điều kiện loại 2 (trái thực tế hiện tại).",
-      "why": "Thực tế hiện tại 'don't have / don't know' -> Giả định loại 2: If + S + V2/ed (had/knew), S + could/would + V.",
-      "wrong": "Loại 1 sai vì thực tế không có; loại 3 sai vì chỉ dùng cho quá khứ.",
-      "tip": "MẸO QUA MÔN: Hiện tại 'don't have / can't' -> Viết lại bằng IF LOẠI 2 (had / could)!",
-      "topic": "Viết lại câu điều kiện loại 2"
+      "translation": "\"Tôi không có đủ tiền, vì vậy tôi không thể mua chiếc điện thoại thông minh mới đó.\"\n• Dịch từng cụm: don't have enough money (không có đủ tiền) • so (vì vậy) • can't buy that new smartphone (không thể mua chiếc điện thoại mới đó).",
+      "why": "1) Dấu hiệu: Câu gốc dùng 'don't have' và 'can't buy' (HIỆN TẠI) → giả định trái thực tế hiện tại dùng CÂU ĐIỀU KIỆN LOẠI 2.\n2) Công thức Loại 2: If + S + V2/ed, S + would/could + V.\n3) Đổi ngược nghĩa: 'don't have' → 'If I had'; 'can't buy' → 'I could buy'.",
+      "wrong": "A dùng Loại 1 (sai thực tế); B dùng Loại 3 (chỉ dùng cho quá khứ); C không đổi ngược nghĩa ('nếu không có tiền thì không thể mua' — sai mục đích giả định).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'don't have ... so ... can't' ở HIỆN TẠI → chọn IF LOẠI 2 ('If I had ..., I could ...') và nhớ đổi thành câu khẳng định!",
+      "topic": "Câu điều kiện loại 2 — Trái với thực tế ở Hiện tại"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If I have enough money, I can buy that new smartphone.\"",
-      "B": "phương án: \"If I had had enough money, I could have bought that new smartphone.\"",
-      "C": "phương án: \"If I didn't have enough money, I couldn't buy that new smartphone.\"",
-      "D": "phương án: \"If I had enough money, I could buy that new smartphone.\""
+      "A": "Dịch: \"Nếu tôi có đủ tiền, tôi có thể mua chiếc điện thoại đó.\" → ❌ SAI thì vì dùng Loại 1 ('have ... can'), không dùng để giả định trái hiện tại.",
+      "B": "Dịch: \"Nếu tôi đã có đủ tiền (quá khứ), tôi đã có thể mua...\" → ❌ SAI thì vì dùng Loại 3 ('had had ... could have bought'), trong khi câu gốc ở hiện tại.",
+      "C": "Dịch: \"Nếu tôi không có đủ tiền, tôi không thể mua...\" → ❌ SAI logic điều kiện vì không đảo ngược giả định (lặp lại thực tế phủ định).",
+      "D": "Dịch: \"Nếu tôi có đủ tiền, tôi đã có thể mua chiếc điện thoại mới đó.\" → ✅ ĐÚNG chuẩn Loại 2: If I had (V2), I could buy."
     },
     "vocab_in_question": []
   },
@@ -5213,17 +5213,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển đổi câu chủ động sang câu bị động tương ứng với đúng thì động từ của câu gốc.",
-      "why": "Tân ngữ câu chủ động chuyển lên làm chủ ngữ mới, động từ chuyển thành be + V3/ed phù hợp thì.",
-      "wrong": "Các câu khác giữ nguyên dạng chủ động, sai thì động từ hoặc sai chủ ngữ số ít/nhiều.",
-      "tip": "MẸO QUA MÔN: Xác định thì của câu gốc -> chọn câu bị động có công thức BE + V3 tương ứng!",
-      "topic": "Chuyển đổi câu bị động"
+      "translation": "\"Họ chiếu các bộ phim quốc tế có phụ đề tại rạp chiếu phim này.\"\n• Dịch từng cụm: They show (họ chiếu) • international movies (phim quốc tế) • with subtitles (có phụ đề) • at this cinema (tại rạp này).",
+      "why": "1) Dấu hiệu: Câu gốc ở Hiện tại đơn ('show' — nguyên mẫu), các đáp án đảo 'International movies' (phim quốc tế — vật bị tác động) lên đầu câu → CÂU BỊ ĐỘNG.\n2) Công thức bị động Hiện tại đơn: Chủ ngữ + am/is/are + V3/ed.\n3) 'International movies' là số nhiều → dùng 'are', V3 của 'show' là 'shown' → 'are shown'.",
+      "wrong": "A dùng quá khứ chủ động ('showed'); C dùng Quá khứ tiếp diễn chủ động ('were showing'); D dùng Hiện tại hoàn thành chủ động ('have shown').",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Chủ ngữ mới là VẬT số nhiều (movies) + câu gốc Hiện tại đơn (show) → chọn ngay 'ARE + V3' (are shown)!",
+      "topic": "Câu bị động — Thì Hiện tại đơn"
     },
     "choice_breakdown": {
-      "A": "phụ đề phim (chữ dịch bên dưới màn hình)",
-      "B": "phụ đề phim (chữ dịch bên dưới màn hình)",
-      "C": "phụ đề phim (chữ dịch bên dưới màn hình)",
-      "D": "phụ đề phim (chữ dịch bên dưới màn hình)"
+      "A": "Dịch: \"Phim quốc tế đã chiếu có phụ đề...\" → ❌ SAI vì thiếu 'are' và chia quá khứ chủ động (phim phải ĐƯỢC chiếu).",
+      "B": "Dịch: \"Phim quốc tế được chiếu có phụ đề tại rạp này.\" → ✅ ĐÚNG chuẩn bị động Hiện tại đơn số nhiều: are + shown (V3 của show).",
+      "C": "Dịch: \"Phim quốc tế đang chiếu có phụ đề...\" → ❌ SAI cả thì (Quá khứ tiếp diễn) lẫn thiếu bị động.",
+      "D": "Dịch: \"Phim quốc tế đã chiếu có phụ đề...\" → ❌ SAI cả thì (Hiện tại hoàn thành) lẫn thiếu bị động."
     },
     "vocab_in_question": [
       {
@@ -5248,17 +5248,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Viết lại câu không cần thiết: 'It is not necessary for you to...' = 'You don't have to...'.",
-      "why": "'not necessary' đồng nghĩa hoàn toàn với 'don't have to' (không cần phải).",
-      "wrong": "mustn't (cấm đoán tuyệt đối), can't (không thể), shouldn't (không nên).",
-      "tip": "MẸO QUA MÔN: 'It isn't necessary for you to...' -> Đổi thành: 'You DON'T HAVE TO...'!",
-      "topic": "Viết lại câu khuyết thiếu"
+      "translation": "\"Bạn không cần thiết phải mang thêm khăn tắm đến hồ bơi.\"\n• Dịch từng cụm: It is not necessary for you (không cần thiết cho bạn) • to bring extra towels (mang thêm khăn tắm) • to the swimming pool (tới hồ bơi).",
+      "why": "1) Dấu hiệu: Cụm 'It is not necessary for you to V' = bạn không bắt buộc phải làm.\n2) Đổi sang động từ khuyết thiếu đồng nghĩa: 'don't have to + V' (không cần phải).\n3) Áp dụng: 'You don't have to bring extra towels to the swimming pool.'",
+      "wrong": "A ('mustn't' = bị cấm mang); C ('can't' = không có khả năng mang); D ('shouldn't' = khuyên không nên mang).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'not necessary' → chọn ngay 'DON'T HAVE TO'. Không bao giờ chọn 'mustn't' vì 'mustn't' là CẤM!",
+      "topic": "Động từ khuyết thiếu — Không cần thiết (not necessary = don't have to)"
     },
     "choice_breakdown": {
-      "A": "tuyệt đối không được phép, bị cấm làm",
-      "B": "không cần phải làm (không bắt buộc)",
-      "C": "chắc chắn không thể / không có khả năng",
-      "D": "nên làm (lời khuyên)"
+      "A": "Dịch: \"Bạn bị cấm mang thêm khăn tắm tới hồ bơi.\" → ❌ SAI vì 'mustn't' mang nghĩa cấm đoán, khác hẳn 'không cần thiết'.",
+      "B": "Dịch: \"Bạn không cần phải mang thêm khăn tắm tới hồ bơi.\" → ✅ ĐÚNG vì 'don't have to' = 'not necessary' (không bắt buộc).",
+      "C": "Dịch: \"Bạn không thể mang thêm khăn tắm tới hồ bơi.\" → ❌ SAI vì 'can't' nói về khả năng, không phải sự cần thiết.",
+      "D": "Dịch: \"Bạn không nên mang thêm khăn tắm tới hồ bơi.\" → ❌ SAI vì 'shouldn't' là lời khuyên, không phải 'không cần thiết'."
     },
     "vocab_in_question": []
   },
@@ -5278,17 +5278,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu trực tiếp sang gián tiếp cần lùi thì và đổi các trạng từ chỉ thời gian.",
-      "why": "tomorrow -> the following day / the next day; today -> that day; tonight -> that night; am/is/are -> was/were.",
-      "wrong": "Giữ nguyên tomorrow / today là sai; chưa lùi thì là sai.",
-      "tip": "MẸO QUA MÔN: Trong câu gián tiếp, loại ngay phương án còn giữ nguyên 'tomorrow / today / tonight'!",
-      "topic": "Câu gián tiếp"
+      "translation": "\"Hôm nay chúng tôi đang làm một dự án mới,\" người quản lý dự án nói.\n• Dịch từng cụm: We are working on (chúng tôi đang làm) • a new project (một dự án mới) • today (hôm nay) • the project manager said (quản lý dự án nói).",
+      "why": "1) Dấu hiệu: Có ngoặc kép + 'said' (quá khứ) → CÂU GIÁN TIẾP.\n2) 3 bước biến đổi:\n   • Bước 1 (Đổi đại từ): 'We' (chỉ nhóm của quản lý) → 'they'.\n   • Bước 2 (Lùi thì): 'are working' (Hiện tại tiếp diễn) → 'were working' (Quá khứ tiếp diễn).\n   • Bước 3 (Đổi thời gian): 'today' → 'that day'.",
+      "wrong": "B không đổi 'we', không lùi thì 'are', giữ nguyên 'today'; C dùng sai 'told that' (thiếu tân ngữ) và lùi sai thành 'had worked'; D đổi sai thành tương lai 'will work' và giữ 'today'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Câu gián tiếp thấy 'today' → bắt buộc đổi thành 'THAT DAY' (loại ngay B và D), và 'said that' chứ không dùng 'told that'!",
+      "topic": "Câu gián tiếp — Lùi thì & Đổi trạng từ thời gian"
     },
     "choice_breakdown": {
-      "A": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "B": "phương án: \"The project manager said that we are working on a new project today.\"",
-      "C": "phương án: \"The project manager told that they had worked on a new project that day.\"",
-      "D": "phương án: \"The project manager said that they will work on a new project today.\""
+      "A": "Dịch: \"Người quản lý dự án nói rằng hôm đó họ đang làm một dự án mới.\" → ✅ ĐÚNG cả 3 bước: 'We → they', 'are working → were working', 'today → that day'.",
+      "B": "Dịch: \"Người quản lý dự án nói rằng hôm nay chúng tôi đang làm...\" → ❌ SAI vì giữ nguyên y hệt 'we', 'are working' và 'today'.",
+      "C": "Dịch: \"Người quản lý dự án bảo rằng hôm đó họ đã làm...\" → ❌ SAI vì 'told that' thiếu người nghe (phải có 'told me/us') và lùi sai thì ('had worked').",
+      "D": "Dịch: \"Người quản lý dự án nói rằng hôm nay họ sẽ làm...\" → ❌ SAI vì đổi thành tương lai 'will work' và vẫn giữ 'today'."
     },
     "vocab_in_question": []
   },
@@ -5308,17 +5308,17 @@
     "correctAnswer": "C",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả thực tế ở hiện tại sang câu điều kiện loại 2 (trái thực tế hiện tại).",
-      "why": "Thực tế hiện tại 'don't have / don't know' -> Giả định loại 2: If + S + V2/ed (had/knew), S + could/would + V.",
-      "wrong": "Loại 1 sai vì thực tế không có; loại 3 sai vì chỉ dùng cho quá khứ.",
-      "tip": "MẸO QUA MÔN: Hiện tại 'don't have / can't' -> Viết lại bằng IF LOẠI 2 (had / could)!",
-      "topic": "Viết lại câu điều kiện loại 2"
+      "translation": "\"Tôi không biết địa chỉ email của cô ấy, vì vậy tôi không thể gửi cho cô ấy thiệp/lời mời.\"\n• Dịch từng cụm: don't know her email address (không biết địa chỉ email của cô ấy) • so (vì vậy) • can't send her the invitation (không thể gửi lời mời cho cô ấy).",
+      "why": "1) Dấu hiệu: 'don't know' và 'can't send' ở HIỆN TẠI → giả định trái thực tế hiện tại dùng CÂU ĐIỀU KIỆN LOẠI 2.\n2) Công thức Loại 2: If + S + V2/ed, S + would/could + V.\n3) Áp dụng & Đổi ngược nghĩa: 'don't know' → 'If I knew'; 'can't send' → 'I could send'.",
+      "wrong": "A dùng Loại 1 (sai thực tế); B dùng Loại 3 (chỉ dùng cho quá khứ); D đặt 'would' trong mệnh đề If (sai ngữ pháp).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'don't know ... can't' ở HIỆN TẠI → chọn ngay IF LOẠI 2: 'If I knew ..., I could ...'!",
+      "topic": "Câu điều kiện loại 2 — Trái với thực tế ở Hiện tại"
     },
     "choice_breakdown": {
-      "A": "lời mời, thiệp mời",
-      "B": "lời mời, thiệp mời",
-      "C": "lời mời, thiệp mời",
-      "D": "lời mời, thiệp mời"
+      "A": "Dịch: \"Nếu tôi biết email của cô ấy, tôi sẽ gửi lời mời.\" → ❌ SAI thì vì dùng Loại 1 ('know ... will send'), không dùng để giả định trái hiện tại.",
+      "B": "Dịch: \"Nếu tôi đã biết email của cô ấy (quá khứ), tôi đã có thể gửi...\" → ❌ SAI thì vì dùng Loại 3 ('had known ... could have sent').",
+      "C": "Dịch: \"Nếu tôi biết địa chỉ email của cô ấy, tôi đã có thể gửi lời mời cho cô ấy.\" → ✅ ĐÚNG chuẩn Loại 2: If I knew (V2), I could send.",
+      "D": "Dịch: \"Nếu tôi sẽ biết email của cô ấy...\" → ❌ SAI ngữ pháp vì không bao giờ dùng 'would' sau 'If'."
     },
     "vocab_in_question": [
       {
@@ -5343,17 +5343,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả sự việc trong quá khứ sang câu điều kiện loại 3 (trái thực tế quá khứ).",
-      "why": "Sự việc quá khứ 'didn't study / got up late / failed' -> Giả định loại 3: If + S + had + V3/ed, S + would/could + have + V3/ed.",
-      "wrong": "Loại 2 chỉ dùng cho hiện tại; giữ nguyên thể phủ định/khẳng định mà không đổi nghĩa là sai logic.",
-      "tip": "MẸO QUA MÔN: Quá khứ (didn't / missed) -> Viết lại bằng IF LOẠI 3: HAD + V3 ... WOULD HAVE + V3!",
-      "topic": "Viết lại câu điều kiện loại 3"
+      "translation": "\"Anh ấy đã trượt kỳ thi cuối kỳ vì anh ấy đã không ôn lại bài.\"\n• Dịch từng cụm: failed the final exam (đã trượt kỳ thi cuối kỳ) • because (vì) • didn't revise the lessons (đã không ôn tập bài học).",
+      "why": "1) Dấu hiệu: Cả 'failed' và 'didn't revise' đều ở QUÁ KHỨ → giả định ngược với quá khứ phải dùng CÂU ĐIỀU KIỆN LOẠI 3.\n2) Công thức Loại 3: If + S + had + V3/ed, S + would/could + have + V3/ed.\n3) Áp dụng & Đổi ngược nghĩa:\n   • Nguyên nhân thật: 'didn't revise' (đã không ôn) → Giả định: 'If he had revised' (Nếu anh ấy ĐÃ ôn)\n   • Kết quả thật: 'failed' (đã trượt) → Giả định: 'he would have passed' (thì anh ấy ĐÃ đỗ).",
+      "wrong": "A và D dùng Loại 2 (sai thì quá khứ); C không đổi ngược nghĩa ('nếu không ôn bài thì đã không trượt' — vô lý!).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'failed / didn't' (QUÁ KHỨ) → chọn ngay IF LOẠI 3 ('HAD + V3 ... WOULD HAVE + V3') và kiểm tra nghĩa ngược lại (không ôn → nếu đã ôn thì đã đỗ)!",
+      "topic": "Câu điều kiện loại 3 — Trái với thực tế trong Quá khứ"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If he revised the lessons, he would pass the final exam.\"",
-      "B": "phương án: \"If he had revised the lessons, he would have passed the final exam.\"",
-      "C": "phương án: \"If he hadn't revised the lessons, he wouldn't have failed the final exam.\"",
-      "D": "phương án: \"If he didn't revise the lessons, he wouldn't pass the final exam.\""
+      "A": "Dịch: \"Nếu anh ấy ôn bài, anh ấy sẽ đỗ kỳ thi.\" → ❌ SAI thì vì dùng Loại 2 ('revised ... would pass'), trong khi kỳ thi đã diễn ra ở quá khứ.",
+      "B": "Dịch: \"Nếu anh ấy đã ôn lại bài, anh ấy đã đỗ kỳ thi cuối kỳ rồi.\" → ✅ ĐÚNG chuẩn Loại 3 (had revised ... would have passed) và đúng logic.",
+      "C": "Dịch: \"Nếu anh ấy đã không ôn bài, anh ấy đã không trượt kỳ thi.\" → ❌ SAI logic hoàn toàn (không ôn sao lại không trượt!).",
+      "D": "Dịch: \"Nếu anh ấy không ôn bài, anh ấy sẽ không đỗ.\" → ❌ SAI cả thì (Loại 2) lẫn không đảo ngược giả định (lặp lại thực tế)."
     },
     "vocab_in_question": []
   },
@@ -5373,17 +5373,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả thực tế ở hiện tại sang câu điều kiện loại 2 (trái thực tế hiện tại).",
-      "why": "Thực tế hiện tại 'don't have / don't know' -> Giả định loại 2: If + S + V2/ed (had/knew), S + could/would + V.",
-      "wrong": "Loại 1 sai vì thực tế không có; loại 3 sai vì chỉ dùng cho quá khứ.",
-      "tip": "MẸO QUA MÔN: Hiện tại 'don't have / can't' -> Viết lại bằng IF LOẠI 2 (had / could)!",
-      "topic": "Viết lại câu điều kiện loại 2"
+      "translation": "\"Tối qua bạn có xem trận bóng đá không?\" Alex hỏi tôi.\n• Dịch từng cụm: Did you watch (bạn có xem không) • the football match (trận bóng đá) • last night (tối qua) • Alex asked me (Alex đã hỏi tôi).",
+      "why": "1) Dấu hiệu: Câu hỏi Yes/No bắt đầu bằng 'Did you...?' + 'last night' + 'Alex asked me' → CÂU GIÁN TIẾP.\n2) 4 bước biến đổi:\n   • Bước 1: Thêm 'if / whether', BỎ trợ động từ 'did', giữ trật tự S + V.\n   • Bước 2: Đổi ngôi 'you' (hỏi tôi) → 'I'.\n   • Bước 3: Lùi thì Quá khứ đơn ('did watch') → Quá khứ hoàn thành ('had watched').\n   • Bước 4: Đổi trạng từ thời gian 'last night' (tối qua) → 'the night before' (đêm hôm trước).",
+      "wrong": "B thiếu 'if/whether' và giữ 'did I' + 'last night'; C dùng Hiện tại đơn 'watch'; D chưa lùi thì ('watched') và vẫn giữ 'last night'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'Did you ... last night?' trong ngoặc → Chọn 'if + S + HAD + V3 ... THE NIGHT BEFORE'. Loại ngay câu còn giữ 'last night'!",
+      "topic": "Câu gián tiếp — Câu hỏi Yes/No thì Quá khứ đơn"
     },
     "choice_breakdown": {
-      "A": "phương án: \"Alex asked me if I had watched the football match the night before.\"",
-      "B": "phương án: \"Alex asked me did I watch the football match last night.\"",
-      "C": "phương án: \"Alex asked me whether I watch the football match the night before.\"",
-      "D": "phương án: \"Alex asked me if I watched the football match last night.\""
+      "A": "Dịch: \"Alex hỏi tôi liệu tối hôm trước tôi có xem trận bóng đá không.\" → ✅ ĐÚNG đủ 4 bước: có 'if', bỏ 'did', lùi 'watched → had watched', đổi 'last night → the night before'.",
+      "B": "Dịch: \"Alex hỏi tôi tối qua tôi có xem trận bóng đá không.\" → ❌ SAI vì thiếu 'if/whether', còn giữ đảo ngữ 'did I', chưa lùi thì và chưa đổi 'last night'.",
+      "C": "Dịch: \"Alex hỏi tôi liệu tôi có xem trận bóng đá tối hôm trước không.\" → ❌ SAI thì vì giữ Hiện tại đơn 'watch' thay vì lùi thành 'had watched'.",
+      "D": "Dịch: \"Alex hỏi tôi liệu tôi có xem trận bóng đá tối qua không.\" → ❌ SAI vì chưa lùi thì Quá khứ hoàn thành ('had watched') và chưa đổi 'last night'."
     },
     "vocab_in_question": []
   },
@@ -5403,17 +5403,17 @@
     "correctAnswer": "C",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: \"I love traveling by train.\" – \"I do, too.\"",
-      "why": "Phương án [C] 'So do I.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Tôi thích đi du lịch bằng tàu hỏa.\" – \"Tôi cũng vậy.\"\n• Dịch từng cụm: love traveling by train (thích đi du lịch bằng tàu hỏa) • I do, too (tôi cũng vậy).",
+      "why": "1) Dấu hiệu: Câu đáp lại là 'I do, too.' (Tôi cũng vậy — đồng tình KHẲNG ĐỊNH).\n2) Muốn viết lại ngắn gọn hơn mà vẫn nghĩa là 'Tôi cũng vậy': dùng 'So + trợ động từ + Chủ ngữ'.\n3) Người nói dùng trợ động từ 'do' (vì 'love' là động từ thường ở Hiện tại đơn, chủ ngữ là 'I') → ghép lại thành 'So do I.'",
+      "wrong": "A và D dùng 'Neither' (nghĩa là 'Tôi cũng KHÔNG' — dùng cho câu phủ định); B dùng 'am' (chỉ dùng khi câu gốc có 'am/is/are').",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'I do, too' (khẳng định + chữ 'do') → chọn ngay 'SO DO I'. Tuyệt đối không chọn 'Neither' (phủ định) hay 'So am I'!",
+      "topic": "Câu đồng tình khẳng định — So + trợ động từ + S"
     },
     "choice_breakdown": {
-      "A": "tôi cũng không (đồng tình phủ định)",
-      "B": "phương án: \"So am I.\"",
-      "C": "tôi cũng vậy (đồng tình khẳng định)",
-      "D": "tôi cũng không (đồng tình phủ định)"
+      "A": "Dịch: \"Tôi cũng không.\" → ❌ SAI vì 'Neither' là đồng tình PHỦ ĐỊNH, còn câu gốc là 'I do, too' (khẳng định).",
+      "B": "Dịch: \"Tôi cũng là...\" → ❌ SAI vì câu gốc dùng 'love' (động từ thường) và 'do', không phải 'to be' (am/is/are).",
+      "C": "Dịch: \"Tôi cũng vậy.\" → ✅ ĐÚNG vì 'So + do + I' tương đương hoàn toàn với 'I do, too'.",
+      "D": "Dịch: \"Tôi cũng không.\" → ❌ SAI cả 'Neither' (phủ định) lẫn 'am' (sai trợ động từ)."
     },
     "vocab_in_question": []
   },
@@ -5433,17 +5433,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Tôi chắc chắn đây không phải đồ của tôi/của Mark -> Đây chắc chắn không thể là...",
-      "why": "'I am certain / sure that ... isn't / is not' = 'can't be'.",
-      "wrong": "must be (chắc chắn là), might not (có lẽ không), shouldn't (không nên).",
-      "tip": "MẸO QUA MÔN: Thấy 'I am certain/sure that ... NOT' -> Chọn ngay 'CAN'T BE'!",
-      "topic": "Suy đoán logic (Modals)"
+      "translation": "\"Tôi chắc chắn chiếc túi này không phải của tôi vì túi của tôi màu đỏ tươi.\"\n• Dịch từng cụm: I am certain that (tôi chắc chắn rằng) • this bag is not mine (chiếc túi này không phải của tôi) • bright red (màu đỏ tươi).",
+      "why": "1) Dấu hiệu: Cụm 'I am certain that ... is not ...' = 'Tôi CHẮC CHẮN KHÔNG PHẢI là...'.\n2) Khi suy đoán chắc chắn điều gì KHÔNG ĐÚNG (có bằng chứng rõ ràng: túi mình màu đỏ tươi), ta dùng 'CAN'T BE'.\n3) Lưu ý: Không dùng 'might not be' (chỉ là 'có lẽ không', không đủ độ chắc chắn như 'certain').",
+      "wrong": "A ('must be' = chắc chắn là — ngược nghĩa 'is not'); C ('might not be' = có lẽ không — yếu hơn 'certain'); D ('shouldn't be' = không nên là).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'certain / sure that ... NOT' → chọn ngay 'CAN'T BE'!",
+      "topic": "Động từ khuyết thiếu suy đoán — Chắc chắn không phải (can't be)"
     },
     "choice_breakdown": {
-      "A": "chắc hẳn là (suy đoán chắc chắn đúng)",
-      "B": "chắc chắn không thể / không có khả năng",
-      "C": "có lẽ, có thể xảy ra (khả năng)",
-      "D": "nên làm (lời khuyên)"
+      "A": "Dịch: \"Chiếc túi này chắc chắn là của tôi vì túi tôi màu đỏ tươi.\" → ❌ SAI hoàn toàn nghĩa vì ngược với 'is not mine' (không phải của tôi).",
+      "B": "Dịch: \"Chiếc túi này chắc chắn không thể là của tôi vì túi tôi màu đỏ tươi.\" → ✅ ĐÚNG vì 'can't be' diễn tả sự chắc chắn không phải ('am certain ... is not').",
+      "C": "Dịch: \"Chiếc túi này có lẽ không phải của tôi...\" → ❌ SAI mức độ chắc chắn: 'might not' chỉ là đoán mò 50/50, còn 'certain' là chắc chắn 100%.",
+      "D": "Dịch: \"Chiếc túi này không nên là của tôi...\" → ❌ SAI nghĩa vì 'shouldn't' là lời khuyên (không nên)."
     },
     "vocab_in_question": []
   },
@@ -5463,17 +5463,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Maria không thể đi xe đạp khi cô ấy 5 tuổi.",
-      "why": "couldn't + V = wasn't/weren't able to + V (quá khứ của be able to).",
-      "wrong": "isn't able to (hiện tại), hasn't been able to (HTHT), won't be able to (tương lai).",
-      "tip": "MẸO QUA MÔN: 'couldn't' ở quá khứ -> Viết lại bằng 'WASN'T/WEREN'T ABLE TO'!",
-      "topic": "Khả năng trong quá khứ"
+      "translation": "\"Maria đã không thể đi xe đạp khi cô ấy lên 5 tuổi.\"\n• Dịch từng cụm: Maria couldn't ride a bicycle (Maria đã không thể đi xe đạp) • when she was five years old (khi cô ấy 5 tuổi).",
+      "why": "1) Dấu hiệu: Động từ 'couldn't' (quá khứ của can't) + mệnh đề quá khứ 'when she was five years old'.\n2) Cấu trúc đồng nghĩa với 'can / could' để chỉ khả năng là 'BE ABLE TO + V':\n   • Hiện tại: can/can't = am/is/are (not) able to\n   • Quá khứ: could/couldn't = WAS/WERE (NOT) ABLE TO\n3) 'Maria' là 1 người (số ít) ở quá khứ → dùng 'wasn't able to'.",
+      "wrong": "B (Hiện tại hoàn thành), C (Hiện tại đơn), D (Tương lai đơn) đều sai thì vì câu gốc có 'when she was five years old' (quá khứ).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'couldn't' + mốc quá khứ ('when ... was') → đổi ngay sang 'WASN'T / WEREN'T ABLE TO'!",
+      "topic": "Khả năng trong quá khứ — couldn't = wasn't / weren't able to"
     },
     "choice_breakdown": {
-      "A": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "B": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "C": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "D": "được/bị thực hiện (thể bị động Quá khứ đơn)"
+      "A": "Dịch: \"Maria đã không thể đi xe đạp khi cô ấy lên 5 tuổi.\" → ✅ ĐÚNG vì 'wasn't able to' là dạng quá khứ số ít tương đương hoàn toàn với 'couldn't'.",
+      "B": "Dịch: \"Maria đã không thể đi xe đạp (tính đến nay) khi cô ấy 5 tuổi.\" → ❌ SAI thì vì Hiện tại hoàn thành không đi với mốc quá khứ chấm dứt ('when she was 5').",
+      "C": "Dịch: \"Maria hiện tại không thể đi xe đạp khi cô ấy 5 tuổi.\" → ❌ SAI thì ('isn't' là hiện tại, không khớp 'was').",
+      "D": "Dịch: \"Maria sẽ không thể đi xe đạp khi cô ấy 5 tuổi.\" → ❌ SAI thì ('won't' là tương lai, vô lý với 'when she was 5')."
     },
     "vocab_in_question": []
   },
@@ -5493,17 +5493,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Bạn nên đi khám bác sĩ về chứng đau đầu. -> Nếu tôi là bạn, tôi sẽ đi khám bác sĩ.",
-      "why": "Lời khuyên: 'You should + V' = 'If I were you, I would + V'.",
-      "wrong": "A dùng 'am' là sai; C dùng loại 3 là sai; D dùng 'will' ở vế chính là sai cấu trúc loại 2.",
-      "tip": "MẸO QUA MÔN: 'You should + V' -> Viết lại thành 'IF I WERE YOU, I WOULD + V'!",
-      "topic": "Câu điều kiện loại 2 (Lời khuyên)"
+      "translation": "\"Bạn nên đi khám bác sĩ về chứng đau đầu của mình.\"\n• Dịch từng cụm: You should see a doctor (bạn nên đi gặp bác sĩ) • about your headache (về cơn đau đầu của bạn).",
+      "why": "1) Dấu hiệu: Câu gốc dùng 'You should + V' (Bạn nên làm gì — đưa ra LỜI KHUYÊN).\n2) Mẫu câu viết lại lời khuyên kinh điển bằng điều kiện Loại 2:\n   • 'If I were you, I would + V' (Nếu tôi là bạn, tôi sẽ...).\n3) Lưu ý ngữ pháp chuẩn: Trong mệnh đề điều kiện Loại 2, luôn ưu tiên dùng 'were' cho mọi chủ ngữ ('If I were you'), và vế sau dùng 'would' (không dùng 'will').",
+      "wrong": "A dùng 'am' (sai thì Loại 2); C dùng Loại 3 'had been' (chỉ dùng cho chuyện đã qua trong quá khứ); D dùng 'will' ở vế sau (sai công thức Loại 2).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'You should + V' (khuyên nhủ) → chọn ngay mẫu thuộc lòng 'IF I WERE YOU, I WOULD + V'!",
+      "topic": "Câu điều kiện loại 2 — Đưa ra lời khuyên (If I were you)"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If I am you, I would see a doctor about your headache.\"",
-      "B": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "C": "phương án: \"If I had been you, I would see a doctor about your headache.\"",
-      "D": "được/bị thực hiện (thể bị động Quá khứ đơn)"
+      "A": "Dịch: \"Nếu tôi là bạn...\" → ❌ SAI ngữ pháp vì câu điều kiện giả định không dùng 'If I am you' mà phải lùi thì thành 'If I were you'.",
+      "B": "Dịch: \"Nếu tôi là bạn, tôi sẽ đi khám bác sĩ về chứng đau đầu của bạn.\" → ✅ ĐÚNG chuẩn mẫu lời khuyên Loại 2: If I were you, I would + V.",
+      "C": "Dịch: \"Nếu tôi đã từng là bạn (quá khứ), tôi sẽ đi khám...\" → ❌ SAI vì dùng 'had been' (Loại 3) cho lời khuyên ở hiện tại.",
+      "D": "Dịch: \"Nếu tôi là bạn, tôi sẽ...\" → ❌ SAI công thức vì vế sau của 'If I were you' phải dùng 'would', không dùng 'will'."
     },
     "vocab_in_question": []
   },
@@ -6748,17 +6748,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển đổi câu chủ động sang câu bị động tương ứng với đúng thì động từ của câu gốc.",
-      "why": "Tân ngữ câu chủ động chuyển lên làm chủ ngữ mới, động từ chuyển thành be + V3/ed phù hợp thì.",
-      "wrong": "Các câu khác giữ nguyên dạng chủ động, sai thì động từ hoặc sai chủ ngữ số ít/nhiều.",
-      "tip": "MẸO QUA MÔN: Xác định thì của câu gốc -> chọn câu bị động có công thức BE + V3 tương ứng!",
-      "topic": "Chuyển đổi câu bị động"
+      "translation": "\"Ai đó đã lấy trộm chiếc xe đạp của tôi khỏi nhà để xe rồi.\"\n• Dịch từng cụm: Someone (ai đó) • has stolen (đã lấy trộm) • my bicycle (xe đạp của tôi) • from the garage (từ nhà để xe).",
+      "why": "1) Dấu hiệu: Câu gốc dùng 'has stolen' (have/has + V3 → Hiện tại hoàn thành).\n2) Đưa 'My bicycle' (1 chiếc xe đạp — số ít) lên đầu làm chủ ngữ bị động (chiếc xe ĐÃ BỊ trộm).\n3) Công thức bị động Hiện tại hoàn thành: Chủ ngữ số ít + HAS BEEN + V3/ed.\n4) Áp dụng: 'My bicycle has been stolen from the garage.'",
+      "wrong": "A dùng Quá khứ đơn ('was'); C dùng Hiện tại đơn ('is'); D dùng Quá khứ hoàn thành ('had been') — đều làm thay đổi thì của câu gốc.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Câu gốc có 'has + V3' (has stolen) → đáp án bị động PHẢI giữ 'HAS BEEN + V3' (has been stolen)!",
+      "topic": "Câu bị động — Thì Hiện tại hoàn thành (have/has + been + V3/ed)"
     },
     "choice_breakdown": {
-      "A": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "B": "phương án: \"My bicycle has been stolen from the garage.\"",
-      "C": "phương án: \"My bicycle is stolen from the garage.\"",
-      "D": "phương án: \"My bicycle had been stolen from the garage.\""
+      "A": "Dịch: \"Xe đạp của tôi đã bị trộm khỏi nhà để xe (quá khứ đơn).\" → ❌ SAI thì vì câu gốc dùng Hiện tại hoàn thành ('has stolen'), không phải Quá khứ đơn.",
+      "B": "Dịch: \"Xe đạp của tôi đã bị lấy trộm khỏi nhà để xe.\" → ✅ ĐÚNG chuẩn bị động Hiện tại hoàn thành số ít: has been stolen.",
+      "C": "Dịch: \"Xe đạp của tôi bị trộm khỏi nhà để xe (hiện tại đơn).\" → ❌ SAI thì vì 'is stolen' diễn tả sự việc lặp đi lặp lại ở hiện tại.",
+      "D": "Dịch: \"Xe đạp của tôi đã bị trộm (trước một mốc quá khứ).\" → ❌ SAI thì vì 'had been' là Quá khứ hoàn thành, không khớp với 'has stolen'."
     },
     "vocab_in_question": []
   },
@@ -6778,17 +6778,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Viết lại câu không cần thiết: 'It is not necessary for you to...' = 'You don't have to...'.",
-      "why": "'not necessary' đồng nghĩa hoàn toàn với 'don't have to' (không cần phải).",
-      "wrong": "mustn't (cấm đoán tuyệt đối), can't (không thể), shouldn't (không nên).",
-      "tip": "MẸO QUA MÔN: 'It isn't necessary for you to...' -> Đổi thành: 'You DON'T HAVE TO...'!",
-      "topic": "Viết lại câu khuyết thiếu"
+      "translation": "\"Bạn không cần thiết phải tham dự cuộc họp vào ngày mai.\"\n• Dịch từng cụm: It isn't necessary for you (không cần thiết cho bạn) • to attend the meeting (tham dự cuộc họp) • tomorrow (ngày mai).",
+      "why": "1) Dấu hiệu: Cụm 'It isn't necessary for you to V' = bạn không cần phải làm gì (không bắt buộc).\n2) Đổi sang động từ khuyết thiếu tương đương: 'don't have to + V'.\n3) Áp dụng: 'You don't have to attend the meeting tomorrow.'",
+      "wrong": "B ('mustn't' = bị cấm tham dự); C ('shouldn't' = không nên tham dự); D ('can't' = không thể tham dự).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'isn't necessary' → chọn ngay 'DON'T HAVE TO'. Không bao giờ chọn 'mustn't' (cấm đoán)!",
+      "topic": "Động từ khuyết thiếu — Không cần thiết (not necessary = don't have to)"
     },
     "choice_breakdown": {
-      "A": "không cần phải làm (không bắt buộc)",
-      "B": "tuyệt đối không được phép, bị cấm làm",
-      "C": "nên làm (lời khuyên)",
-      "D": "chắc chắn không thể / không có khả năng"
+      "A": "Dịch: \"Bạn không cần phải tham dự cuộc họp vào ngày mai.\" → ✅ ĐÚNG vì 'don't have to' = 'isn't necessary' (không bắt buộc).",
+      "B": "Dịch: \"Bạn bị cấm tham dự cuộc họp ngày mai.\" → ❌ SAI vì 'mustn't' mang nghĩa CẤM ĐOÁN, sai với 'không cần thiết'.",
+      "C": "Dịch: \"Bạn không nên tham dự cuộc họp ngày mai.\" → ❌ SAI vì 'shouldn't' mang tính khuyên răn, không phải 'không cần thiết'.",
+      "D": "Dịch: \"Bạn không thể tham dự cuộc họp ngày mai.\" → ❌ SAI vì 'can't' nói về khả năng không làm được."
     },
     "vocab_in_question": []
   },
@@ -6808,17 +6808,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu trực tiếp sang gián tiếp cần lùi thì và đổi các trạng từ chỉ thời gian.",
-      "why": "tomorrow -> the following day / the next day; today -> that day; tonight -> that night; am/is/are -> was/were.",
-      "wrong": "Giữ nguyên tomorrow / today là sai; chưa lùi thì là sai.",
-      "tip": "MẸO QUA MÔN: Trong câu gián tiếp, loại ngay phương án còn giữ nguyên 'tomorrow / today / tonight'!",
-      "topic": "Câu gián tiếp"
+      "translation": "\"Tối nay bạn có đi dự tiệc không?\" cô ấy hỏi tôi.\n• Dịch từng cụm: Are you going to the party (bạn có đi bữa tiệc không) • tonight (tối nay) • she asked me (cô ấy đã hỏi tôi).",
+      "why": "1) Dấu hiệu: Câu hỏi Yes/No bắt đầu bằng 'Are you going...?' + 'tonight' + 'she asked me'.\n2) 4 bước đổi sang gián tiếp:\n   • Bước 1: Thêm 'if / whether', KHÔNG đảo động từ to be ra trước chủ ngữ.\n   • Bước 2: Đổi ngôi 'you' (hỏi tôi) → 'I'.\n   • Bước 3: Lùi thì Hiện tại tiếp diễn ('are going') → Quá khứ tiếp diễn ('was going').\n   • Bước 4: Đổi trạng từ thời gian 'tonight' (tối nay) → 'that night' (tối hôm đó).",
+      "wrong": "A chưa lùi thì ('am') và chưa đổi 'tonight'; C lùi sai thành Hiện tại đơn ('go'); D giữ 'that night' nhưng lại đảo 'was' lên trước 'I' (lỗi đảo ngữ!).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'Are you ... tonight?' → Chọn 'if + I + WAS ... THAT NIGHT'. Loại ngay câu còn chữ 'tonight' và câu đảo 'was I'!",
+      "topic": "Câu gián tiếp — Câu hỏi Yes/No thì Hiện tại tiếp diễn"
     },
     "choice_breakdown": {
-      "A": "phương án: \"She asked me if I am going to the party tonight.\"",
-      "B": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "C": "phương án: \"She asked me if I go to the party that night.\"",
-      "D": "được/bị thực hiện (thể bị động Quá khứ đơn)"
+      "A": "Dịch: \"Cô ấy hỏi tôi liệu tối nay tôi có đi dự tiệc không.\" → ❌ SAI vì chưa lùi thì ('am' phải thành 'was') và chưa đổi 'tonight → that night'.",
+      "B": "Dịch: \"Cô ấy hỏi tôi liệu tối hôm đó tôi có đi dự tiệc không.\" → ✅ ĐÚNG đủ 4 bước: có 'if', giữ trật tự 'I was going', đổi 'tonight → that night'.",
+      "C": "Dịch: \"Cô ấy hỏi tôi liệu tối hôm đó tôi có đi tiệc không.\" → ❌ SAI thì vì câu gốc dùng Hiện tại tiếp diễn ('are going'), không phải Hiện tại đơn ('go').",
+      "D": "Dịch: \"Cô ấy hỏi tôi liệu tối hôm đó tôi có đi tiệc không.\" → ❌ SAI trật tự từ vì đảo 'was' ra trước 'I' (câu gián tiếp phải là 'I was', không đảo ngữ)."
     },
     "vocab_in_question": []
   },
@@ -6838,17 +6838,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả sự việc trong quá khứ sang câu điều kiện loại 3 (trái thực tế quá khứ).",
-      "why": "Sự việc quá khứ 'didn't study / got up late / failed' -> Giả định loại 3: If + S + had + V3/ed, S + would/could + have + V3/ed.",
-      "wrong": "Loại 2 chỉ dùng cho hiện tại; giữ nguyên thể phủ định/khẳng định mà không đổi nghĩa là sai logic.",
-      "tip": "MẸO QUA MÔN: Quá khứ (didn't / missed) -> Viết lại bằng IF LOẠI 3: HAD + V3 ... WOULD HAVE + V3!",
-      "topic": "Viết lại câu điều kiện loại 3"
+      "translation": "\"Cô ấy đã không học hành chăm chỉ, vì vậy cô ấy đã trượt kỳ thi cuối kỳ.\"\n• Dịch từng cụm: didn't study hard (đã không học chăm chỉ) • so (vì vậy) • failed the final exam (đã trượt kỳ thi cuối kỳ).",
+      "why": "1) Dấu hiệu: 'didn't study' và 'failed' đều ở QUÁ KHỨ → giả định ngược với quá khứ dùng CÂU ĐIỀU KIỆN LOẠI 3.\n2) Công thức Loại 3: If + S + had + V3/ed, S + would/could + have + V3/ed.\n3) Áp dụng & Đổi ngược nghĩa:\n   • Nguyên nhân thật: 'didn't study hard' (đã không học chăm) → 'If she had studied hard' (Nếu cô ấy ĐÃ học chăm)\n   • Kết quả thật: 'failed' (đã trượt) → 'she wouldn't have failed' (thì cô ấy ĐÃ KHÔNG trượt).",
+      "wrong": "A và D dùng Loại 2 (sai thì quá khứ); C giữ nguyên nghĩa cũ 'nếu không học chăm thì đã trượt' (lặp lại thực tế chứ không phải giả định ngược lại).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'didn't ... failed' (QUÁ KHỨ) → chọn IF LOẠI 3: 'If + HAD + V3 ... WOULD(N'T) HAVE + V3' và nhớ đổi ngược khẳng định/phủ định ở cả 2 vế!",
+      "topic": "Câu điều kiện loại 3 — Trái với thực tế trong Quá khứ"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If she studied hard, she wouldn't fail the final exam.\"",
-      "B": "phương án: \"If she had studied hard, she wouldn't have failed the final exam.\"",
-      "C": "phương án: \"If she hadn't studied hard, she would have failed the final exam.\"",
-      "D": "phương án: \"If she didn't study hard, she would fail the final exam.\""
+      "A": "Dịch: \"Nếu cô ấy học chăm, cô ấy sẽ không trượt.\" → ❌ SAI thì vì dùng Loại 2 ('studied ... wouldn't fail'), trong khi chuyện đã xảy ra trong quá khứ.",
+      "B": "Dịch: \"Nếu cô ấy đã học hành chăm chỉ, cô ấy đã không trượt kỳ thi cuối kỳ.\" → ✅ ĐÚNG chuẩn Loại 3 (had studied ... wouldn't have failed) và đúng logic ngược thực tế.",
+      "C": "Dịch: \"Nếu cô ấy đã không học chăm, cô ấy đã trượt kỳ thi.\" → ❌ SAI mục đích giả định vì không đảo ngược nghĩa (vẫn giữ y nguyên 'không học → trượt').",
+      "D": "Dịch: \"Nếu cô ấy không học chăm, cô ấy sẽ trượt.\" → ❌ SAI cả thì (Loại 2) lẫn không đảo ngược nghĩa."
     },
     "vocab_in_question": []
   },
@@ -6868,17 +6868,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Chuyển câu diễn tả thực tế ở hiện tại sang câu điều kiện loại 2 (trái thực tế hiện tại).",
-      "why": "Thực tế hiện tại 'don't have / don't know' -> Giả định loại 2: If + S + V2/ed (had/knew), S + could/would + V.",
-      "wrong": "Loại 1 sai vì thực tế không có; loại 3 sai vì chỉ dùng cho quá khứ.",
-      "tip": "MẸO QUA MÔN: Hiện tại 'don't have / can't' -> Viết lại bằng IF LOẠI 2 (had / could)!",
-      "topic": "Viết lại câu điều kiện loại 2"
+      "translation": "\"Tôi không có đủ tiền để mua chiếc máy tính xách tay mới đó.\"\n• Dịch từng cụm: don't have enough money (không có đủ tiền) • to buy that new laptop (để mua chiếc laptop mới đó).",
+      "why": "1) Dấu hiệu: Câu gốc dùng 'don't have' (HIỆN TẠI) → giả định trái thực tế hiện tại dùng CÂU ĐIỀU KIỆN LOẠI 2.\n2) Công thức Loại 2: If + S + V2/ed, S + would/could + V.\n3) Áp dụng & Đổi ngược nghĩa: 'don't have' → 'If I had enough money'; mục đích 'to buy' → 'I could buy that new laptop'.",
+      "wrong": "A dùng Loại 1 (sai thực tế); C dùng Loại 3 (chỉ dùng cho quá khứ); D không đổi ngược nghĩa ('nếu không có tiền thì không thể mua').",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'don't have ... to V' ở HIỆN TẠI → chọn ngay IF LOẠI 2: 'If I had ..., I could ...'!",
+      "topic": "Câu điều kiện loại 2 — Trái với thực tế ở Hiện tại"
     },
     "choice_breakdown": {
-      "A": "phương án: \"If I have enough money, I can buy that new laptop.\"",
-      "B": "phương án: \"If I had enough money, I could buy that new laptop.\"",
-      "C": "phương án: \"If I had had enough money, I could have bought that new laptop.\"",
-      "D": "phương án: \"If I didn't have enough money, I couldn't buy that new laptop.\""
+      "A": "Dịch: \"Nếu tôi có đủ tiền, tôi có thể mua chiếc laptop đó.\" → ❌ SAI thì vì dùng Loại 1 ('have ... can'), không dùng để giả định trái hiện tại.",
+      "B": "Dịch: \"Nếu tôi có đủ tiền, tôi đã có thể mua chiếc laptop mới đó.\" → ✅ ĐÚNG chuẩn Loại 2: If I had (V2), I could buy.",
+      "C": "Dịch: \"Nếu tôi đã có đủ tiền (quá khứ), tôi đã có thể mua...\" → ❌ SAI thì vì dùng Loại 3 ('had had ... could have bought'), trong khi câu gốc ở hiện tại.",
+      "D": "Dịch: \"Nếu tôi không có đủ tiền, tôi không thể mua...\" → ❌ SAI logic vì lặp lại thực tế phủ định chứ không đổi ngược nghĩa."
     },
     "vocab_in_question": []
   },
@@ -6898,17 +6898,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: The weather was terrible yesterday.",
-      "why": "Phương án [A] 'The weather was terrible yesterday, wasn't it?' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Hôm qua thời tiết thật là tệ.\"\n• Dịch từng cụm: The weather (thời tiết) • was terrible (đã rất tệ) • yesterday (hôm qua).",
+      "why": "1) Dấu hiệu: Các đáp án giữ nguyên câu gốc rồi gắn thêm phần ', ... it?' ở cuối → đây là CÂU HỎI ĐUÔI (Tag question, kiểu '...phải không?').\n2) 3 quy tắc vàng làm Câu hỏi đuôi:\n   • Quy tắc 1 (Trái dấu): Vế trước KHẲNG ĐỊNH ('was') → Đuôi phải PHỦ ĐỊNH ('wasn't').\n   • Quy tắc 2 (Giữ nguyên động từ): Vế trước dùng to be 'was' → Đuôi bắt buộc dùng lại 'was' (không đổi sang didn't hay isn't).\n   • Quy tắc 3 (Đổi chủ ngữ thành đại từ): 'The weather' (vật, số ít) → 'it'.\n4) Ghép lại: ', wasn't it?'",
+      "wrong": "B cùng dấu khẳng định ('was it?' sai quy tắc trái dấu); C tự ý dùng 'didn't' khi câu gốc đang dùng 'was'; D đổi sai thì về hiện tại 'isn't'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy dấu phẩy + đuôi ngắn ở cuối → ĐỌC NGƯỢC DẤU & GIỮ NGUYÊN ĐỘNG TỪ: 'was' (khẳng định) → đuôi là 'WASN'T IT?'!",
+      "topic": "Câu hỏi đuôi (Tag Question)"
     },
     "choice_breakdown": {
-      "A": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "B": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "C": "được/bị thực hiện (thể bị động Quá khứ đơn)",
-      "D": "được/bị thực hiện (thể bị động Quá khứ đơn)"
+      "A": "Dịch: \"Hôm qua thời tiết thật tệ, phải không?\" → ✅ ĐÚNG đủ 3 quy tắc: 'was' (khẳng định) → đuôi phủ định 'wasn't', 'the weather' → 'it'.",
+      "B": "Dịch: \"Hôm qua thời tiết thật tệ, phải không?\" → ❌ SAI quy tắc trái dấu: vế trước là khẳng định 'was' thì đuôi không được là khẳng định 'was it'.",
+      "C": "Dịch: \"...\" → ❌ SAI trợ động từ: câu gốc dùng 'to be' (was) nên đuôi cũng phải dùng 'wasn't', tuyệt đối không dùng 'didn't'.",
+      "D": "Dịch: \"...\" → ❌ SAI thì: câu gốc ở quá khứ ('was ... yesterday'), không được dùng hiện tại 'isn't'."
     },
     "vocab_in_question": []
   },
@@ -6928,17 +6928,17 @@
     "correctAnswer": "D",
     "passage": "",
     "explanation": {
-      "translation": "Tôi chắc chắn đây không phải đồ của tôi/của Mark -> Đây chắc chắn không thể là...",
-      "why": "'I am certain / sure that ... isn't / is not' = 'can't be'.",
-      "wrong": "must be (chắc chắn là), might not (có lẽ không), shouldn't (không nên).",
-      "tip": "MẸO QUA MÔN: Thấy 'I am certain/sure that ... NOT' -> Chọn ngay 'CAN'T BE'!",
-      "topic": "Suy đoán logic (Modals)"
+      "translation": "\"Tôi chắc chắn người đó không phải John vì hiện tại anh ấy đang ở Paris.\"\n• Dịch từng cụm: I am certain (tôi chắc chắn) • that isn't John (đó không phải John) • currently in Paris (hiện tại đang ở Paris).",
+      "why": "1) Dấu hiệu: Cụm 'I am certain that isn't...' = chắc chắn KHÔNG THỂ là.\n2) Khi suy đoán chắc chắn điều gì KHÔNG ĐÚNG, ta dùng 'CAN'T BE' (bẫy kinh điển: rất nhiều người chọn nhầm 'mustn't be', nhưng 'mustn't' nghĩa là CẤM ĐOÁN chứ không dùng để suy đoán!).",
+      "wrong": "A ('shouldn't' = không nên); B ('mustn't' = bị cấm — không dùng để suy đoán); C ('might not' = có lẽ không — không chắc chắn bằng 'certain').",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'certain / sure that ... NOT' → chọn ngay 'CAN'T BE'. Cấm chọn 'mustn't be' vì 'mustn't' chỉ là cấm đoán!",
+      "topic": "Động từ khuyết thiếu suy đoán — Chắc chắn không phải (can't be)"
     },
     "choice_breakdown": {
-      "A": "nên làm (lời khuyên)",
-      "B": "tuyệt đối không được phép, bị cấm làm",
-      "C": "có lẽ, có thể xảy ra (khả năng)",
-      "D": "chắc chắn không thể / không có khả năng"
+      "A": "Dịch: \"Đó không nên là John vì anh ấy đang ở Paris.\" → ❌ SAI nghĩa vì 'shouldn't' là lời khuyên (không nên).",
+      "B": "Dịch: \"Đó bị cấm là John...\" → ❌ SAI ngữ pháp suy đoán: 'mustn't' chỉ mang nghĩa CẤM ĐOÁN, không phải phủ định của suy đoán 'must'.",
+      "C": "Dịch: \"Đó có lẽ không phải là John...\" → ❌ SAI mức độ chắc chắn ('might not' chỉ là đoán có lẽ, còn 'certain' là chắc chắn 100%).",
+      "D": "Dịch: \"Đó chắc chắn không thể là John vì hiện tại anh ấy đang ở Paris.\" → ✅ ĐÚNG chuẩn suy đoán chắc chắn không phải: 'can't be'."
     },
     "vocab_in_question": []
   },
@@ -6958,17 +6958,17 @@
     "correctAnswer": "B",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: Can you describe the new boss to me?",
-      "why": "Phương án [B] 'What is the new boss like?' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Bạn có thể miêu tả người sếp mới cho tôi nghe được không?\"\n• Dịch từng cụm: Can you describe (bạn có thể miêu tả) • the new boss (người sếp mới) • to me (cho tôi).",
+      "why": "1) Dấu hiệu: Có động từ 'describe' (miêu tả xem ai đó/cái gì đó như thế nào).\n2) Mẫu câu hỏi miêu tả tính cách/đặc điểm chuẩn trong tiếng Anh:\n   • 'What + be (is/are) + Chủ ngữ + like?' (Ai đó/cái gì đó như thế nào?)\n3) Cảnh giác bẫy cực lớn: 'What does ... like?' có nghĩa là 'Ông ấy THÍCH cái gì?', hoàn toàn khác với 'What IS ... like?' (Ông ấy là người NHƯ THẾ NÀO?).",
+      "wrong": "A ('What does ... like?' = sếp mới thích gì?); C ('How does ... like?' — sai cấu trúc miêu tả); D ('Who does ... like?' = sếp mới thích ai?).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'describe ...' (miêu tả) → chọn ngay 'WHAT IS / ARE ... LIKE?'. Cẩn thận bẫy 'does ... like' (hỏi sở thích)!",
+      "topic": "Mẫu câu hỏi miêu tả — What is/are ... like?"
     },
     "choice_breakdown": {
-      "A": "phương án: \"What does the new boss like?\"",
-      "B": "phương án: \"What is the new boss like?\"",
-      "C": "phương án: \"How does the new boss like?\"",
-      "D": "phương án: \"Who does the new boss like?\""
+      "A": "Dịch: \"Sếp mới thích cái gì?\" → ❌ SAI nghĩa vì 'does + S + like' là hỏi SỞ THÍCH, không phải hỏi miêu tả.",
+      "B": "Dịch: \"Người sếp mới trông/tính tình như thế nào?\" → ✅ ĐÚNG chuẩn mẫu câu miêu tả: 'What is + S + like?'.",
+      "C": "Dịch: \"Sếp mới thích như thế nào?\" → ❌ SAI ngữ pháp và sai nghĩa ('like' ở đây không dùng với 'How does').",
+      "D": "Dịch: \"Sếp mới thích ai?\" → ❌ SAI nghĩa hoàn toàn ('Who' là hỏi người mà sếp thích)."
     },
     "vocab_in_question": []
   },
@@ -6988,17 +6988,17 @@
     "correctAnswer": "A",
     "passage": "",
     "explanation": {
-      "translation": "Nội dung câu hỏi: I find it difficult to wake up early in winter.",
-      "why": "Phương án [A] 'It is difficult for me to wake up early in winter.' là đáp án đúng nhất về mặt ngữ pháp và ngữ nghĩa ngữ cảnh.",
-      "wrong": "Các phương án còn lại sai thì động từ, sai dạng thức từ hoặc không hợp logic ngữ nghĩa của câu.",
-      "tip": "MẸO QUA MÔN: Xác định từ khóa (keywords) trước và sau chỗ trống, loại trừ các đáp án sai thì và sai cấu trúc trước!",
-      "topic": "Viết lại câu (Transformation)"
+      "translation": "\"Tôi thấy thật khó để thức dậy sớm vào mùa đông.\"\n• Dịch từng cụm: I find it difficult (tôi thấy điều đó thật khó) • to wake up early (thức dậy sớm) • in winter (vào mùa đông).",
+      "why": "1) Dấu hiệu: Mẫu câu 'S + find it + tính từ (difficult/easy) + to V' (Ai đó thấy việc làm gì đó như thế nào).\n2) Công thức biến đổi tương đương với chủ ngữ giả 'It':\n   • 'It is + tính từ + FOR + tân ngữ (me/him/her...) + to V' (Thật ... cho ai đó để làm gì).\n3) Áp dụng: 'I find it difficult to wake up...' → 'It is difficult for me to wake up...'.",
+      "wrong": "B sai nghĩa (việc dậy sớm tìm thấy tôi khó!); C dùng sai giới từ ('to me' thay vì 'for me'); D dùng sai chủ ngữ ('I am difficult' nghĩa là tôi là người khó tính!).",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'S + find it + ADJ + to V' → chọn ngay 'IT IS + ADJ + FOR + (me/him...) + TO V'!",
+      "topic": "Cấu trúc giả chủ ngữ — S + find it + adj + to V ↔ It is + adj + for sb + to V"
     },
     "choice_breakdown": {
-      "A": "phương án: \"It is difficult for me to wake up early in winter.\"",
-      "B": "phương án: \"Waking up early in winter finds me difficult.\"",
-      "C": "động từ nguyên mẫu có to (to wake up early in winter is difficult to me.)",
-      "D": "phương án: \"I am difficult to wake up early in winter.\""
+      "A": "Dịch: \"Thật khó đối với tôi để thức dậy sớm vào mùa đông.\" → ✅ ĐÚNG chuẩn cấu trúc: It is + adj (difficult) + for me + to V (wake up).",
+      "B": "Dịch: \"Việc dậy sớm vào mùa đông thấy tôi khó khăn.\" → ❌ SAI nghĩa và ngữ pháp vì đảo ngược 'waking up' làm chủ ngữ của 'finds'.",
+      "C": "Dịch: \"Thức dậy sớm vào mùa đông thì khó với tôi.\" → ❌ SAI giới từ chuẩn trong mẫu 'It is/to V + adj + FOR sb' (dùng 'for me', không dùng 'to me').",
+      "D": "Dịch: \"Tôi thật khó tính khi dậy sớm...\" → ❌ SAI nghĩa vì không được lấy người làm chủ ngữ cho tính từ chỉ tính chất sự việc ('It is difficult...')."
     },
     "vocab_in_question": []
   },
@@ -7018,17 +7018,17 @@
     "correctAnswer": "C",
     "passage": "",
     "explanation": {
-      "translation": "Mặc dù thời tiết xấu/mưa to, chúng tôi vẫn đi dã ngoại.",
-      "why": "Although + mệnh đề (S + V) = In spite of / Despite + cụm danh từ (the terrible weather / the heavy rain).",
-      "wrong": "Despite it rained (sai vì Despite không đi với mệnh đề), Even though the heavy rain (sai vì Even though phải đi với mệnh đề).",
-      "tip": "MẸO QUA MÔN: Sau chỗ trống là Cụm danh từ (The heavy rain) -> Chọn 'IN SPITE OF' hoặc 'DESPITE'!",
-      "topic": "Biến đổi câu Although / In spite of"
+      "translation": "\"Mặc dù trời đã mưa to, chúng tôi vẫn tận hưởng chuyến đi cắm trại của mình.\"\n• Dịch từng cụm: Although it rained heavily (mặc dù trời đã mưa to) • enjoyed our camping trip (tận hưởng chuyến cắm trại).",
+      "why": "1) Dấu hiệu: Câu gốc dùng 'Although + S + V' ('it rained heavily').\n2) Quy tắc bắt buộc:\n   • Although / Even though + MỆNH ĐỀ (có S + V)\n   • In spite of / Despite + CỤM DANH TỪ (không có động từ chia thì)\n3) Gom mệnh đề 'it rained heavily' (mưa to — động từ + trạng từ) thành cụm danh từ 'the heavy rain' (cơn mưa to — tính từ + danh từ) → ghép với 'In spite of'!",
+      "wrong": "A dùng 'Because of' (= bởi vì, ngược nghĩa 'mặc dù'); B dùng 'Despite' nhưng theo sau vẫn là mệnh đề 'it rained heavily'; D dùng 'Even though' nhưng theo sau lại là cụm danh từ 'the heavy rain'.",
+      "tip": "DẤU HIỆU & MẸO CHỌN NHANH: Thấy 'Although' → loại 'Because/Because of'. Nếu sau chỗ nối là CỤM DANH TỪ (the heavy rain) → chọn 'IN SPITE OF / DESPITE', loại 'Even though'!",
+      "topic": "Câu nhượng bộ — Although + Mệnh đề ↔ In spite of / Despite + Cụm danh từ"
     },
     "choice_breakdown": {
-      "A": "phương án: \"Because of the heavy rain, we enjoyed our camping trip.\"",
-      "B": "phương án: \"Despite it rained heavily, we enjoyed our camping trip.\"",
-      "C": "mặc dù, bất chấp (+ cụm danh từ)",
-      "D": "phương án: \"Even though the heavy rain, we enjoyed our camping trip.\""
+      "A": "Dịch: \"Bởi vì cơn mưa to, chúng tôi đã tận hưởng chuyến cắm trại.\" → ❌ SAI nghĩa vì 'Because of' là 'bởi vì', ngược với 'Although' (mặc dù).",
+      "B": "Dịch: \"Mặc dù trời đã mưa to...\" → ❌ SAI ngữ pháp vì 'Despite' chỉ đi với cụm danh từ hoặc V-ing, KHÔNG được đi với mệnh đề có động từ 'it rained'.",
+      "C": "Dịch: \"Mặc dù cơn mưa to, chúng tôi vẫn tận hưởng chuyến cắm trại của mình.\" → ✅ ĐÚNG vì 'In spite of' đi chuẩn với cụm danh từ 'the heavy rain'.",
+      "D": "Dịch: \"Mặc dù cơn mưa to...\" → ❌ SAI ngữ pháp vì 'Even though' bắt buộc phải đi với mệnh đề (S + V), không đi với cụm danh từ 'the heavy rain'."
     },
     "vocab_in_question": []
   },
